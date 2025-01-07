@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/appsettings.Development.json
+/appsettings.json
+/Properties/ServiceDependencies/goolsdev-webapp - Zip Deploy/profile.arm.json
