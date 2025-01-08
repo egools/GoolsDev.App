@@ -1,6 +1,6 @@
 using System;
 
-namespace GoolsDev.MvcApp.Models
+namespace GoolsDev.App.Models
 {
     public class ErrorViewModel
     {

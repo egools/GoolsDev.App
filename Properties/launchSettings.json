@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "GoolsDev.MvcApp": {
+    "GoolsDev.App": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

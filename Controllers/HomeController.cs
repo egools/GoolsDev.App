@@ -1,4 +1,4 @@
-﻿using GoolsDev.MvcApp.Models;
+﻿using GoolsDev.App.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GoolsDev.MvcApp.Controllers
+namespace GoolsDev.App.Controllers
 {
     public class HomeController : Controller
     {
@@ -19,11 +19,6 @@ namespace GoolsDev.MvcApp.Controllers
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }
