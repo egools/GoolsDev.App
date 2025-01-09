@@ -126,7 +126,7 @@ namespace GoolsDev.App.Controllers
                             {
                                 TimeZoneInfo easternStandardTime = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
                                 DateTimeOffset timeInEST = TimeZoneInfo.ConvertTime(gameDoc.Status.StartDate, easternStandardTime);
-                                leaderboardStatline.GameStatus = $"{gameDoc.Status.StartDate:ddd h:mm tt \"EST\"} {homeAway} {opponent.ShortName}";
+                                leaderboardStatline.GameStatus = $"{gameDoc.Status.StartDate:ddd h:mmtt \"EST\"} {homeAway} {opponent.ShortName}";
                             }
                             else if (gameDoc.Status.Complete)
                             {

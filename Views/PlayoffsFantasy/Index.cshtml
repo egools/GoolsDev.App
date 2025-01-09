@@ -15,18 +15,7 @@
                     <span class="token rank-token">#@(rank)</span>
                     <span>@fantasyTeam.Name</span>
                     <span class="score">@fantasyTeam.TotalPoints.ToString("0.00")</span>
-                </span>
-                <span class="score-preview">
-                    @foreach (var position in Model.RosterPositions)
-                    {
-                        <span class="position-score">
-                            <span>@position</span>
-                            <text>:</text>
-                            <span>@fantasyTeam[position].Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
-                        </span>
-                    }
-                </span>
-
+                </span>               
             </label>
             <input type="checkbox" id="team@(rank)" name="team@(rank)" class="hider" checked="checked" />
             <div class="player-container">
@@ -51,13 +40,23 @@
                                 {
                                     <div class="player-game @(!statline.HasGame ? "no-game" : string.Empty)">
                                         <span>Week @statline.Week</span>
-                                        <span>@statline.GameStatus</span>
+                                        <span class="game-status">@statline.GameStatus</span>
                                         <span class="score">@statline.FantasyPoints.ToString("0.00")</span>
                                     </div>
                                 }
                             }
                         </div>
                     </div>
+                }
+            </div>
+            <div class="score-preview">
+                @foreach (var position in Model.RosterPositions)
+                {
+                    <span class="position-score">
+                        <span>@position</span>
+                        <text>:</text>
+                        <span>@fantasyTeam[position].Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
+                    </span>
                 }
             </div>
         </div>
