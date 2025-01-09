@@ -1,4 +1,5 @@
 using GoolsDev.App.Cosmos;
+using GoolsDev.App.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Azure.Cosmos;
@@ -21,6 +22,8 @@ namespace GoolsDev.App
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddOptions<BmgcFantasyPlayoffsSettings>()
+                .BindConfiguration("BmgcFantasyPlayoffsSettings");
             services
                 .AddAuthentication()
                 .AddGoogle(options =>

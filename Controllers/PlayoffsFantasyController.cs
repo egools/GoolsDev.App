@@ -3,6 +3,7 @@ using GoolsDev.App.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,35 +21,37 @@ namespace GoolsDev.App.Controllers
         private readonly ILogger<BmgcController> _logger;
         private readonly ICosmosPlayerStats _cosmosPlayerStats;
         private readonly ICosmosGames _cosmosGames;
+        private readonly BmgcFantasyPlayoffsSettings _settings;
         private readonly IMemoryCache _memoryCache;
-        private const int _year = 2024;
 
         public PlayoffsFantasyController(
             ILogger<BmgcController> logger,
             ICosmosPlayerStats cosmosPlayerStats,
             ICosmosGames cosmosGames,
+            IOptions<BmgcFantasyPlayoffsSettings> options,
             IMemoryCache memoryCache
             )
         {
             _logger = logger;
             _cosmosPlayerStats = cosmosPlayerStats;
             _cosmosGames = cosmosGames;
+            _settings = options.Value;
             _memoryCache = memoryCache;
         }
 
         public async Task<IActionResult> Index()
         {
-            var teams = GetFantasyTeams(_year);
+            var teams = GetFantasyTeams(_settings.CurrentNflSeason);
             var playerIDs = teams.SelectMany(t => t.Players.Values);
-            var playerStatDocs = await _cosmosPlayerStats.GetPlayerStats(_year, playerIDs);
-            var gameDocs = await _cosmosGames.GetGames(_year);
+            var playerStatDocs = await _cosmosPlayerStats.GetPlayerStats(_settings.CurrentNflSeason, playerIDs);
+            var gameDocs = await _cosmosGames.GetGames(_settings.CurrentNflSeason);
             return View(CreateLeaderboard(teams, playerStatDocs, gameDocs));
         }
 
         [Route("leaders")]
         public async Task<IActionResult> LeadingScorers()
         {
-            var players = await _cosmosPlayerStats.GetAllPlayers(_year);
+            var players = await _cosmosPlayerStats.GetAllPlayers(_settings.CurrentNflSeason);
             return View(players);
         }
 
@@ -75,6 +78,7 @@ namespace GoolsDev.App.Controllers
         {
             var leaderboard = new PlayoffsFantasyLeaderboard();
 
+            leaderboard.RosterPositions = ["QB", "RB", "WR1", "WR2", "TE", "FL1", "FL2"];
             var teamGames = new Dictionary<string, (NflGameDocument, NflGameTeam, NflGameTeam, bool)>();
             gameDocs.ForEach(g =>
             {
@@ -105,16 +109,16 @@ namespace GoolsDev.App.Controllers
 
                     foreach (var week in leaderboard.Weeks)
                     {
-                        var statline = playerDoc.Statlines.FirstOrDefault(s => s.Week == week && s.SeasonType == 3);
-                        var leaderBoardStatline = statline is not null
+                        var statline = playerDoc.Statlines.FirstOrDefault(s => s.Week == week && s.SeasonType == _settings.CurrentSeasonType);
+                        var leaderboardStatline = statline is not null
                             ? new LeaderboardStatline(statline)
                             : new LeaderboardStatline()
                             {
                                 Week = week,
-                                SeasonType = 3,
+                                SeasonType = _settings.CurrentSeasonType,
                                 GameStatus = "No Game"
                             };
-                        if (teamGames.TryGetValue($"{playerDoc.TeamId}.{leaderBoardStatline.Week}", out var teamGame))
+                        if (teamGames.TryGetValue($"{playerDoc.TeamId}.{leaderboardStatline.Week}", out var teamGame))
                         {
                             var (gameDoc, team, opponent, isHome) = teamGame;
                             var homeAway = isHome ? "vs" : "@";
@@ -122,12 +126,12 @@ namespace GoolsDev.App.Controllers
                             {
                                 TimeZoneInfo easternStandardTime = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
                                 DateTimeOffset timeInEST = TimeZoneInfo.ConvertTime(gameDoc.Status.StartDate, easternStandardTime);
-                                leaderBoardStatline.GameStatus = $"{gameDoc.Status.StartDate:ddd h:mm tt \"EST\"} {homeAway} {opponent.ShortName}";
+                                leaderboardStatline.GameStatus = $"{gameDoc.Status.StartDate:ddd h:mm tt \"EST\"} {homeAway} {opponent.ShortName}";
                             }
                             else if (gameDoc.Status.Complete)
                             {
                                 var winLoss = team.Winner ? "W" : "L";
-                                leaderBoardStatline.GameStatus = $"Final {winLoss} {team.Score}-{opponent.Score} {homeAway} {opponent.ShortName}";
+                                leaderboardStatline.GameStatus = $"Final ({winLoss}) {team.Score}-{opponent.Score} {homeAway} {opponent.ShortName}";
                             }
                             else
                             {
@@ -140,11 +144,12 @@ namespace GoolsDev.App.Controllers
                                     > 4 => "OT",
                                     _ => string.Empty
                                 };
-                                leaderBoardStatline.GameStatus = $"{gameDoc.Status.Clock} {team.Score}-{opponent.Score} {homeAway} {opponent.ShortName}";
+                                leaderboardStatline.GameStatus = $"{team.Score}-{opponent.Score} {gameDoc.Status.Clock} {period} {homeAway} {opponent.ShortName}";
                             }
-                            player.CurrentGameStatus = leaderBoardStatline.GameStatus;
+                            player.CurrentGameStatus = leaderboardStatline.GameStatus;
+                            leaderboardStatline.HasGame = true;
                         }
-                        player.Statlines.Add(leaderBoardStatline);
+                        player.Statlines.Add(leaderboardStatline);
                     }
 
                     leaderboardTeam.TotalPoints += player.Statlines.Sum(p => p.FantasyPoints);

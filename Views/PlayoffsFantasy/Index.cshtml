@@ -1,65 +1,66 @@
 ﻿@model PlayoffsFantasyLeaderboard
 
 @{
-    ViewData["Title"] = "BMGC";
+    ViewData["Title"] = "BMGC Playoffs Fantasy";
     var rank = 1;
+    Layout = "_BmgcLayout";
 }
 
-<h1>BMGC Playoffs Fantasy</h1>
+<div class="bmgc-leaderboard">
+    @foreach (var fantasyTeam in Model.FantasyTeams.OrderByDescending(ft => ft.TotalPoints))
+    {
+        <div class="leaderboard-team">
+            <label class="leaderboard-header" for="team@(rank)">
+                <span class="team-header">
+                    <span class="token rank-token">#@(rank)</span>
+                    <span>@fantasyTeam.Name</span>
+                    <span class="score">@fantasyTeam.TotalPoints.ToString("0.00")</span>
+                </span>
+                <span class="score-preview">
+                    @foreach (var position in Model.RosterPositions)
+                    {
+                        <span class="position-score">
+                            <span>@position</span>
+                            <text>:</text>
+                            <span>@fantasyTeam[position].Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
+                        </span>
+                    }
+                </span>
 
-@foreach (var fantasyTeam in Model.FantasyTeams.OrderByDescending(ft => ft.TotalPoints))
-{
-    <div class="leaderboard-team">
-        <div class="leaderboard-header">
-            <span>#@(rank++)</span>
-            <span>@fantasyTeam.Name</span>
-            <span>@fantasyTeam.TotalPoints.ToString("0.00")</span>
-        </div>
-        <div class="player-container">
-            @foreach (var player in fantasyTeam.Players)
-            {
-                <div class="fantasy-player-row">
-                    <span>@player.RosterPosition</span>
-                    <span>@player.FirstName @player.LastName</span>
-                    <span>@player.TeamShortName - @player.Postion</span>
-                    <span>@player.Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
-                    <div class="statlines-container">
-                        @foreach (var week in Model.Weeks)
-                        {
-                            var statline = player.Statlines.FirstOrDefault(s => s.Week == week);
-                            if (statline is not null)
+            </label>
+            <input type="checkbox" id="team@(rank)" name="team@(rank)" class="hider" checked="checked" />
+            <div class="player-container">
+                @foreach (var position in Model.RosterPositions)
+                {
+                    var player = fantasyTeam[position];
+                    <div class="player-row">
+                        <label class="player-header" for="player_@(rank)_@(player.RosterPosition)">
+                            <span class="token position-token">@player.RosterPosition</span>
+                            <span class="player-info-card">
+                                <span>@player.FirstName @player.LastName</span>
+                                <span class="team-position">@player.TeamShortName - @player.Postion #@player.JerseyNumber</span>
+                            </span>
+                            <span class="score">@player.Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
+                        </label>
+                        <input type="checkbox" id="player_@(rank)_@(player.RosterPosition)" name="player_@(rank)_@(player.RosterPosition)" class="hider" checked="checked" />
+                        <div class="statlines-container">
+                            @foreach (var week in Model.Weeks)
                             {
-                                <div class="player-game">
-                                    <span>Week @statline.Week</span>
-                                    <span>@statline.FantasyPoints.ToString("0.00")</span>
-                                    <span>@statline.GameStatus</span>
-                                </div>
+                                var statline = player.Statlines.FirstOrDefault(s => s.Week == week);
+                                if (statline is not null)
+                                {
+                                    <div class="player-game @(!statline.HasGame ? "no-game" : string.Empty)">
+                                        <span>Week @statline.Week</span>
+                                        <span>@statline.GameStatus</span>
+                                        <span class="score">@statline.FantasyPoints.ToString("0.00")</span>
+                                    </div>
+                                }
                             }
-                        }
+                        </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
-    </div>
-
-}
-
-<style>
-    .leaderboard-team
-    {
-        padding: 1rem;
-        border: 1px solid grey;
-        border-radius: 0.4rem;
-        margin-bottom: 0.5rem;
+        rank++;
     }
-
-    .player-container
-    {
-    }
-
-    .fantasy-player-row
-    {
-        padding: 0.5rem 0;
-        border-top: 1px dashed grey;
-    }
-</style>
+</div>
