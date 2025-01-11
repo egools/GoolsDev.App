@@ -48,6 +48,24 @@ namespace GoolsDev.App.Controllers
             return View(CreateLeaderboard(teams, playerStatDocs, gameDocs));
         }
 
+        [Route("{name}")]
+        public async Task<IActionResult> Team(string name)
+        {
+            var teams = GetFantasyTeams(_settings.CurrentNflSeason);
+            if(!teams.Any(t => t.Name.Equals(name, StringComparison.OrdinalIgnoreCase)))
+            {
+                return Redirect("/bmgc/playoffs");
+            }
+
+            var playerIDs = teams.SelectMany(t => t.Players.Values);
+            var playerStatDocs = await _cosmosPlayerStats.GetPlayerStats(_settings.CurrentNflSeason, playerIDs);
+            var gameDocs = await _cosmosGames.GetGames(_settings.CurrentNflSeason);
+            var leaderboard = CreateLeaderboard(teams, playerStatDocs, gameDocs);
+            leaderboard.IsTeamPage = true;
+            leaderboard.PlayerPageName = name;
+            return View("Index", leaderboard);
+        }
+
         [Route("leaders")]
         public async Task<IActionResult> LeadingScorers()
         {
@@ -157,6 +175,12 @@ namespace GoolsDev.App.Controllers
                 }
 
                 leaderboard.FantasyTeams.Add(leaderboardTeam);
+            }
+
+            var rank = 1;
+            foreach(var team in leaderboard.FantasyTeams.OrderByDescending(t => t.TotalPoints))
+            {
+                team.Rank = rank++;
             }
 
             return leaderboard;

@@ -6,6 +6,8 @@ namespace GoolsDev.App.Models
 {
     public class PlayoffsFantasyLeaderboard
     {
+        public bool IsTeamPage { get; set; } = false;
+        public string PlayerPageName { get; set; }
         public IEnumerable<string> RosterPositions { get; set; }
         public IOrderedEnumerable<int> Weeks { get; set; }
         public List<LeaderboardTeam> FantasyTeams { get; set; } = new List<LeaderboardTeam>();
@@ -15,6 +17,7 @@ namespace GoolsDev.App.Models
     {
         public string Name { get; set; }
         public double TotalPoints { get; set; }
+        public int Rank { get; set; }
         public List<LeaderboardPlayer> Players { get; set; } = new List<LeaderboardPlayer>();
         public LeaderboardPlayer this[string position] => Players.FirstOrDefault(p => p.RosterPosition == position);
     }
