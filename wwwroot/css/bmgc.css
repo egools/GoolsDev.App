@@ -4,12 +4,12 @@
     --bmgcLightBlue: #073948;
     --bmgcBlue: #0f313e;
     --bmgcDarkBlue: #1e232d;
-    --bmgcGold: #ffd700;
-    --bmgcGoldLight: #ffe293;
+    --bmgcGold: #e8c500;
+    --bmgcGoldLight: #fff2a5;
     --bmgcSilver: #c0c0c0;
     --bmgcSilverLight: #eeecec;
     --bmgcBronze: #7e5d35;
-    --bmgcBronzeLight: #987a34;
+    --bmgcBronzeLight: #a88a44;
 }
 
 html
@@ -21,6 +21,9 @@ html
     font-family: "Roboto Mono", monospace;
     color: white;
     font-size: 10px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bmgcBlue) var(--bmgcLightBlue);
 }
 
 .bmgc-leaderboard
@@ -45,32 +48,32 @@ html
     {
         background-position: 0;
         background-size: 4.2rem;
-        transition: background-position 0.15s ease-in;
+        transition: background-position 0.2s ease-out;
     }
 
-    .leaderboard-team:first-child .rank-token
-    {
-        background: linear-gradient(135deg, var(--bmgcGold) 40%,var(--bmgcGoldLight) 50%, var(--bmgcGold) 63%);
-        border-color: var(--bmgcGoldLight);
-        background-size: 6rem;
-        color: #000000aa;
-    }
+        .leaderboard-team .rank-token.rank1
+        {
+            background: linear-gradient(135deg, var(--bmgcGold) 40%,var(--bmgcGoldLight) 50%, var(--bmgcGold) 63%);
+            border-color: var(--bmgcGoldLight);
+            background-size: 6rem;
+            color: #000000aa;
+        }
 
-    .leaderboard-team:nth-child(2) .rank-token
-    {
-        background: linear-gradient(135deg, var(--bmgcSilver) 40%,var(--bmgcSilverLight) 50%, var(--bmgcSilver) 63%);
-        border-color: var(--bmgcSilverLight);
-        background-size: 6rem;
-        color: #000000aa;
-    }
+        .leaderboard-team .rank-token.rank2
+        {
+            background: linear-gradient(135deg, var(--bmgcSilver) 40%,var(--bmgcSilverLight) 50%, var(--bmgcSilver) 63%);
+            border-color: var(--bmgcSilverLight);
+            background-size: 6rem;
+            color: #000000aa;
+        }
 
-    .leaderboard-team:nth-child(3) .rank-token
-    {
-        background: linear-gradient(135deg, var(--bmgcBronze) 40%,var(--bmgcBronzeLight) 50%, var(--bmgcBronze) 63%);
-        border-color: var(--bmgcBronzeLight);
-        background-size: 6rem;
-        color: #ffffffaa;
-    }
+        .leaderboard-team .rank-token.rank3
+        {
+            background: linear-gradient(135deg, var(--bmgcBronze) 40%,var(--bmgcBronzeLight) 50%, var(--bmgcBronze) 63%);
+            border-color: var(--bmgcBronzeLight);
+            background-size: 6rem;
+            color: #ffffffaa;
+        }
 
     .leaderboard-team:hover .rank-token
     {
@@ -109,7 +112,6 @@ html
     font-size: 1.2rem;
     justify-content: space-between;
     flex-wrap: wrap;
-    transition: opacity 0.5s, max-height 0.3s;
 }
 
     .score-preview .position-score
@@ -121,35 +123,15 @@ html
         transform: rotate(17deg);
     }
 
-.player-container
-{
-    max-height: 800px;
-    transition: opacity 0.5s, max-height 0.3s;
-}
-
-.hider
-{
-    display: none;
-}
-
-    .hider:checked + .player-container,
-    .hider:checked + .statlines-container,
-    .hider:not(:checked) ~ .score-preview
-    {
-        max-height: 0;
-        opacity: 0;
-        visibility: hidden;
-    }
-
 .player-row
 {
     padding: 0.5rem 0;
-    border-top: 2px solid #66667722;
+    border-bottom: 2px solid #66667722;
 }
 
     .player-row:first-child
     {
-        border-top-color: var(--bmgcLightBlue);
+        border-top: 2px solid var(--bmgcLightBlue);
     }
 
 .token
@@ -211,4 +193,57 @@ html
     {
         font-size: 1.2rem;
     }
+}
+
+.team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 1.4rem;
+}
+
+.team-link:hover {
+    color: lightgreen
+}
+
+.hidee
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s;
+}
+
+    .hidee > *
+    {
+        opacity: 1;
+        overflow: hidden;
+        transition: opacity 0.5s;
+    }
+
+.hider
+{
+    display: none;
+}
+
+    .hider:checked + .hidee
+    {
+        grid-template-rows: 0fr;
+    }
+
+    .hider:checked + .hidee > *
+    {
+        opacity: 0;
+    }
+
+.bmgc-leaderboard.team-page .hidee:has(.player-container)
+{
+    grid-template-rows: 1fr;
+}
+
+.bmgc-leaderboard.team-page .hidee .player-container {
+    opacity: 1;
 }
