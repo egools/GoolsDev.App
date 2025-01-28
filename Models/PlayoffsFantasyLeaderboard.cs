@@ -31,6 +31,7 @@ namespace GoolsDev.App.Models
         public string Postion { get; set; }
         public string RosterPosition { get; set; }
         public string CurrentGameStatus { get; set; }
+        public bool IsEliminated { get; set; }
         public List<LeaderboardStatline> Statlines { get; set; } = new List<LeaderboardStatline>();
     }
 

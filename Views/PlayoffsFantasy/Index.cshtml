@@ -26,7 +26,7 @@
                     @foreach (var position in Model.RosterPositions)
                     {
                         var player = fantasyTeam[position];
-                        <div class="player-row">
+                        <div class="player-row @(player.IsEliminated ? "eliminated" : string.Empty)">
                             <label class="player-header" for="player_@(fantasyTeam.Rank)_@(player.RosterPosition)">
                                 <span class="token position-token">@player.RosterPosition</span>
                                 <span class="player-info-card">
