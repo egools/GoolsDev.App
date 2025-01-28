@@ -1,1 +1,28 @@
-﻿<h1>Leading Scores</h1>
+﻿@model List<TopScorerPlayer>
+
+@{
+    ViewData["Title"] = "Playoff Leading Scorers";
+    Layout = "_BmgcLayout";
+}
+
+<div class="top-scorers">
+    <h1>Leading Scorers</h1>
+    <input id="faOnly" name="faOnly" type="checkbox" />
+    <label for="faOnly" class="faOnly-label">
+        Free Agents Only
+    </label>
+    <div class="player-container">
+        @foreach (var player in Model.OrderByDescending(p => p.TotalPoints))
+        {
+            <div class="player-row @(string.IsNullOrEmpty(player.FantasyTeam) ? "free-agent" : "rostered")">
+                <div class="player-header">
+                    <span class="player-info-card">
+                        <span>@player.FirstName @player.LastName</span>
+                        <span class="team-position">@player.TeamShortName - @player.Postion (@(player.FantasyTeam ?? "FA"))</span>
+                    </span>
+                    <span class="score">@player.TotalPoints.ToString("0.00")</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -52,7 +51,7 @@ namespace GoolsDev.App.Controllers
         public async Task<IActionResult> Team(string name)
         {
             var teams = GetFantasyTeams(_settings.CurrentNflSeason);
-            if(!teams.Any(t => t.Name.Equals(name, StringComparison.OrdinalIgnoreCase)))
+            if (!teams.Any(t => t.Name.Equals(name, StringComparison.OrdinalIgnoreCase)))
             {
                 return Redirect("/bmgc/playoffs");
             }
@@ -69,8 +68,10 @@ namespace GoolsDev.App.Controllers
         [Route("leaders")]
         public async Task<IActionResult> LeadingScorers()
         {
-            var players = await _cosmosPlayerStats.GetAllPlayers(_settings.CurrentNflSeason);
-            return View(players);
+            var playerDocs = await _cosmosPlayerStats.GetAllPlayers(_settings.CurrentNflSeason);
+            var teams = GetFantasyTeams(_settings.CurrentNflSeason);
+            var model = CreatePlayerLeaderboard(teams, playerDocs);
+            return View(model);
         }
 
         private List<PlayoffFantasyTeam> GetFantasyTeams(int year)
@@ -87,6 +88,32 @@ namespace GoolsDev.App.Controllers
                         PropertyNameCaseInsensitive = true
                     });
                 });
+        }
+
+        private List<TopScorerPlayer> CreatePlayerLeaderboard(
+            List<PlayoffFantasyTeam> fantasyTeams,
+            List<NflPlayerStatsDocument> playerDocs)
+        {
+            var rosterMap = fantasyTeams
+                .SelectMany(t => t.Players
+                    .Select(p => new KeyValuePair<string, string>(p.Value, t.Name)))
+                .ToDictionary();
+            var players = new List<TopScorerPlayer>();
+            foreach (var player in playerDocs)
+            {
+                rosterMap.TryGetValue(player.PlayerId, out var teamName);
+                players.Add(new TopScorerPlayer
+                {
+                    FantasyTeam = teamName,
+                    FirstName = player.FirstName,
+                    LastName = player.LastName,
+                    JerseyNumber = player.JerseyNumber,
+                    Postion = player.Position,
+                    TeamShortName = player.TeamShortName,
+                    TotalPoints = player.Statlines.Where(s => s.SeasonType == 3).Sum(s => s.FantasyPoints)
+                });
+            }
+            return players;
         }
 
         private PlayoffsFantasyLeaderboard CreateLeaderboard(
@@ -150,6 +177,10 @@ namespace GoolsDev.App.Controllers
                             {
                                 var winLoss = team.Winner ? "W" : "L";
                                 leaderboardStatline.GameStatus = $"Final ({winLoss}) {team.Score}-{opponent.Score} {homeAway} {opponent.ShortName}";
+                                if (!team.Winner)
+                                {
+                                    player.IsEliminated = true;
+                                }
                             }
                             else
                             {
@@ -164,6 +195,7 @@ namespace GoolsDev.App.Controllers
                                 };
                                 leaderboardStatline.GameStatus = $"{team.Score}-{opponent.Score} {gameDoc.Status.Clock} {period} {homeAway} {opponent.ShortName}";
                             }
+
                             player.CurrentGameStatus = leaderboardStatline.GameStatus;
                             leaderboardStatline.HasGame = true;
                         }
@@ -178,7 +210,7 @@ namespace GoolsDev.App.Controllers
             }
 
             var rank = 1;
-            foreach(var team in leaderboard.FantasyTeams.OrderByDescending(t => t.TotalPoints))
+            foreach (var team in leaderboard.FantasyTeams.OrderByDescending(t => t.TotalPoints))
             {
                 team.Rank = rank++;
             }
