@@ -10,7 +10,7 @@ namespace GoolsDev.App.Models
         public string PlayerPageName { get; set; }
         public IEnumerable<string> RosterPositions { get; set; }
         public IOrderedEnumerable<int> Weeks { get; set; }
-        public List<LeaderboardTeam> FantasyTeams { get; set; } = new List<LeaderboardTeam>();
+        public List<LeaderboardTeam> FantasyTeams { get; set; } = [];
     }
 
     public class LeaderboardTeam
@@ -18,8 +18,8 @@ namespace GoolsDev.App.Models
         public string Name { get; set; }
         public double TotalPoints { get; set; }
         public int Rank { get; set; }
-        public List<LeaderboardPlayer> Players { get; set; } = new List<LeaderboardPlayer>();
-        public LeaderboardPlayer this[string position] => Players.FirstOrDefault(p => p.RosterPosition == position);
+        public List<LeaderboardPlayer> Players { get; set; } = [];
+        public LeaderboardPlayer this[string position] => Players.FirstOrDefault(p => p.RosterPosition == position) ?? new();
     }
 
     public class LeaderboardPlayer
@@ -32,7 +32,7 @@ namespace GoolsDev.App.Models
         public string RosterPosition { get; set; }
         public string CurrentGameStatus { get; set; }
         public bool IsEliminated { get; set; }
-        public List<LeaderboardStatline> Statlines { get; set; } = new List<LeaderboardStatline>();
+        public List<LeaderboardStatline> Statlines { get; set; } = [];
     }
 
     public record LeaderboardStatline : NflPlayerStatline

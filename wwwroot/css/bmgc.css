@@ -33,6 +33,7 @@ html
     gap: 0.5rem;
     width: max-content;
     margin: 2rem auto;
+    min-width: 30rem;
 }
 
 .leaderboard-team
@@ -269,18 +270,22 @@ html
         margin: 1rem 0;
     }
 
-    .top-scorers #faOnly:checked ~ .player-container .rostered
+    .top-scorers #faOnly:checked ~ .player-container .rostered,
+    .top-scorers #showQB:not(:checked) ~ .player-container .QB,
+    .top-scorers #showRB:not(:checked) ~ .player-container .RB,
+    .top-scorers #showWR:not(:checked) ~ .player-container .WR, 
+    .top-scorers #showTE:not(:checked) ~ .player-container .TE
     {
         display: none;
     }
 
-#faOnly
+.leader-filter
 {
     accent-color: var(--bmgcBlue);
     margin-bottom: 1.5rem;
 }
 
-.faOnly-label
+.fa-only-label, .show-position-label
 {
     font-size: 1.4rem;
 }

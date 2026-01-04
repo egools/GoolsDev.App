@@ -15,28 +15,19 @@ namespace GoolsDev.App.Controllers
 
     [ResponseCache(Duration = 60)]
     [Route("bmgc/playoffs")]
-    public class PlayoffsFantasyController : Controller
+    public class PlayoffsFantasyController(
+        ILogger<BmgcController> logger,
+        ICosmosPlayerStats cosmosPlayerStats,
+        ICosmosGames cosmosGames,
+        IOptions<BmgcFantasyPlayoffsSettings> options,
+        IMemoryCache memoryCache
+            ) : Controller
     {
-        private readonly ILogger<BmgcController> _logger;
-        private readonly ICosmosPlayerStats _cosmosPlayerStats;
-        private readonly ICosmosGames _cosmosGames;
-        private readonly BmgcFantasyPlayoffsSettings _settings;
-        private readonly IMemoryCache _memoryCache;
-
-        public PlayoffsFantasyController(
-            ILogger<BmgcController> logger,
-            ICosmosPlayerStats cosmosPlayerStats,
-            ICosmosGames cosmosGames,
-            IOptions<BmgcFantasyPlayoffsSettings> options,
-            IMemoryCache memoryCache
-            )
-        {
-            _logger = logger;
-            _cosmosPlayerStats = cosmosPlayerStats;
-            _cosmosGames = cosmosGames;
-            _settings = options.Value;
-            _memoryCache = memoryCache;
-        }
+        private readonly ILogger<BmgcController> _logger = logger;
+        private readonly ICosmosPlayerStats _cosmosPlayerStats = cosmosPlayerStats;
+        private readonly ICosmosGames _cosmosGames = cosmosGames;
+        private readonly BmgcFantasyPlayoffsSettings _settings = options.Value;
+        private readonly IMemoryCache _memoryCache = memoryCache;
 
         public async Task<IActionResult> Index()
         {
@@ -65,37 +56,19 @@ namespace GoolsDev.App.Controllers
             return View("Index", leaderboard);
         }
 
+        [Route("leaders/playoffs")]
+        public async Task<IActionResult> LeadingScorersPlayoffs() => await LeadingScorers(s => s.SeasonType == 3);
+
         [Route("leaders")]
-        public async Task<IActionResult> LeadingScorers()
+        [Route("leaders/regular")]
+        public async Task<IActionResult> LeadingScorersRegularSeason() => await LeadingScorers(s => s.SeasonType == 2 && s.Week == 99);
+
+        private async Task<IActionResult> LeadingScorers(Func<NflPlayerStatline, bool> filter)
         {
             var playerDocs = await _cosmosPlayerStats.GetAllPlayers(_settings.CurrentNflSeason);
-            var teams = GetFantasyTeams(_settings.CurrentNflSeason);
-            var model = CreatePlayerLeaderboard(teams, playerDocs);
-            return View(model);
-        }
-
-        private List<PlayoffFantasyTeam> GetFantasyTeams(int year)
-        {
-            return _memoryCache.GetOrCreate(
-                "2024Roster",
-                cacheEntry =>
-                {
-                    cacheEntry.Priority = CacheItemPriority.NeverRemove;
-                    cacheEntry.AbsoluteExpirationRelativeToNow = TimeSpan.FromDays(60);
-                    var text = System.IO.File.ReadAllText($"Data/playoffs_fantasy_roster_{year}.json");
-                    return JsonSerializer.Deserialize<List<PlayoffFantasyTeam>>(text, new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-                });
-        }
-
-        private List<TopScorerPlayer> CreatePlayerLeaderboard(
-            List<PlayoffFantasyTeam> fantasyTeams,
-            List<NflPlayerStatsDocument> playerDocs)
-        {
+            var fantasyTeams = GetFantasyTeams(_settings.CurrentNflSeason);
             var rosterMap = fantasyTeams
-                .SelectMany(t => t.Players
+                .SelectMany(t => t.Players.Where(p => !string.IsNullOrEmpty(p.Value))
                     .Select(p => new KeyValuePair<string, string>(p.Value, t.Name)))
                 .ToDictionary();
             var players = new List<TopScorerPlayer>();
@@ -110,10 +83,26 @@ namespace GoolsDev.App.Controllers
                     JerseyNumber = player.JerseyNumber,
                     Postion = player.Position,
                     TeamShortName = player.TeamShortName,
-                    TotalPoints = player.Statlines.Where(s => s.SeasonType == 3).Sum(s => s.FantasyPoints)
+                    TotalPoints = player.Statlines.Where(filter).Sum(s => s.FantasyPoints)
                 });
             }
-            return players;
+            return View("LeadingScorers", players);
+        }
+
+        private List<PlayoffFantasyTeam> GetFantasyTeams(int year)
+        {
+            return _memoryCache.GetOrCreate(
+                $"{year}Roster",
+                cacheEntry =>
+                {
+                    cacheEntry.Priority = CacheItemPriority.NeverRemove;
+                    cacheEntry.AbsoluteExpirationRelativeToNow = TimeSpan.FromDays(60);
+                    var text = System.IO.File.ReadAllText($"Data/playoffs_fantasy_roster_{year}.json");
+                    return JsonSerializer.Deserialize<List<PlayoffFantasyTeam>>(text, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                });
         }
 
         private PlayoffsFantasyLeaderboard CreateLeaderboard(
@@ -121,9 +110,11 @@ namespace GoolsDev.App.Controllers
             List<NflPlayerStatsDocument> playerDocs,
             List<NflGameDocument> gameDocs)
         {
-            var leaderboard = new PlayoffsFantasyLeaderboard();
+            var leaderboard = new PlayoffsFantasyLeaderboard
+            {
+                RosterPositions = ["QB", "RB", "WR1", "WR2", "TE", "FL1", "FL2"]
+            };
 
-            leaderboard.RosterPositions = ["QB", "RB", "WR1", "WR2", "TE", "FL1", "FL2"];
             var teamGames = new Dictionary<string, (NflGameDocument, NflGameTeam, NflGameTeam, bool)>();
             gameDocs.ForEach(g =>
             {
@@ -142,6 +133,8 @@ namespace GoolsDev.App.Controllers
                 foreach (var (rosterPosition, id) in fantasyTeam.Players)
                 {
                     var playerDoc = playerDocs.FirstOrDefault(p => p.PlayerId == id);
+                    if (playerDoc is null) continue;
+
                     var player = new LeaderboardPlayer
                     {
                         FirstName = playerDoc.FirstName,

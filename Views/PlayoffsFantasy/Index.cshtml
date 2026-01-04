@@ -28,7 +28,9 @@
                         var player = fantasyTeam[position];
                         <div class="player-row @(player.IsEliminated ? "eliminated" : string.Empty)">
                             <label class="player-header" for="player_@(fantasyTeam.Rank)_@(player.RosterPosition)">
-                                <span class="token position-token">@player.RosterPosition</span>
+                                <span class="token position-token">
+                                    @(player.RosterPosition ?? position)
+                                </span>
                                 <span class="player-info-card">
                                     <span>@player.FirstName @player.LastName</span>
                                     <span class="team-position">@player.TeamShortName - @player.Postion #@player.JerseyNumber</span>

@@ -1,26 +1,44 @@
 ﻿@model List<TopScorerPlayer>
 
 @{
-    ViewData["Title"] = "Playoff Leading Scorers";
+    ViewData["Title"] = "Leading Scorers";
     Layout = "_BmgcLayout";
 }
 
 <div class="top-scorers">
     <h1>Leading Scorers</h1>
-    <input id="faOnly" name="faOnly" type="checkbox" />
-    <label for="faOnly" class="faOnly-label">
+    <input id="faOnly" name="faOnly" type="checkbox" class="leader-filter" />
+    <label for="faOnly" class="fa-only-label">
         Free Agents Only
+    </label><br />
+    <input id="showQB" name="showQB" type="checkbox" class="leader-filter" checked />
+    <label for="showQB" class="show-position-label">
+        QB
+    </label>
+    <input id="showRB" name="showRB" type="checkbox" class="leader-filter" checked />
+    <label for="showRB" class="show-position-label">
+        RB
+    </label>
+    <input id="showWR" name="showWR" type="checkbox" class="leader-filter" checked />
+    <label for="showWR" class="show-position-label">
+        WR
+    </label>
+    <input id="showTE" name="showTE" type="checkbox" class="leader-filter" checked />
+    <label for="showTE" class="show-position-label">
+        TE
     </label>
     <div class="player-container">
         @foreach (var player in Model.OrderByDescending(p => p.TotalPoints))
         {
-            <div class="player-row @(string.IsNullOrEmpty(player.FantasyTeam) ? "free-agent" : "rostered")">
+            <div class="player-row 
+                @(string.IsNullOrEmpty(player.FantasyTeam) ? "free-agent" : "rostered")
+                @player.Postion">
                 <div class="player-header">
                     <span class="player-info-card">
                         <span>@player.FirstName @player.LastName</span>
                         <span class="team-position">@player.TeamShortName - @player.Postion (@(player.FantasyTeam ?? "FA"))</span>
                     </span>
-                    <span class="score">@player.TotalPoints.ToString("0.00")</span>
+                    <span class="score regular">@player.TotalPoints.ToString("0.00")</span>
                 </div>
             </div>
         }

@@ -9,7 +9,7 @@ namespace GoolsDev.App.Controllers
     {       
         public IActionResult Index()
         {
-            return Redirect("playoffs");
+            return Redirect("bmgc/playoffs");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
