@@ -57,7 +57,7 @@
                         </div>
                     }
                     @{
-                        var url = Model.IsTeamPage ? "./" : $"./{fantasyTeam.Name}";
+                        var url = Model.IsTeamPage ? "./" : $"/bmgc/playoffs/{fantasyTeam.Name}";
                         var text = Model.IsTeamPage ? "back to leaderboard" : "team page";
                     }
                     <a class="team-link" href="@url">

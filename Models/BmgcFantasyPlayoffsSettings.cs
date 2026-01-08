@@ -3,13 +3,13 @@
     public class BmgcFantasyPlayoffsSettings
     {
         public int CurrentNflSeason { get; set; }
-        public int CurrentSeasonType { get; set; }
-        public ScoringType ScoringType { get; set; }
+        public NflSeasonType CurrentSeasonType { get; set; }
     }
 
-    public enum ScoringType
+    public enum NflSeasonType
     {
-        Standard = 1,
-        BestBall = 2
+        Preseason = 1,
+        RegularSeason = 2,
+        Playoffs = 3
     }
 }

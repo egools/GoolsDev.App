@@ -1,0 +1,55 @@
+{
+	"scoringType": 2,
+	"isBestBall": true,
+	"rosterPositions": [ "QB", "RB", "WR", "TE", "FL" ],
+	"teams": [
+		{
+			"name": "Zach",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Gools",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Kranker",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Marc",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Dan",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Beast",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Jeff",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Snow",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Spence",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Brandon",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Tyler",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Bailey",
+			"weeklyRoster": {}
+		}
+	]
+}

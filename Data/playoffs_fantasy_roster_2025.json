@@ -1,146 +1,55 @@
-[
-	{
-		"name": "Zach",
-		"players": {
-			"QB": "",
-			"WR1": "",
-			"RB": "",
-			"WR2": "",
-			"FL1": "",
-			"TE": "",
-			"FL2": ""
+{
+	"scoringType": 2,
+	"isBestBall": true,
+	"rosterPositions": [ "QB", "RB", "WR", "TE", "FL" ],
+	"teams": [
+		{
+			"name": "Zach",
+			"weeklyRoster": { }
+		},
+		{
+			"name": "Gools",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Kranker",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Marc",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Dan",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Beast",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Jeff",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Snow",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Spence",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Brandon",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Tyler",
+			"weeklyRoster": {}
+		},
+		{
+			"name": "Bailey",
+			"weeklyRoster": {}
 		}
-	},
-	{
-		"name": "Gools",
-		"players": {
-			"RB": "",
-			"WR1": "",
-			"WR2": "",
-			"FL1": "",
-			"QB": "",
-			"TE": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Kranker",
-		"players": {
-			"QB": "",
-			"WR1": "",
-			"RB": "",
-			"WR2": "",
-			"TE": "",
-			"FL1": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Marc",
-		"players": {
-			"RB": "",
-			"WR1": "",
-			"WR2": "",
-			"FL1": "",
-			"FL2": "",
-			"TE": "",
-			"QB": ""
-		}
-	},
-	{
-		"name": "Dan",
-		"players": {
-			"RB": "",
-			"QB": "",
-			"FL1": "",
-			"WR1": "",
-			"WR2": "",
-			"TE": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Beast",
-		"players": {
-			"WR1": "",
-			"RB": "",
-			"FL1": "",
-			"FL2": "",
-			"WR2": "",
-			"TE": "",
-			"QB": ""
-		}
-	},
-	{
-		"name": "Jeff",
-		"players": {
-			"RB": "",
-			"TE": "",
-			"WR1": "",
-			"WR2": "",
-			"QB": "",
-			"FL1": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Snow",
-		"players": {
-			"RB": "",
-			"QB": "",
-			"TE": "",
-			"WR1": "",
-			"WR2": "",
-			"FL1": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Spence",
-		"players": {
-			"RB": "",
-			"QB": "",
-			"WR1": "",
-			"WR2": "",
-			"FL1": "",
-			"TE": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Brandon",
-		"players": {
-			"QB": "",
-			"TE": "",
-			"WR1": "",
-			"WR2": "",
-			"RB": "",
-			"FL1": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Tyler",
-		"players": {
-			"QB": "",
-			"WR1": "",
-			"RB": "",
-			"WR2": "",
-			"TE": "",
-			"FL1": "",
-			"FL2": ""
-		}
-	},
-	{
-		"name": "Bailey",
-		"players": {
-			"QB": "",
-			"WR1": "",
-			"WR2": "",
-			"RB": "",
-			"FL1": "",
-			"TE": "",
-			"FL2": ""
-		}
-	}
-]
+	]
+}
