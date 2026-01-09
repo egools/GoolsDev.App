@@ -1,4 +1,4 @@
-﻿@model PlayoffsFantasyLeaderboard
+﻿@model PlayoffsFantasyWeeklyLeaderboard
 
 @{
     ViewData["Title"] = "BMGC Playoffs Fantasy";
@@ -8,6 +8,7 @@
 <div class="bmgc-leaderboard @(Model.IsTeamPage ? "team-page" : string.Empty)">
     @foreach (var fantasyTeam in Model.FantasyTeams.OrderByDescending(ft => ft.TotalPoints))
     {
+        var maxWeek = Model.Weeks.Max();
         if (Model.IsTeamPage && !fantasyTeam.Name.Equals(Model.PlayerPageName, StringComparison.OrdinalIgnoreCase))
         {
             continue;
@@ -23,34 +24,32 @@
             <input type="checkbox" id="team@(fantasyTeam.Rank)" class="hider" name="team@(fantasyTeam.Rank)" @(!Model.IsTeamPage ? "checked" : string.Empty) />
             <div class="hidee">
                 <div class="player-container">
-                    @foreach (var position in Model.RosterPositions)
+                    @foreach (var week in Model.Weeks)
                     {
-                        var player = fantasyTeam[position];
-                        <div class="player-row @(player.IsEliminated ? "eliminated" : string.Empty)">
-                            <label class="player-header" for="player_@(fantasyTeam.Rank)_@(player.RosterPosition)">
-                                <span class="token position-token">
-                                    @(player.RosterPosition ?? position)
+                        var roster = fantasyTeam.WeeklyRosters[week];
+                        <div class="week-row">
+                            <label class="week-header" for="week_@(week)_@(fantasyTeam.Rank)">
+                                <span class="week-info-card">
+                                    <span>Week @week</span>
                                 </span>
-                                <span class="player-info-card">
-                                    <span>@player.FirstName @player.LastName</span>
-                                    <span class="team-position">@player.TeamShortName - @player.Postion #@player.JerseyNumber</span>
-                                </span>
-                                <span class="score">@player.Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
+                                <span class="score">@roster.Sum(p => p.Statline.FantasyPoints).ToString("0.00")</span>
                             </label>
-                            <input type="checkbox" class="hider" id="player_@(fantasyTeam.Rank)_@(player.RosterPosition)" name="player_@(fantasyTeam.Rank)_@(player.RosterPosition)" checked />
+                            <input type="checkbox" class="hider" id="week_@(week)_@(fantasyTeam.Rank)" name="week_@(week)_@(fantasyTeam.Rank)" @(week != maxWeek ? "checked" : string.Empty) />
                             <div class="hidee">
-                                <div class="statlines-container">
-                                    @foreach (var week in Model.Weeks)
+                                <div class="player-container">
+                                    @foreach (var player in roster.OrderBy(p => p.PositionIndex))
                                     {
-                                        var statline = player.Statlines.FirstOrDefault(s => s.Week == week);
-                                        if (statline is not null)
-                                        {
-                                            <div class="player-game @(!statline.HasGame ? "no-game" : string.Empty)">
-                                                <span>Week @statline.Week</span>
-                                                <span class="game-status">@statline.GameStatus</span>
-                                                <span class="score">@statline.FantasyPoints.ToString("0.00")</span>
-                                            </div>
-                                        }
+                                        <div class="player-header">
+                                            <span class="token position-token">
+                                                @player.RosterPosition
+                                            </span>
+                                            <span class="player-info-card">
+                                                <span>@player.FirstName @player.LastName</span>
+                                                <span class="team-position">@player.TeamShortName - @player.Position #@player.JerseyNumber</span>
+                                                <span class="game-status">@player.Statline.GameStatus</span>
+                                            </span>
+                                            <span class="score">@player.Statline.FantasyPoints.ToString("0.00")</span>
+                                        </div>
                                     }
                                 </div>
                             </div>
@@ -67,16 +66,6 @@
                         </svg><text>@text</text>
                     </a>
                 </div>
-            </div>
-            <div class="score-preview">
-                @foreach (var position in Model.RosterPositions)
-                {
-                    <span class="position-score">
-                        <span>@position</span>
-                        <text>:</text>
-                        <span>@fantasyTeam[position].Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
-                    </span>
-                }
             </div>
         </div>
     }

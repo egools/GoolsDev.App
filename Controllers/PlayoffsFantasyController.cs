@@ -35,11 +35,15 @@ namespace GoolsDev.App.Controllers
             var playerIDs = GetUniquePlayerIds(fantasySeason);
             var playerStatDocs = await _cosmosPlayerStats.GetPlayerStats(_settings.CurrentNflSeason, playerIDs);
             var gameDocs = await _cosmosGames.GetGames(_settings.CurrentNflSeason);
-            return fantasySeason.ScoringType switch
+            PlayoffsFantasyLeaderboard leaderboard = fantasySeason.ScoringType switch
             {
-                ScoringType.Weekly => View(CreateStandardLeaderboard(fantasySeason, playerStatDocs, gameDocs, (int)_settings.CurrentSeasonType)),
-                _ => View(CreateStandardLeaderboard(fantasySeason, playerStatDocs, gameDocs, (int)_settings.CurrentSeasonType))
+                ScoringType.Weekly => new PlayoffsFantasyWeeklyLeaderboard(fantasySeason.RosterPositions, (int)_settings.CurrentSeasonType),
+                _ => new PlayoffsFantasyStandardLeaderboard(fantasySeason.RosterPositions, (int)_settings.CurrentSeasonType)
             };
+
+            leaderboard.Build(fantasySeason, playerStatDocs, gameDocs);
+
+            return View(leaderboard.ViewName, leaderboard);
         }
 
         [Route("{name}")]
@@ -55,14 +59,17 @@ namespace GoolsDev.App.Controllers
             var playerIDs = GetUniquePlayerIds(fantasySeason);
             var playerStatDocs = await _cosmosPlayerStats.GetPlayerStats(_settings.CurrentNflSeason, playerIDs);
             var gameDocs = await _cosmosGames.GetGames(_settings.CurrentNflSeason);
-            var leaderboard = fantasySeason.ScoringType switch
+            PlayoffsFantasyLeaderboard leaderboard = fantasySeason.ScoringType switch
             {
-                ScoringType.Weekly => CreateStandardLeaderboard(fantasySeason, playerStatDocs, gameDocs, (int)_settings.CurrentSeasonType),
-                _ => CreateStandardLeaderboard(fantasySeason, playerStatDocs, gameDocs, (int)_settings.CurrentSeasonType)
+                ScoringType.Weekly => new PlayoffsFantasyWeeklyLeaderboard(fantasySeason.RosterPositions, (int)_settings.CurrentSeasonType),
+                _ => new PlayoffsFantasyStandardLeaderboard(fantasySeason.RosterPositions, (int)_settings.CurrentSeasonType)
             };
+
             leaderboard.IsTeamPage = true;
             leaderboard.PlayerPageName = name;
-            return View("Index", leaderboard);
+            leaderboard.Build(fantasySeason, playerStatDocs, gameDocs);
+
+            return View(leaderboard.ViewName, leaderboard);
         }
 
         [Route("leaders/playoffs")]
@@ -77,7 +84,7 @@ namespace GoolsDev.App.Controllers
             return fantasySeason.ScoringType switch
             {
                 ScoringType.Standard => fantasySeason.Teams.SelectMany(t => t.StandardRoster.Values),
-                ScoringType.Weekly => fantasySeason.Teams.SelectMany(t => t.WeeklyRoster.SelectMany(r => r.Value)).Distinct(),
+                ScoringType.Weekly => fantasySeason.Teams.SelectMany(t => t.WeeklyRosters.SelectMany(r => r.Value)).Distinct(),
                 _ => []
             };
         }
@@ -122,220 +129,6 @@ namespace GoolsDev.App.Controllers
                         PropertyNameCaseInsensitive = true
                     });
                 });
-        }
-
-        private static PlayoffsFantasyLeaderboard CreateStandardLeaderboard(
-            FantasySeason fantasySeason,
-            List<NflPlayerStatsDocument> playerDocs,
-            List<NflGameDocument> gameDocs,
-            int currentSeasonType)
-        {
-            var leaderboard = new PlayoffsFantasyLeaderboard
-            {
-                RosterPositions = fantasySeason.RosterPositions
-            };
-
-            var teamGames = new Dictionary<string, (NflGameDocument, NflGameTeam, NflGameTeam, bool)>();
-            gameDocs.ForEach(g =>
-            {
-                if (g.HomeTeam.IsActive) teamGames.Add($"{g.HomeTeam.TeamId}.{g.Week}", (g, g.HomeTeam, g.AwayTeam, true));
-                if (g.AwayTeam.IsActive) teamGames.Add($"{g.AwayTeam.TeamId}.{g.Week}", (g, g.AwayTeam, g.HomeTeam, false));
-            });
-            leaderboard.Weeks = gameDocs.Select(g => g.Week).Distinct().OrderBy(w => w);
-
-            foreach (var fantasyTeam in fantasySeason.Teams)
-            {
-                var leaderboardTeam = new LeaderboardTeam
-                {
-                    Name = fantasyTeam.Name,
-                    TotalPoints = 0
-                };
-                foreach (var (rosterPosition, id) in fantasyTeam.StandardRoster)
-                {
-                    var playerDoc = playerDocs.FirstOrDefault(p => p.PlayerId == id);
-                    if (playerDoc is null) continue;
-
-                    var player = new LeaderboardPlayer
-                    {
-                        FirstName = playerDoc.FirstName,
-                        LastName = playerDoc.LastName,
-                        TeamShortName = playerDoc.TeamShortName,
-                        JerseyNumber = playerDoc.JerseyNumber,
-                        Postion = playerDoc.Position,
-                        RosterPosition = rosterPosition,
-                    };
-
-                    foreach (var week in leaderboard.Weeks)
-                    {
-                        var statline = playerDoc.Statlines.FirstOrDefault(s => s.Week == week && s.SeasonType == currentSeasonType);
-                        var leaderboardStatline = statline is not null
-                            ? new LeaderboardStatline(statline)
-                            : new LeaderboardStatline()
-                            {
-                                Week = week,
-                                SeasonType = currentSeasonType,
-                                GameStatus = "No Game"
-                            };
-                        if (teamGames.TryGetValue($"{playerDoc.TeamId}.{leaderboardStatline.Week}", out var teamGame))
-                        {
-                            var (gameDoc, team, opponent, isHome) = teamGame;
-                            var homeAway = isHome ? "vs" : "@";
-                            if (DateTime.Now < gameDoc.Status.StartDate)
-                            {
-                                TimeZoneInfo easternStandardTime = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
-                                DateTimeOffset timeInEST = TimeZoneInfo.ConvertTime(gameDoc.Status.StartDate, easternStandardTime);
-                                leaderboardStatline.GameStatus = $"{timeInEST:ddd h:mmtt \"EST\"} {homeAway} {opponent.ShortName}";
-                            }
-                            else if (gameDoc.Status.Complete)
-                            {
-                                var winLoss = team.Winner ? "W" : "L";
-                                leaderboardStatline.GameStatus = $"Final ({winLoss}) {team.Score}-{opponent.Score} {homeAway} {opponent.ShortName}";
-                                if (!team.Winner)
-                                {
-                                    player.IsEliminated = true;
-                                }
-                            }
-                            else
-                            {
-                                var period = gameDoc.Status.Period switch
-                                {
-                                    1 => "1st",
-                                    2 => "2nd",
-                                    3 => "3rd",
-                                    4 => "4th",
-                                    > 4 => "OT",
-                                    _ => string.Empty
-                                };
-                                leaderboardStatline.GameStatus = $"{team.Score}-{opponent.Score} {gameDoc.Status.Clock} {period} {homeAway} {opponent.ShortName}";
-                            }
-
-                            player.CurrentGameStatus = leaderboardStatline.GameStatus;
-                            leaderboardStatline.HasGame = true;
-                        }
-                        player.Statlines.Add(leaderboardStatline);
-                    }
-
-                    leaderboardTeam.TotalPoints += player.Statlines.Sum(p => p.FantasyPoints);
-                    leaderboardTeam.Players.Add(player);
-                }
-
-                leaderboard.FantasyTeams.Add(leaderboardTeam);
-            }
-
-            var rank = 1;
-            foreach (var team in leaderboard.FantasyTeams.OrderByDescending(t => t.TotalPoints))
-            {
-                team.Rank = rank++;
-            }
-
-            return leaderboard;
-        }
-
-        private static PlayoffsFantasyLeaderboard CreateWeeklyLeaderboard(
-           FantasySeason fantasySeason,
-           List<NflPlayerStatsDocument> playerDocs,
-           List<NflGameDocument> gameDocs,
-           int currentSeasonType)
-        {
-            var leaderboard = new PlayoffsFantasyLeaderboard
-            {
-                RosterPositions = fantasySeason.RosterPositions
-            };
-
-            var teamGames = new Dictionary<string, (NflGameDocument, NflGameTeam, NflGameTeam, bool)>();
-            gameDocs.ForEach(g =>
-            {
-                if (g.HomeTeam.IsActive) teamGames.Add($"{g.HomeTeam.TeamId}.{g.Week}", (g, g.HomeTeam, g.AwayTeam, true));
-                if (g.AwayTeam.IsActive) teamGames.Add($"{g.AwayTeam.TeamId}.{g.Week}", (g, g.AwayTeam, g.HomeTeam, false));
-            });
-            leaderboard.Weeks = gameDocs.Select(g => g.Week).Distinct().OrderBy(w => w);
-
-            foreach (var fantasyTeam in fantasySeason.Teams)
-            {
-                var leaderboardTeam = new LeaderboardTeam
-                {
-                    Name = fantasyTeam.Name,
-                    TotalPoints = 0
-                };
-                foreach (var (rosterPosition, id) in fantasyTeam.StandardRoster)
-                {
-                    var playerDoc = playerDocs.FirstOrDefault(p => p.PlayerId == id);
-                    if (playerDoc is null) continue;
-
-                    var player = new LeaderboardPlayer
-                    {
-                        FirstName = playerDoc.FirstName,
-                        LastName = playerDoc.LastName,
-                        TeamShortName = playerDoc.TeamShortName,
-                        JerseyNumber = playerDoc.JerseyNumber,
-                        Postion = playerDoc.Position,
-                        RosterPosition = rosterPosition,
-                    };
-
-                    foreach (var week in leaderboard.Weeks)
-                    {
-                        var statline = playerDoc.Statlines.FirstOrDefault(s => s.Week == week && s.SeasonType == currentSeasonType);
-                        var leaderboardStatline = statline is not null
-                            ? new LeaderboardStatline(statline)
-                            : new LeaderboardStatline()
-                            {
-                                Week = week,
-                                SeasonType = currentSeasonType,
-                                GameStatus = "No Game"
-                            };
-                        if (teamGames.TryGetValue($"{playerDoc.TeamId}.{leaderboardStatline.Week}", out var teamGame))
-                        {
-                            var (gameDoc, team, opponent, isHome) = teamGame;
-                            var homeAway = isHome ? "vs" : "@";
-                            if (DateTime.Now < gameDoc.Status.StartDate)
-                            {
-                                TimeZoneInfo easternStandardTime = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
-                                DateTimeOffset timeInEST = TimeZoneInfo.ConvertTime(gameDoc.Status.StartDate, easternStandardTime);
-                                leaderboardStatline.GameStatus = $"{timeInEST:ddd h:mmtt \"EST\"} {homeAway} {opponent.ShortName}";
-                            }
-                            else if (gameDoc.Status.Complete)
-                            {
-                                var winLoss = team.Winner ? "W" : "L";
-                                leaderboardStatline.GameStatus = $"Final ({winLoss}) {team.Score}-{opponent.Score} {homeAway} {opponent.ShortName}";
-                                if (!team.Winner)
-                                {
-                                    player.IsEliminated = true;
-                                }
-                            }
-                            else
-                            {
-                                var period = gameDoc.Status.Period switch
-                                {
-                                    1 => "1st",
-                                    2 => "2nd",
-                                    3 => "3rd",
-                                    4 => "4th",
-                                    > 4 => "OT",
-                                    _ => string.Empty
-                                };
-                                leaderboardStatline.GameStatus = $"{team.Score}-{opponent.Score} {gameDoc.Status.Clock} {period} {homeAway} {opponent.ShortName}";
-                            }
-
-                            player.CurrentGameStatus = leaderboardStatline.GameStatus;
-                            leaderboardStatline.HasGame = true;
-                        }
-                        player.Statlines.Add(leaderboardStatline);
-                    }
-
-                    leaderboardTeam.TotalPoints += player.Statlines.Sum(p => p.FantasyPoints);
-                    leaderboardTeam.Players.Add(player);
-                }
-
-                leaderboard.FantasyTeams.Add(leaderboardTeam);
-            }
-
-            var rank = 1;
-            foreach (var team in leaderboard.FantasyTeams.OrderByDescending(t => t.TotalPoints))
-            {
-                team.Rank = rank++;
-            }
-
-            return leaderboard;
         }
     }
 }

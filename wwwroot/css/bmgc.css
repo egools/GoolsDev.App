@@ -1,6 +1,7 @@
 ﻿:root
 {
     --bmgcGrey: #666677;
+    --bmgcDarkGrey: #303040;
     --bmgcLightBlue: #073948;
     --bmgcBlue: #0f313e;
     --bmgcDarkBlue: #1e232d;
@@ -33,7 +34,7 @@ html
     gap: 0.5rem;
     width: max-content;
     margin: 2rem auto;
-    min-width: 30rem;
+    min-width: 38rem;
 }
 
 .leaderboard-team
@@ -83,7 +84,8 @@ html
 
 .team-header,
 .player-header,
-.player-game
+.player-game,
+.week-header
 {
     display: flex;
     gap: 2rem;
@@ -103,34 +105,15 @@ html
     text-align: right;
 }
 
-.score-preview
-{
-    /*display: flex;*/
-    display: none;
-    gap: 1rem;
-    height: 35px;
-    margin: 0 0.6rem;
-    font-size: 1.2rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-    .score-preview .position-score
-    {
-        display: flex;
-        gap: 0.2rem;
-        margin: 0 -0.6rem;
-        padding: 0.2rem;
-        transform: rotate(17deg);
-    }
-
-.player-row
+.player-row,
+.week-row
 {
     padding: 0.5rem 0;
     border-bottom: 2px solid #66667722;
 }
 
 .bmgc-leaderboard .player-row:first-child,
+.bmgc-leaderboard .week-row:first-child,
 .top-scorers .player-container
 {
     border-top: 2px solid var(--bmgcLightBlue);
@@ -192,6 +175,22 @@ html
     {
         opacity: 0.25;
     }
+
+.week-row .game-status,
+.week-row .team-position
+{
+    font-size: 1rem;
+}
+
+.week-row .player-header
+{
+    border-top: 1px solid var(--bmgcDarkGrey);
+}
+
+.week-info-card
+{
+    padding: 0.2rem 0.5rem;
+}
 
 @media screen and (max-width: 750px)
 {
@@ -273,7 +272,7 @@ html
     .top-scorers #faOnly:checked ~ .player-container .rostered,
     .top-scorers #showQB:not(:checked) ~ .player-container .QB,
     .top-scorers #showRB:not(:checked) ~ .player-container .RB,
-    .top-scorers #showWR:not(:checked) ~ .player-container .WR, 
+    .top-scorers #showWR:not(:checked) ~ .player-container .WR,
     .top-scorers #showTE:not(:checked) ~ .player-container .TE
     {
         display: none;

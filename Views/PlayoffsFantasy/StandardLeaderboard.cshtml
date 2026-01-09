@@ -1,0 +1,73 @@
+﻿@model PlayoffsFantasyStandardLeaderboard
+
+@{
+    ViewData["Title"] = "BMGC Playoffs Fantasy";
+    Layout = "_BmgcLayout";
+}
+
+<div class="bmgc-leaderboard @(Model.IsTeamPage ? "team-page" : string.Empty)">
+    @foreach (var fantasyTeam in Model.FantasyTeams.OrderByDescending(ft => ft.TotalPoints))
+    {
+        if (Model.IsTeamPage && !fantasyTeam.Name.Equals(Model.PlayerPageName, StringComparison.OrdinalIgnoreCase))
+        {
+            continue;
+        }
+        <div class="leaderboard-team">
+            <label class="leaderboard-header" for="team@(fantasyTeam.Rank)">
+                <span class="team-header">
+                    <span class="token rank-token rank@(fantasyTeam.Rank)">#@(fantasyTeam.Rank)</span>
+                    <span>@fantasyTeam.Name</span>
+                    <span class="score">@fantasyTeam.TotalPoints.ToString("0.00")</span>
+                </span>
+            </label>
+            <input type="checkbox" id="team@(fantasyTeam.Rank)" class="hider" name="team@(fantasyTeam.Rank)" @(!Model.IsTeamPage ? "checked" : string.Empty) />
+            <div class="hidee">
+                <div class="player-container">
+                    @foreach (var position in Model.RosterPositions)
+                    {
+                        var player = fantasyTeam[position];
+                        <div class="player-row @(player.IsEliminated ? "eliminated" : string.Empty)">
+                            <label class="player-header" for="player_@(fantasyTeam.Rank)_@(player.RosterPosition)">
+                                <span class="token position-token">
+                                    @(player.RosterPosition ?? position)
+                                </span>
+                                <span class="player-info-card">
+                                    <span>@player.FirstName @player.LastName</span>
+                                    <span class="team-position">@player.TeamShortName - @player.Position #@player.JerseyNumber</span>
+                                </span>
+                                <span class="score">@player.Statlines.Sum(s => s.FantasyPoints).ToString("0.00")</span>
+                            </label>
+                            <input type="checkbox" class="hider" id="player_@(fantasyTeam.Rank)_@(player.RosterPosition)" name="player_@(fantasyTeam.Rank)_@(player.RosterPosition)" checked />
+                            <div class="hidee">
+                                <div class="statlines-container">
+                                    @foreach (var week in Model.Weeks)
+                                    {
+                                        var statline = player.Statlines.FirstOrDefault(s => s.Week == week);
+                                        if (statline is not null)
+                                        {
+                                            <div class="player-game @(!statline.HasGame ? "no-game" : string.Empty)">
+                                                <span>Week @statline.Week</span>
+                                                <span class="game-status">@statline.GameStatus</span>
+                                                <span class="score">@statline.FantasyPoints.ToString("0.00")</span>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @{
+                        var url = Model.IsTeamPage ? "./" : $"/bmgc/playoffs/{fantasyTeam.Name}";
+                        var text = Model.IsTeamPage ? "back to leaderboard" : "team page";
+                    }
+                    <a class="team-link" href="@url">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 14 14">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"></path>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"></path>
+                        </svg><text>@text</text>
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

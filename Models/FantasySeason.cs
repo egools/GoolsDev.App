@@ -20,6 +20,6 @@ namespace GoolsDev.App.Models
     {
         public string Name { get; set; }
         public Dictionary<string, string> StandardRoster { get; set; }
-        public Dictionary<int, List<string>> WeeklyRoster { get; set; }
+        public Dictionary<int, List<string>> WeeklyRosters { get; set; }
     }
 }
