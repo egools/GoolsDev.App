@@ -34,6 +34,7 @@ namespace GoolsDev.App.Cosmos
         bool IsActive,
         double Score,
         bool Winner,
+        string GameStatus,
         NflRecord Record
     );
 

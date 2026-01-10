@@ -68,10 +68,21 @@ namespace GoolsDev.App.Models
                         var playerGameDoc = gameDocs.FirstOrDefault(g => (g.HomeTeam.TeamId == playerDoc.TeamId || g.AwayTeam.TeamId == playerDoc.TeamId) && g.Week == week);
                         if (playerGameDoc is not null)
                         {
-                            leaderboardStatline.GenerateGameStatus(playerGameDoc, playerDoc.TeamId);
-                            player.CurrentGameStatus = leaderboardStatline.GameStatus;
+                            var team = playerGameDoc.HomeTeam.TeamId == playerDoc.TeamId
+                                 ? playerGameDoc.HomeTeam
+                                 : playerGameDoc.AwayTeam;
+                            leaderboardStatline.GameStatus = team.GameStatus;
+                            if (!team.Winner)
+                            {
+                                player.IsEliminated = true;
+                            }
                         }
-                        player.Statline = leaderboardStatline;
+                        else
+                        {
+                            player.IsEliminated = true;
+                        }
+
+                            player.Statline = leaderboardStatline;
                         leaderboardTeam.TotalPoints += player.Statline.FantasyPoints;
                         weeklyRoster.Add(player);
                     }

@@ -7,6 +7,7 @@ using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -93,14 +94,19 @@ namespace GoolsDev.App.Controllers
         {
             var playerDocs = await _cosmosPlayerStats.GetAllPlayers(_settings.CurrentNflSeason);
             var fantasySeason = GetFantasySeason(_settings.CurrentNflSeason);
-            var standardRosterMap = fantasySeason.Teams
-                .SelectMany(t => t.StandardRoster.Where(p => !string.IsNullOrEmpty(p.Value))
-                    .Select(p => new KeyValuePair<string, string>(p.Value, t.Name)))
-                .ToDictionary();
+            var teamName = string.Empty;
+            Dictionary<string, string> standardRosterMap = [];
+            if (fantasySeason.ScoringType == ScoringType.Standard)
+            {
+                standardRosterMap = fantasySeason.Teams
+                    .SelectMany(t => t.StandardRoster.Where(p => !string.IsNullOrEmpty(p.Value))
+                        .Select(p => new KeyValuePair<string, string>(p.Value, t.Name)))
+                    .ToDictionary();
+            }
             var players = new List<TopScorerPlayer>();
             foreach (var player in playerDocs)
             {
-                standardRosterMap.TryGetValue(player.PlayerId, out var teamName);
+                standardRosterMap.TryGetValue(player.PlayerId, out teamName);
                 players.Add(new TopScorerPlayer
                 {
                     FantasyTeam = teamName,

@@ -39,7 +39,7 @@
                                 <div class="player-container">
                                     @foreach (var player in roster.OrderBy(p => p.PositionIndex))
                                     {
-                                        <div class="player-header">
+                                        <div class="player-header @(player.IsEliminated ? "eliminated" : string.Empty)">
                                             <span class="token position-token">
                                                 @player.RosterPosition
                                             </span>

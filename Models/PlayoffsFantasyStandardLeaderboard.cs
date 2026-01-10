@@ -23,12 +23,6 @@ namespace GoolsDev.App.Models
             List<NflPlayerStatsDocument> playerDocs,
             List<NflGameDocument> gameDocs)
         {
-            var teamGames = new Dictionary<string, (NflGameDocument, NflGameTeam, NflGameTeam, bool)>();
-            gameDocs.ForEach(g =>
-            {
-                if (g.HomeTeam.IsActive) teamGames.Add($"{g.HomeTeam.TeamId}.{g.Week}", (g, g.HomeTeam, g.AwayTeam, true));
-                if (g.AwayTeam.IsActive) teamGames.Add($"{g.AwayTeam.TeamId}.{g.Week}", (g, g.AwayTeam, g.HomeTeam, false));
-            });
             Weeks = gameDocs.Select(g => g.Week).Distinct().OrderBy(w => w);
 
             foreach (var fantasyTeam in fantasySeason.Teams)
@@ -68,11 +62,16 @@ namespace GoolsDev.App.Models
                         var playerGameDoc = gameDocs.FirstOrDefault(g => (g.HomeTeam.TeamId == playerDoc.TeamId || g.AwayTeam.TeamId == playerDoc.TeamId) && g.Week == week);
                         if (playerGameDoc is not null)
                         {
-                            leaderboardStatline.GenerateGameStatus(playerGameDoc, playerDoc.TeamId);
-                            player.CurrentGameStatus = leaderboardStatline.GameStatus;
+                            var team = playerGameDoc.HomeTeam.TeamId == playerDoc.TeamId
+                                ? playerGameDoc.HomeTeam
+                                : playerGameDoc.AwayTeam;
+                            leaderboardStatline.GameStatus = team.GameStatus;
+                            if (!team.Winner)
+                            {
+                                player.IsEliminated = true;
+                            }
                         }
 
-                        player.CurrentGameStatus = leaderboardStatline.GameStatus;
                         player.Statlines.Add(leaderboardStatline);
                     }
 
@@ -99,7 +98,6 @@ namespace GoolsDev.App.Models
 
     public class StandardLeaderboardPlayer : LeaderboardPlayer
     {
-        public bool IsEliminated { get; set; }
         public List<LeaderboardStatline> Statlines { get; set; } = [];
     }
 }

@@ -119,7 +119,7 @@ html
     border-top: 2px solid var(--bmgcLightBlue);
 }
 
-.player-row.eliminated
+.eliminated
 {
     color: grey;
 }
