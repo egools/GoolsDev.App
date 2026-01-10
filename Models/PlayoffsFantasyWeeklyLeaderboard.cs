@@ -72,7 +72,7 @@ namespace GoolsDev.App.Models
                                  ? playerGameDoc.HomeTeam
                                  : playerGameDoc.AwayTeam;
                             leaderboardStatline.GameStatus = team.GameStatus;
-                            if (!team.Winner)
+                            if (playerGameDoc.Status.Complete && !team.Winner)
                             {
                                 player.IsEliminated = true;
                             }
