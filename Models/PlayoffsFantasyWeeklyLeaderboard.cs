@@ -82,8 +82,7 @@ namespace GoolsDev.App.Models
                             player.IsEliminated = true;
                         }
 
-                            player.Statline = leaderboardStatline;
-                        leaderboardTeam.TotalPoints += player.Statline.FantasyPoints;
+                        player.Statline = leaderboardStatline;
                         weeklyRoster.Add(player);
                     }
 
@@ -100,8 +99,11 @@ namespace GoolsDev.App.Models
                         }
                     }
 
+                    leaderboardTeam.TotalPoints += 
+                        weeklyRoster
+                        .Where(p => p.RosterPosition != "BN")
+                        .Sum(p => p.Statline.FantasyPoints);
                 }
-
                 FantasyTeams.Add(leaderboardTeam);
             }
 

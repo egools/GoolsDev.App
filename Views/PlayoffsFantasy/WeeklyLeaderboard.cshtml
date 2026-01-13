@@ -32,7 +32,7 @@
                                 <span class="week-info-card">
                                     <span>Week @week</span>
                                 </span>
-                                <span class="score">@roster.Sum(p => p.Statline.FantasyPoints).ToString("0.00")</span>
+                                <span class="score">@roster.Where(p => p.RosterPosition != "BN").Sum(p => p.Statline.FantasyPoints).ToString("0.00")</span>
                             </label>
                             <input type="checkbox" class="hider" id="week_@(week)_@(fantasyTeam.Rank)" name="week_@(week)_@(fantasyTeam.Rank)" @(week != maxWeek ? "checked" : string.Empty) />
                             <div class="hidee">
