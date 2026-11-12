@@ -1,0 +1,916 @@
+{
+  "scoring": "correct pick = 1, correct key pick = 2, closest yardage guess(es) = 2 each (ties share), push/loss = 0",
+  "yardage_results": {
+    "1": {
+      "prop": "Gibbs rush+rec",
+      "actual": 186,
+      "closest_miss": 17,
+      "winners": [
+        "Spencer"
+      ],
+      "guesses": {
+        "Spencer": 169,
+        "Kranker": 150,
+        "Brandon": 147,
+        "Zach": 130,
+        "JB": 125,
+        "Dan": 121,
+        "Snow": 121,
+        "Bailey": 120,
+        "Beast": 117,
+        "Marc": 116,
+        "Tyler": 114,
+        "Gools": 99
+      }
+    },
+    "2": {
+      "prop": "Henry rush+rec",
+      "actual": 87,
+      "closest_miss": 1,
+      "winners": [
+        "Marc"
+      ],
+      "guesses": {
+        "Marc": 86,
+        "Zach": 85,
+        "Snow": 97,
+        "Dan": 98,
+        "JB": 100,
+        "Bailey": 110,
+        "Tyler": 112,
+        "Brandon": 118,
+        "Kranker": 120,
+        "Beast": 129,
+        "Gools": 135,
+        "Spencer": 169
+      }
+    },
+    "3": {
+      "prop": "K9 rush+rec",
+      "actual": 73,
+      "closest_miss": 4,
+      "winners": [
+        "Beast"
+      ],
+      "guesses": {
+        "Beast": 77,
+        "Zach": 100,
+        "Bailey": 105,
+        "Tyler": 121,
+        "Snow": 124,
+        "JB": 125,
+        "Kranker": 125,
+        "Brandon": 132,
+        "Marc": 132,
+        "Dan": 145,
+        "Gools": 149,
+        "Spencer": 275
+      }
+    },
+    "4": {
+      "prop": "Bowers rec yds",
+      "actual": 86,
+      "closest_miss": 0,
+      "winners": [
+        "Beast"
+      ],
+      "guesses": {
+        "Beast": 86,
+        "Marc": 87,
+        "Zach": 85,
+        "Snow": 88,
+        "Dan": 75,
+        "Bailey": 74,
+        "Gools": 74,
+        "Spencer": 99,
+        "Tyler": 69,
+        "Kranker": 65,
+        "Brandon": 57
+      }
+    },
+    "5": {
+      "prop": "Bijan rush+rec",
+      "actual": 118,
+      "closest_miss": 2,
+      "winners": [
+        "JB",
+        "Zach"
+      ],
+      "guesses": {
+        "JB": 120,
+        "Zach": 120,
+        "Bailey": 115,
+        "Spencer": 121,
+        "Beast": 123,
+        "Marc": 111,
+        "Dan": 128,
+        "Gools": 131,
+        "Brandon": 134,
+        "Snow": 134,
+        "Tyler": 153,
+        "Kranker": 160
+      }
+    },
+    "6": {
+      "prop": "Warren rush+rec",
+      "actual": 78,
+      "closest_miss": 0,
+      "winners": [
+        "Brandon"
+      ],
+      "guesses": {
+        "Brandon": 78,
+        "Zach": 75,
+        "Snow": 84,
+        "Bailey": 70,
+        "Marc": 87,
+        "Beast": 91,
+        "JB": 60,
+        "Dan": 48,
+        "Tyler": 43,
+        "Gools": 115,
+        "Spencer": 151
+      }
+    },
+    "7": {
+      "prop": "Puka rec yds",
+      "actual": 68,
+      "closest_miss": 1,
+      "winners": [
+        "Tyler"
+      ],
+      "guesses": {
+        "Tyler": 69,
+        "Beast": 74,
+        "JB": 82,
+        "Gools": 101,
+        "Bailey": 110,
+        "Brandon": 112,
+        "Dan": 112,
+        "Zach": 115,
+        "Marc": 0,
+        "Spencer": 147,
+        "Snow": 161
+      }
+    },
+    "8": {
+      "prop": "Chase + Tee yds",
+      "actual": 296,
+      "closest_miss": 74,
+      "winners": [
+        "Spencer"
+      ],
+      "guesses": {
+        "Spencer": 222,
+        "Tyler": 204,
+        "Zach": 200,
+        "Snow": 199,
+        "Brandon": 187,
+        "Dan": 166,
+        "Beast": 165,
+        "JB": 150,
+        "Bailey": 140,
+        "Marc": 131,
+        "Gools": 125
+      }
+    },
+    "9": {
+      "prop": "Bucky rush+rec",
+      "actual": 125,
+      "closest_miss": 10,
+      "winners": [
+        "Zach"
+      ],
+      "guesses": {
+        "Zach": 115,
+        "Brandon": 146,
+        "Dan": 99,
+        "Beast": 92,
+        "Marc": 87,
+        "Bailey": 86,
+        "Kranker": 85,
+        "Tyler": 78,
+        "Gools": 77,
+        "Snow": 77,
+        "Spencer": 69,
+        "JB": 50
+      }
+    }
+  },
+  "scores": {
+    "Spencer": {
+      "weekly": {
+        "1": {
+          "game_points": 4,
+          "yardage_guess": 169,
+          "yardage_points": 2,
+          "week_total": 6
+        },
+        "2": {
+          "game_points": 6,
+          "yardage_guess": 169,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "3": {
+          "game_points": 8,
+          "yardage_guess": 275,
+          "yardage_points": 0,
+          "week_total": 8
+        },
+        "4": {
+          "game_points": 5,
+          "yardage_guess": 99,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "5": {
+          "game_points": 6,
+          "yardage_guess": 121,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "6": {
+          "game_points": 6,
+          "yardage_guess": 151,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "7": {
+          "game_points": 3,
+          "yardage_guess": 147,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "8": {
+          "game_points": 6,
+          "yardage_guess": 222,
+          "yardage_points": 2,
+          "week_total": 8
+        },
+        "9": {
+          "game_points": 3,
+          "yardage_guess": 69,
+          "yardage_points": 0,
+          "week_total": 3
+        }
+      },
+      "game_points": 47,
+      "yardage_points": 4,
+      "total_points": 51
+    },
+    "Brandon": {
+      "weekly": {
+        "1": {
+          "game_points": 7,
+          "yardage_guess": 147,
+          "yardage_points": 0,
+          "week_total": 7
+        },
+        "2": {
+          "game_points": 5,
+          "yardage_guess": 118,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "3": {
+          "game_points": 5,
+          "yardage_guess": 132,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "4": {
+          "game_points": 4,
+          "yardage_guess": 57,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "5": {
+          "game_points": 7,
+          "yardage_guess": 134,
+          "yardage_points": 0,
+          "week_total": 7
+        },
+        "6": {
+          "game_points": 3,
+          "yardage_guess": 78,
+          "yardage_points": 2,
+          "week_total": 5
+        },
+        "7": {
+          "game_points": 4,
+          "yardage_guess": 112,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "8": {
+          "game_points": 4,
+          "yardage_guess": 187,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "9": {
+          "game_points": 5,
+          "yardage_guess": 146,
+          "yardage_points": 0,
+          "week_total": 5
+        }
+      },
+      "game_points": 44,
+      "yardage_points": 2,
+      "total_points": 46
+    },
+    "Gools": {
+      "weekly": {
+        "1": {
+          "game_points": 6,
+          "yardage_guess": 99,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "2": {
+          "game_points": 4,
+          "yardage_guess": 135,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "3": {
+          "game_points": 6,
+          "yardage_guess": 149,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "4": {
+          "game_points": 7,
+          "yardage_guess": 74,
+          "yardage_points": 0,
+          "week_total": 7
+        },
+        "5": {
+          "game_points": 5,
+          "yardage_guess": 131,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "6": {
+          "game_points": 5,
+          "yardage_guess": 115,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "7": {
+          "game_points": 4,
+          "yardage_guess": 101,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "8": {
+          "game_points": 4,
+          "yardage_guess": 125,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "9": {
+          "game_points": 5,
+          "yardage_guess": 77,
+          "yardage_points": 0,
+          "week_total": 5
+        }
+      },
+      "game_points": 46,
+      "yardage_points": 0,
+      "total_points": 46
+    },
+    "Bailey": {
+      "weekly": {
+        "1": {
+          "game_points": 6,
+          "yardage_guess": 120,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "2": {
+          "game_points": 7,
+          "yardage_guess": 110,
+          "yardage_points": 0,
+          "week_total": 7
+        },
+        "3": {
+          "game_points": 2,
+          "yardage_guess": 105,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "4": {
+          "game_points": 3,
+          "yardage_guess": 74,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "5": {
+          "game_points": 8,
+          "yardage_guess": 115,
+          "yardage_points": 0,
+          "week_total": 8
+        },
+        "6": {
+          "game_points": 2,
+          "yardage_guess": 70,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "7": {
+          "game_points": 4,
+          "yardage_guess": 110,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "8": {
+          "game_points": 5,
+          "yardage_guess": 140,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "9": {
+          "game_points": 8,
+          "yardage_guess": 86,
+          "yardage_points": 0,
+          "week_total": 8
+        }
+      },
+      "game_points": 45,
+      "yardage_points": 0,
+      "total_points": 45
+    },
+    "JB": {
+      "weekly": {
+        "1": {
+          "game_points": 7,
+          "yardage_guess": 125,
+          "yardage_points": 0,
+          "week_total": 7
+        },
+        "2": {
+          "game_points": 5,
+          "yardage_guess": 100,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "3": {
+          "game_points": 7,
+          "yardage_guess": 125,
+          "yardage_points": 0,
+          "week_total": 7
+        },
+        "4": {
+          "game_points": 2,
+          "yardage_guess": null,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "5": {
+          "game_points": 2,
+          "yardage_guess": 120,
+          "yardage_points": 2,
+          "week_total": 4
+        },
+        "6": {
+          "game_points": 3,
+          "yardage_guess": 60,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "7": {
+          "game_points": 5,
+          "yardage_guess": 82,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "8": {
+          "game_points": 3,
+          "yardage_guess": 150,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "9": {
+          "game_points": 8,
+          "yardage_guess": 50,
+          "yardage_points": 0,
+          "week_total": 8
+        }
+      },
+      "game_points": 42,
+      "yardage_points": 2,
+      "total_points": 44
+    },
+    "Tyler": {
+      "weekly": {
+        "1": {
+          "game_points": 4,
+          "yardage_guess": 114,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "2": {
+          "game_points": 2,
+          "yardage_guess": 112,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "3": {
+          "game_points": 6,
+          "yardage_guess": 121,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "4": {
+          "game_points": 4,
+          "yardage_guess": 69,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "5": {
+          "game_points": 6,
+          "yardage_guess": 153,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "6": {
+          "game_points": 5,
+          "yardage_guess": 43,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "7": {
+          "game_points": 3,
+          "yardage_guess": 69,
+          "yardage_points": 2,
+          "week_total": 5
+        },
+        "8": {
+          "game_points": 5,
+          "yardage_guess": 204,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "9": {
+          "game_points": 4,
+          "yardage_guess": 78,
+          "yardage_points": 0,
+          "week_total": 4
+        }
+      },
+      "game_points": 39,
+      "yardage_points": 2,
+      "total_points": 41
+    },
+    "Beast": {
+      "weekly": {
+        "1": {
+          "game_points": 2,
+          "yardage_guess": 117,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "2": {
+          "game_points": 4,
+          "yardage_guess": 129,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "3": {
+          "game_points": 2,
+          "yardage_guess": 77,
+          "yardage_points": 2,
+          "week_total": 4
+        },
+        "4": {
+          "game_points": 4,
+          "yardage_guess": 86,
+          "yardage_points": 2,
+          "week_total": 6
+        },
+        "5": {
+          "game_points": 5,
+          "yardage_guess": 123,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "6": {
+          "game_points": 3,
+          "yardage_guess": 91,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "7": {
+          "game_points": 5,
+          "yardage_guess": 74,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "8": {
+          "game_points": 4,
+          "yardage_guess": 165,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "9": {
+          "game_points": 7,
+          "yardage_guess": 92,
+          "yardage_points": 0,
+          "week_total": 7
+        }
+      },
+      "game_points": 36,
+      "yardage_points": 4,
+      "total_points": 40
+    },
+    "Dan": {
+      "weekly": {
+        "1": {
+          "game_points": 4,
+          "yardage_guess": 121,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "2": {
+          "game_points": 6,
+          "yardage_guess": 98,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "3": {
+          "game_points": 6,
+          "yardage_guess": 145,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "4": {
+          "game_points": 2,
+          "yardage_guess": 75,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "5": {
+          "game_points": 3,
+          "yardage_guess": 128,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "6": {
+          "game_points": 4,
+          "yardage_guess": 48,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "7": {
+          "game_points": 4,
+          "yardage_guess": 112,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "8": {
+          "game_points": 6,
+          "yardage_guess": 166,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "9": {
+          "game_points": 5,
+          "yardage_guess": 99,
+          "yardage_points": 0,
+          "week_total": 5
+        }
+      },
+      "game_points": 40,
+      "yardage_points": 0,
+      "total_points": 40
+    },
+    "Zach": {
+      "weekly": {
+        "1": {
+          "game_points": 5,
+          "yardage_guess": 130,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "2": {
+          "game_points": 8,
+          "yardage_guess": 85,
+          "yardage_points": 0,
+          "week_total": 8
+        },
+        "3": {
+          "game_points": 3,
+          "yardage_guess": 100,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "4": {
+          "game_points": 2,
+          "yardage_guess": 85,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "5": {
+          "game_points": 5,
+          "yardage_guess": 120,
+          "yardage_points": 2,
+          "week_total": 7
+        },
+        "6": {
+          "game_points": 2,
+          "yardage_guess": 75,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "7": {
+          "game_points": 4,
+          "yardage_guess": 115,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "8": {
+          "game_points": 4,
+          "yardage_guess": 200,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "9": {
+          "game_points": 3,
+          "yardage_guess": 115,
+          "yardage_points": 2,
+          "week_total": 5
+        }
+      },
+      "game_points": 36,
+      "yardage_points": 4,
+      "total_points": 40
+    },
+    "Snow": {
+      "weekly": {
+        "1": {
+          "game_points": 4,
+          "yardage_guess": 121,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "2": {
+          "game_points": 6,
+          "yardage_guess": 97,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "3": {
+          "game_points": 5,
+          "yardage_guess": 124,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "4": {
+          "game_points": 4,
+          "yardage_guess": 88,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "5": {
+          "game_points": 5,
+          "yardage_guess": 134,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "6": {
+          "game_points": 2,
+          "yardage_guess": 84,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "7": {
+          "game_points": 2,
+          "yardage_guess": 161,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "8": {
+          "game_points": 4,
+          "yardage_guess": 199,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "9": {
+          "game_points": 6,
+          "yardage_guess": 77,
+          "yardage_points": 0,
+          "week_total": 6
+        }
+      },
+      "game_points": 38,
+      "yardage_points": 0,
+      "total_points": 38
+    },
+    "Marc": {
+      "weekly": {
+        "1": {
+          "game_points": 1,
+          "yardage_guess": 116,
+          "yardage_points": 0,
+          "week_total": 1
+        },
+        "2": {
+          "game_points": 3,
+          "yardage_guess": 86,
+          "yardage_points": 2,
+          "week_total": 5
+        },
+        "3": {
+          "game_points": 4,
+          "yardage_guess": 132,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "4": {
+          "game_points": 5,
+          "yardage_guess": 87,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "5": {
+          "game_points": 2,
+          "yardage_guess": 111,
+          "yardage_points": 0,
+          "week_total": 2
+        },
+        "6": {
+          "game_points": 4,
+          "yardage_guess": 87,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "7": {
+          "game_points": 3,
+          "yardage_guess": 0,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "8": {
+          "game_points": 5,
+          "yardage_guess": 131,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "9": {
+          "game_points": 5,
+          "yardage_guess": 87,
+          "yardage_points": 0,
+          "week_total": 5
+        }
+      },
+      "game_points": 32,
+      "yardage_points": 2,
+      "total_points": 34
+    },
+    "Kranker": {
+      "weekly": {
+        "1": {
+          "game_points": 5,
+          "yardage_guess": 150,
+          "yardage_points": 0,
+          "week_total": 5
+        },
+        "2": {
+          "game_points": 4,
+          "yardage_guess": 120,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "3": {
+          "game_points": 4,
+          "yardage_guess": 125,
+          "yardage_points": 0,
+          "week_total": 4
+        },
+        "4": {
+          "game_points": 3,
+          "yardage_guess": 65,
+          "yardage_points": 0,
+          "week_total": 3
+        },
+        "5": {
+          "game_points": 6,
+          "yardage_guess": 160,
+          "yardage_points": 0,
+          "week_total": 6
+        },
+        "9": {
+          "game_points": 7,
+          "yardage_guess": 85,
+          "yardage_points": 0,
+          "week_total": 7
+        }
+      },
+      "game_points": 29,
+      "yardage_points": 0,
+      "total_points": 29
+    }
+  }
+}
