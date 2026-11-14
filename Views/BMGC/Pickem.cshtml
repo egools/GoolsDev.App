@@ -35,9 +35,10 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var picker in Model.PickerNames)
+            @foreach (var kvp in Model.PickemScores.OrderByDescending(p => p.Value.GamePoints))
             {
-                var pickemScore = Model.PickemScores[picker];
+                var picker = kvp.Key;
+                var pickemScore = kvp.Value;
                 var keyPicksCorrect = 0;
                 <tr>
                     <th>@picker</th>
@@ -62,7 +63,7 @@
                     }
                     <td>
                         @pickemScore.GamePoints<br />
-                        🔑(@keyPicksCorrect/@Model.Weeks.Max())
+                        (@keyPicksCorrect/@Model.Weeks.Max())
                     </td>
                 </tr>
             }
@@ -86,17 +87,20 @@
                     allKeyPicks += allWeekScores.Count();
                     <td>
                         @allWeekScores.Sum(p => p.GamePoints)<br />
-                        🔑(@keyPicksCorrect/@allWeekScores.Count())
+                        (@keyPicksCorrect/@allWeekScores.Count())
                     </td>
                 }
                 <td>
                     @Model.PickemScores.Sum(p => p.Value.GamePoints)<br />
-                    🔑(@allKeyPicksCorrect/@allKeyPicks)
+                    (@allKeyPicksCorrect/@allKeyPicks)
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table>    
 </div>
+<p class="bc-note">
+    numbers in parentheses are key picks
+</p>
 
 @* Yardage Props *@
 <h2 class="pickem-header">Yardage Player Props</h2>

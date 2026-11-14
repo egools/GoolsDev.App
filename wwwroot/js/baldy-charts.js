@@ -67,9 +67,9 @@
     }
 
     function renderPickemLeaderboard(container, data) {
-        const Width = 1000,
+        const Width = 800,
             Height = 550,
-            margin = { top: 20, right: 135, bottom: 30, left: 50 };
+            margin = { top: 20, right: 120, bottom: 30, left: 50 };
         const weeks = data.weeks;
         const names = data.pickers;
 
@@ -184,9 +184,9 @@
     function renderPickemYardage(container, data, legendEl) {
         const pickemYards = data.yardage,
             weeks = data.weeks;
-        const Width = 1000,
+        const Width = 700,
             Height = 550,
-            margin = { top: 20, right: 20, bottom: 50, left: 50 };
+            margin = { top: 20, right: 20, bottom: 70, left: 50 };
         const pickers = data.pickers,
             pickerCount = pickers.length;
         const propByWeek = {};
@@ -208,9 +208,9 @@
         const innerW = Width - margin.left - margin.right,
             innerH = Height - margin.top - margin.bottom,
             weekWidth = innerW / weeks.length;
-        const laneStep = Math.min((weekWidth * 0.75) / (pickerCount - 1), 8);
+        // const laneStep = Math.min((weekWidth * 0.75) / (pickerCount - 1), 8);
+        // const lane = (pickerIndex) => (pickerIndex - (pickerCount - 1) / 2) * laneStep;
         const xFromWeek = (weekIndex) => margin.left + (weekIndex + 0.5) * weekWidth;
-        const lane = (pickerIndex) => (pickerIndex - (pickerCount - 1) / 2) * laneStep;
         const yFromYards = (yards) => margin.top + (1 - yards / yMax) * innerH;
 
         const chartContainer = container.querySelector(".pickem-chart-container");
@@ -234,10 +234,31 @@
         }
 
         weeks.forEach((w, wi) => {
-            const weekText = svgEl("text", svg, { x: xFromWeek(wi), y: Height - margin.bottom + 20, "text-anchor": "middle", class: "bc-axis" });
+            const weekText = svgEl("text", svg,
+                {
+                    x: xFromWeek(wi),
+                    y: Height - margin.bottom + 20,
+                    "text-anchor": "middle",
+                    class: "bc-axis"
+                });
             weekText.textContent = `Week ${w}`;
-            const propText = svgEl("text", svg, { x: xFromWeek(wi), y: Height - margin.bottom + 36, "text-anchor": "middle", class: "bc-axis-sub" });
-            propText.textContent = propByWeek[w] ? propByWeek[w].label : "";
+            const propPlayerText = svgEl("text", svg,
+                {
+                    x: xFromWeek(wi),
+                    y: Height - margin.bottom + 36,
+                    "text-anchor": "middle",
+                    class: "bc-axis-sub"
+                });
+            propPlayerText.textContent = propByWeek[w].players;
+
+            const propStatText = svgEl("text", svg,
+                {
+                    x: xFromWeek(wi),
+                    y: Height - margin.bottom + 52,
+                    "text-anchor": "middle",
+                    class: "bc-axis-sub"
+                });
+            propStatText.textContent = propByWeek[w].statType;
         });
 
         //y axis
@@ -291,7 +312,7 @@
                 const offStr = `(${off > 0 ? "+" : ""}${off})`;
                 const win = prop && prop.winners.indexOf(picker) >= 0;
                 const dot = svgEl("circle", svg, {
-                    cx: xFromWeek(weekIndex) + lane(pickerIndex),
+                    cx: xFromWeek(weekIndex), //+ lane(pickerIndex),
                     cy: yFromYards(guess.yards),
                     r: win ? 5 : 4,
                     fill: `var(--${picker}Color)`,

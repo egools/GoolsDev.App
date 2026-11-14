@@ -306,7 +306,7 @@ html
 /* pickem charts */
 .pickem-header
 {
-    margin: 50px 0 5px 50px;
+    margin: 50px 0 5px 0;
     text-align: center;
     font-size: 18px;
 }
@@ -364,7 +364,7 @@ html
 
     .pickem-chart .bc-dim
     {
-        opacity: 0.15;
+        opacity: 0.05;
     }
 
     .pickem-chart .bc-label
@@ -451,14 +451,6 @@ html
             display: inline-block;
         }
 
-    .pickem-chart .bc-note
-    {
-        margin: 8px 0 0;
-        font-size: 12px;
-        opacity: 0.7;
-        text-align: center;
-    }
-
 .baldy-table
 {
     margin: 15px 0;
@@ -531,6 +523,14 @@ html
         top: 15%;
         left: 27%;
         font-size: 21px;
-        transform: rotate(229deg);
+        transform: rotate(227deg);
         opacity: 0.17;
     }
+
+.bc-note
+{
+    margin: 8px 0 0;
+    font-size: 12px;
+    opacity: 0.7;
+    text-align: center;
+}

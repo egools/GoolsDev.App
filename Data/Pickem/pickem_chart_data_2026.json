@@ -692,66 +692,75 @@
 		"props": [
 			{
 				"week": 1,
-				"label": "Gibbs rush+rec",
+				"players": "Gibbs",
+				"statType": "rush+rec",
 				"actual": 186,
 				"detail": "Jahmyr Gibbs: 156 rush + 30 rec",
-				"winners": ["Spencer"]
+				"winners": [ "Spencer" ]
 			},
 			{
 				"week": 2,
-				"label": "Henry rush+rec",
+				"players": "Henry",
+				"statType": "rush+rec",
 				"actual": 87,
 				"detail": "Derrick Henry: 68 rush + 19 rec",
-				"winners": ["Marc"]
+				"winners": [ "Marc" ]
 			},
 			{
 				"week": 3,
-				"label": "K9 rush+rec",
+				"players": "K9",
+				"statType": "rush+rec",
 				"actual": 73,
 				"detail": "Kenneth Walker III: 70 rush + 3 rec",
-				"winners": ["Beast"]
+				"winners": [ "Beast" ]
 			},
 			{
 				"week": 4,
-				"label": "Bowers rec yds",
+				"players": "Bowers",
+				"statType": "rec yds",
 				"actual": 86,
 				"detail": "Brock Bowers: 86 rec",
-				"winners": ["Beast"]
+				"winners": [ "Beast" ]
 			},
 			{
 				"week": 5,
-				"label": "Bijan rush+rec",
+				"players": "Bijan",
+				"statType": "rush+rec",
 				"actual": 118,
 				"detail": "Bijan Robinson: 86 rush + 32 rec",
-				"winners": ["Jeff", "Zach"]
+				"winners": [ "Jeff", "Zach" ]
 			},
 			{
 				"week": 6,
-				"label": "Warren rush+rec",
+				"players": "Warren",
+				"statType": "rush+rec",
 				"actual": 78,
 				"detail": "Jaylen Warren: 50 rush + 28 rec",
-				"winners": ["Brandon"]
+				"winners": [ "Brandon" ]
 			},
 			{
 				"week": 7,
-				"label": "Puka rec yds",
+				"players": "Puka",
+				"statType": "rec yds",
 				"actual": 68,
 				"detail": "Puka Nacua: 68 rec",
-				"winners": ["Tyler"]
+				"winners": [ "Tyler" ]
 			},
 			{
 				"week": 8,
-				"label": "Chase + Tee yds",
+				"players": "Chase + Tee",
+				"statType": "rush+rec",
 				"actual": 296,
 				"detail": "Ja'Marr Chase: 141 rec | Tee Higgins: 155 rec",
-				"winners": ["Spencer"]
+				"winners": [ "Spencer" ]
 			},
 			{
 				"week": 9,
-				"label": "Bucky rush+rec",
+				"players": "Bucky",
+				"statType": "rush+rec",
 				"actual": 125,
 				"detail": "Bucky Irving: 97 rush + 28 rec",
-				"winners": ["Zach"]
+				"winners": [ "Zach" ]
 			}
 		],
 		"guesses": {
