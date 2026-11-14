@@ -1,0 +1,81 @@
+﻿@model PickemData
+
+<div class="baldy-table">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                @foreach (var week in Model.Weeks)
+                {
+                    <th>@week</th>
+                }
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var kvp in Model.PickemScores.OrderByDescending(p => p.Value.GamePoints))
+            {
+                var picker = kvp.Key;
+                var pickemScore = kvp.Value;
+                var keyPicksCorrect = 0;
+                <tr>
+                    <th>@picker</th>
+                    @foreach (var week in Model.Weeks)
+                    {
+                        pickemScore.WeekResults.TryGetValue(week.ToString(), out var result);
+                        if (result != null)
+                        {
+                            <td>
+                                @result.GamePoints
+                                @if (result.KeyPickCorrect)
+                                {
+                                    <span class="key-hit">🔑</span>
+                                    keyPicksCorrect++;
+                                }
+                            </td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                    <td>
+                        @pickemScore.GamePoints<br />
+                        (@keyPicksCorrect/@Model.Weeks.Max())
+                    </td>
+                </tr>
+            }
+            <tr>
+                <th>Total</th>
+                @{
+                    var allKeyPicksCorrect = 0;
+                    var allKeyPicks = 0;
+                }
+                @foreach (var week in Model.Weeks)
+                {
+                    var allWeekScores = Model.PickemScores
+                        .Select(p =>
+                        {
+                            p.Value.WeekResults.TryGetValue(week.ToString(), out var result);
+                            return result;
+                        })
+                        .Where(p => p != null);
+                    var keyPicksCorrect = allWeekScores.Count(p => p.KeyPickCorrect);
+                    allKeyPicksCorrect += keyPicksCorrect;
+                    allKeyPicks += allWeekScores.Count();
+                    <td>
+                        @allWeekScores.Sum(p => p.GamePoints)<br />
+                        (@keyPicksCorrect/@allWeekScores.Count())
+                    </td>
+                }
+                <td>
+                    @Model.PickemScores.Sum(p => p.Value.GamePoints)<br />
+                    (@allKeyPicksCorrect/@allKeyPicks)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p class="bc-note">
+    numbers in parentheses are key picks
+</p>

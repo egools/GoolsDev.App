@@ -1,0 +1,52 @@
+﻿@model PickemData
+
+@{
+    var allPicks = Model.ParlayResults.SelectMany(p => p.Value);
+    var correctCount = allPicks.Count(p => p.Scored);
+}
+<h2 class="pickem-header">Baldy Parlay Picks (@correctCount/@allPicks.Count())</h2>
+<div class="baldy-table">
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                @foreach (var week in Model.Weeks)
+                {
+                    var picks = Model.ParlayResults
+                        .Select(p => p.Value
+                            .FirstOrDefault(p => p.Week == week))
+                        .Where(p => p != null);
+                    var correct = picks.Count(p => p.Scored);
+                    <th>
+                        Week @week<br />
+                        <span class="correct-count">(@correct/@picks.Count())</span>
+                    </th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var picker in Model.PickerNames)
+            {
+                var correct = Model.ParlayResults[picker].Count(p => p.Scored);
+                <tr>
+                    <th>
+                        @picker<br />
+                        <span class="correct-count">(@correct/@Model.Weeks.Count)</span>
+                    </th>
+                    @foreach (var week in Model.Weeks)
+                    {
+                        var pick = Model.ParlayResults[picker].FirstOrDefault(p => p.Week == week);
+                        if (pick != null)
+                        {
+                            <td class="@(pick.Scored ? "hit" : "miss")">@pick.Player</td>
+                        }
+                        else
+                        {
+                            <td class="no-pick"></td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

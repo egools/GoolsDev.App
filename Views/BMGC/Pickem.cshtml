@@ -22,85 +22,7 @@
     <div class="bc-tip"></div>
 </div>
 
-<div class="baldy-table">
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                @foreach (var week in Model.Weeks)
-                {
-                    <th>@week</th>
-                }
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var kvp in Model.PickemScores.OrderByDescending(p => p.Value.GamePoints))
-            {
-                var picker = kvp.Key;
-                var pickemScore = kvp.Value;
-                var keyPicksCorrect = 0;
-                <tr>
-                    <th>@picker</th>
-                    @foreach (var week in Model.Weeks)
-                    {
-                        pickemScore.WeekResults.TryGetValue(week.ToString(), out var result);
-                        if (result != null)
-                        {
-                            <td>
-                                @result.GamePoints
-                                @if (result.KeyPickCorrect)
-                                {
-                                    <span class="key-hit">🔑</span>
-                                    keyPicksCorrect++;
-                                }
-                            </td>
-                        }
-                        else
-                        {
-                            <td></td>
-                        }
-                    }
-                    <td>
-                        @pickemScore.GamePoints<br />
-                        (@keyPicksCorrect/@Model.Weeks.Max())
-                    </td>
-                </tr>
-            }
-            <tr>
-                <th>Total</th>
-                @{
-                    var allKeyPicksCorrect = 0;
-                    var allKeyPicks = 0;
-                }
-                @foreach (var week in Model.Weeks)
-                {
-                    var allWeekScores = Model.PickemScores
-                        .Select(p =>
-                        {
-                            p.Value.WeekResults.TryGetValue(week.ToString(), out var result);
-                            return result;
-                        })
-                        .Where(p => p != null);
-                    var keyPicksCorrect = allWeekScores.Count(p => p.KeyPickCorrect);
-                    allKeyPicksCorrect += keyPicksCorrect;
-                    allKeyPicks += allWeekScores.Count();
-                    <td>
-                        @allWeekScores.Sum(p => p.GamePoints)<br />
-                        (@keyPicksCorrect/@allWeekScores.Count())
-                    </td>
-                }
-                <td>
-                    @Model.PickemScores.Sum(p => p.Value.GamePoints)<br />
-                    (@allKeyPicksCorrect/@allKeyPicks)
-                </td>
-            </tr>
-        </tbody>
-    </table>    
-</div>
-<p class="bc-note">
-    numbers in parentheses are key picks
-</p>
+<partial name="_GameTable" />
 
 @* Yardage Props *@
 <h2 class="pickem-header">Yardage Player Props</h2>
@@ -125,61 +47,11 @@
     </div>
 </div>
 
-@* Baldy Parlay *@
-@{
-    var allPicks = Model.ParlayResults.SelectMany(p => p.Value);
-    var correctCount = allPicks.Count(p => p.Scored);
-}
-<h2 class="pickem-header">Baldy Parlay Picks (@correctCount/@allPicks.Count())</h2>
-<div class="baldy-table">
-    <table>
-        <thead>
-            <tr>
-                <td></td>
-                @foreach (var week in Model.Weeks)
-                {
-                    var picks = Model.ParlayResults
-                        .Select(p => p.Value
-                            .FirstOrDefault(p => p.Week == week))
-                        .Where(p => p != null);
-                    var correct = picks.Count(p => p.Scored);
-                    <th>
-                        Week @week<br />
-                        <span class="correct-count">(@correct/@picks.Count())</span>
-                    </th>
-                }
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var picker in Model.PickerNames)
-            {
-                var correct = Model.ParlayResults[picker].Count(p => p.Scored);
-                <tr>
-                    <th>
-                        @picker<br />
-                        <span class="correct-count">(@correct/@Model.Weeks.Count)</span>
-                    </th>
-                    @foreach (var week in Model.Weeks)
-                    {
-                        var pick = Model.ParlayResults[picker].FirstOrDefault(p => p.Week == week);
-                        if (pick != null)
-                        {
-                            <td class="@(pick.Scored ? "hit" : "miss")">@pick.Player</td>
-                        }
-                        else
-                        {
-                            <td class="no-pick"></td>
-                        }
-                    }
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+<partial name="_ParlayTable" />
 
 @section Scripts {
 
-    <script src='~/js/baldy-charts.js'></script>
+    <script src='~/js/baldy-charts.js?v=1.0'></script>
     <script>
         const PICKEM_DATA = @Html.Raw(Model.ChartDataJson);
         BaldyCharts.renderPickemLeaderboard(document.getElementById("pickemLeaderboard"), PICKEM_DATA);
