@@ -340,7 +340,12 @@
                 refresh();
             });
             btn.addEventListener("click", () => {
-                pinned = pinned === picker ? null : picker;
+                if (pinned === picker) {
+                    pinned = null;
+                    hover = null;
+                }
+                else
+                    pinned = picker;
                 refresh();
             });
             legendBtns[picker] = btn;

@@ -6,9 +6,11 @@
 
 @section Head {
     <style>
-        body {
+        body
+        {
             max-width: 1000px;
             margin: 0 auto;
+            padding: 10px;
         }
     </style>
 }
@@ -120,12 +122,12 @@
 </div>
 
 @* Baldy Parlay *@
+@{
+    var allPicks = Model.ParlayResults.SelectMany(p => p.Value);
+    var correctCount = allPicks.Count(p => p.Scored);
+}
+<h2 class="pickem-header">Baldy Parlay Picks (@correctCount/@allPicks.Count())</h2>
 <div class="baldy-table">
-    @{
-        var allPicks = Model.ParlayResults.SelectMany(p => p.Value);
-        var correctCount = allPicks.Count(p => p.Scored);
-    }
-    <h2 class="pickem-header">Baldy Parlay Picks (@correctCount/@allPicks.Count())</h2>
     <table>
         <thead>
             <tr>
