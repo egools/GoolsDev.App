@@ -1,0 +1,1193 @@
+{
+  "nflGameResults": {
+    "1": {
+      "NE @ SEA": {
+        "awayTeam": "NE",
+        "homeTeam": "SEA",
+        "awayScore": 10,
+        "homeScore": 13,
+        "results": {
+          "NE +3.5": "win",
+          "SEA -3.5": "loss"
+        },
+        "winningPicks": [
+          "NE +3.5"
+        ],
+        "pushPicks": []
+      },
+      "SF v LAR": {
+        "awayTeam": "SF",
+        "homeTeam": "LAR",
+        "awayScore": 27,
+        "homeScore": 7,
+        "results": {
+          "LAR -4.5": "loss",
+          "SF +4.5": "win"
+        },
+        "winningPicks": [
+          "SF +4.5"
+        ],
+        "pushPicks": []
+      },
+      "NO @ DET": {
+        "awayTeam": "NO",
+        "homeTeam": "DET",
+        "awayScore": 30,
+        "homeScore": 31,
+        "results": {
+          "DET -7": "loss",
+          "NO +7": "win"
+        },
+        "winningPicks": [
+          "NO +7"
+        ],
+        "pushPicks": []
+      },
+      "TB @ CIN": {
+        "awayTeam": "TB",
+        "homeTeam": "CIN",
+        "awayScore": 27,
+        "homeScore": 33,
+        "results": {
+          "CIN -3.5": "win",
+          "TB +3.5": "loss"
+        },
+        "winningPicks": [
+          "CIN -3.5"
+        ],
+        "pushPicks": []
+      },
+      "BUF @ HOU": {
+        "awayTeam": "BUF",
+        "homeTeam": "HOU",
+        "awayScore": 36,
+        "homeScore": 31,
+        "results": {
+          "BUF -1.5": "win",
+          "HOU +1.5": "loss"
+        },
+        "winningPicks": [
+          "BUF -1.5"
+        ],
+        "pushPicks": []
+      },
+      "NYJ @ TEN": {
+        "awayTeam": "NYJ",
+        "homeTeam": "TEN",
+        "awayScore": 23,
+        "homeScore": 10,
+        "results": {
+          "NYJ +1.5": "win",
+          "TEN -1.5": "loss"
+        },
+        "winningPicks": [
+          "NYJ +1.5"
+        ],
+        "pushPicks": []
+      },
+      "WAS @ PHI": {
+        "awayTeam": "WAS",
+        "homeTeam": "PHI",
+        "awayScore": 22,
+        "homeScore": 24,
+        "results": {
+          "PHI -5.5": "loss",
+          "WAS +5.5": "win"
+        },
+        "winningPicks": [
+          "WAS +5.5"
+        ],
+        "pushPicks": []
+      },
+      "GB @ MIN": {
+        "awayTeam": "GB",
+        "homeTeam": "MIN",
+        "awayScore": 22,
+        "homeScore": 39,
+        "results": {
+          "GB +1.5": "loss",
+          "MIN -1.5": "win"
+        },
+        "winningPicks": [
+          "MIN -1.5"
+        ],
+        "pushPicks": []
+      },
+      "DAL @ NYG": {
+        "awayTeam": "DAL",
+        "homeTeam": "NYG",
+        "awayScore": 20,
+        "homeScore": 28,
+        "results": {
+          "DAL -3": "loss",
+          "NYG +3": "win"
+        },
+        "winningPicks": [
+          "NYG +3"
+        ],
+        "pushPicks": []
+      },
+      "DEN @ KC": {
+        "awayTeam": "DEN",
+        "homeTeam": "KC",
+        "awayScore": 10,
+        "homeScore": 31,
+        "results": {
+          "DEN +2.5": "loss",
+          "KC -2.5": "win"
+        },
+        "winningPicks": [
+          "KC -2.5"
+        ],
+        "pushPicks": []
+      }
+    },
+    "2": {
+      "DET @ BUF": {
+        "awayTeam": "DET",
+        "homeTeam": "BUF",
+        "awayScore": 31,
+        "homeScore": 41,
+        "results": {
+          "BUF -4.5": "win",
+          "DET +4.5": "loss"
+        },
+        "winningPicks": [
+          "BUF -4.5"
+        ],
+        "pushPicks": []
+      },
+      "NO @ BAL": {
+        "awayTeam": "NO",
+        "homeTeam": "BAL",
+        "awayScore": 24,
+        "homeScore": 17,
+        "results": {
+          "BAL -8.5": "loss",
+          "NO +8.5": "win"
+        },
+        "winningPicks": [
+          "NO +8.5"
+        ],
+        "pushPicks": []
+      },
+      "CIN @ HOU": {
+        "awayTeam": "CIN",
+        "homeTeam": "HOU",
+        "awayScore": 20,
+        "homeScore": 6,
+        "results": {
+          "CIN +2.5": "win",
+          "HOU -2.5": "loss"
+        },
+        "winningPicks": [
+          "CIN +2.5"
+        ],
+        "pushPicks": []
+      },
+      "MIN @ CHI": {
+        "awayTeam": "MIN",
+        "homeTeam": "CHI",
+        "awayScore": 9,
+        "homeScore": 3,
+        "results": {
+          "CHI -4.5": "loss",
+          "MIN +4.5": "win"
+        },
+        "winningPicks": [
+          "MIN +4.5"
+        ],
+        "pushPicks": []
+      },
+      "CAR @ ATL": {
+        "awayTeam": "CAR",
+        "homeTeam": "ATL",
+        "awayScore": 34,
+        "homeScore": 3,
+        "results": {
+          "ATL +2.5": "loss",
+          "CAR -2.5": "win"
+        },
+        "winningPicks": [
+          "CAR -2.5"
+        ],
+        "pushPicks": []
+      },
+      "JAX @ DEN": {
+        "awayTeam": "JAX",
+        "homeTeam": "DEN",
+        "awayScore": 13,
+        "homeScore": 20,
+        "results": {
+          "DEN -2.5": "win",
+          "JAX +2.5": "loss"
+        },
+        "winningPicks": [
+          "DEN -2.5"
+        ],
+        "pushPicks": []
+      },
+      "WAS @ DAL": {
+        "awayTeam": "WAS",
+        "homeTeam": "DAL",
+        "awayScore": 20,
+        "homeScore": 37,
+        "results": {
+          "DAL -4.5": "win",
+          "WAS +4.5": "loss"
+        },
+        "winningPicks": [
+          "DAL -4.5"
+        ],
+        "pushPicks": []
+      },
+      "NYG @ LAR": {
+        "awayTeam": "NYG",
+        "homeTeam": "LAR",
+        "awayScore": 6,
+        "homeScore": 28,
+        "results": {
+          "LAR -7": "win",
+          "NYG +7": "loss"
+        },
+        "winningPicks": [
+          "LAR -7"
+        ],
+        "pushPicks": []
+      }
+    },
+    "3": {
+      "NYJ @ DET": {
+        "awayTeam": "NYJ",
+        "homeTeam": "DET",
+        "awayScore": 24,
+        "homeScore": 31,
+        "results": {
+          "DET -6.5": "win",
+          "NYJ +6.5": "loss"
+        },
+        "winningPicks": [
+          "DET -6.5"
+        ],
+        "pushPicks": []
+      },
+      "LAC @ BUF": {
+        "awayTeam": "LAC",
+        "homeTeam": "BUF",
+        "awayScore": 16,
+        "homeScore": 24,
+        "results": {
+          "BUF -7": "win",
+          "LAC +7": "loss"
+        },
+        "winningPicks": [
+          "BUF -7"
+        ],
+        "pushPicks": []
+      },
+      "NE @ JAX": {
+        "awayTeam": "NE",
+        "homeTeam": "JAX",
+        "awayScore": 6,
+        "homeScore": 35,
+        "results": {
+          "JAX -3": "win",
+          "NE +3": "loss"
+        },
+        "winningPicks": [
+          "JAX -3"
+        ],
+        "pushPicks": []
+      },
+      "MIN @ TB": {
+        "awayTeam": "MIN",
+        "homeTeam": "TB",
+        "awayScore": 23,
+        "homeScore": 16,
+        "results": {
+          "MIN -1.5": "win",
+          "TB +1.5": "loss"
+        },
+        "winningPicks": [
+          "MIN -1.5"
+        ],
+        "pushPicks": []
+      },
+      "BAL v DAL": {
+        "awayTeam": "BAL",
+        "homeTeam": "DAL",
+        "awayScore": 34,
+        "homeScore": 31,
+        "results": {
+          "BAL -3.5": "loss",
+          "DAL +3.5": "win"
+        },
+        "winningPicks": [
+          "DAL +3.5"
+        ],
+        "pushPicks": []
+      },
+      "LV @ NO": {
+        "awayTeam": "LV",
+        "homeTeam": "NO",
+        "awayScore": 35,
+        "homeScore": 27,
+        "results": {
+          "LV +3.5": "win",
+          "NO -3.5": "loss"
+        },
+        "winningPicks": [
+          "LV +3.5"
+        ],
+        "pushPicks": []
+      },
+      "LAR @ DEN": {
+        "awayTeam": "LAR",
+        "homeTeam": "DEN",
+        "awayScore": 26,
+        "homeScore": 30,
+        "results": {
+          "DEN +2.5": "win",
+          "LAR -2.5": "loss"
+        },
+        "winningPicks": [
+          "DEN +2.5"
+        ],
+        "pushPicks": []
+      },
+      "PHI @ CHI": {
+        "awayTeam": "PHI",
+        "homeTeam": "CHI",
+        "awayScore": 7,
+        "homeScore": 27,
+        "results": {
+          "CHI +4.5": "win",
+          "PHI -4.5": "loss"
+        },
+        "winningPicks": [
+          "CHI +4.5"
+        ],
+        "pushPicks": []
+      }
+    },
+    "4": {
+      "JAX @ CIN": {
+        "awayTeam": "JAX",
+        "homeTeam": "CIN",
+        "awayScore": 22,
+        "homeScore": 17,
+        "results": {
+          "CIN -2.5": "loss",
+          "JAX +2.5": "win"
+        },
+        "winningPicks": [
+          "JAX +2.5"
+        ],
+        "pushPicks": []
+      },
+      "DAL @ HOU": {
+        "awayTeam": "DAL",
+        "homeTeam": "HOU",
+        "awayScore": 34,
+        "homeScore": 30,
+        "results": {
+          "DAL +2.5": "win",
+          "HOU -2.5": "loss"
+        },
+        "winningPicks": [
+          "DAL +2.5"
+        ],
+        "pushPicks": []
+      },
+      "NYJ @ CHI": {
+        "awayTeam": "NYJ",
+        "homeTeam": "CHI",
+        "awayScore": 12,
+        "homeScore": 23,
+        "results": {
+          "CHI -3.5": "win",
+          "NYJ +3.5": "loss"
+        },
+        "winningPicks": [
+          "CHI -3.5"
+        ],
+        "pushPicks": []
+      },
+      "ARI @ NYG": {
+        "awayTeam": "ARI",
+        "homeTeam": "NYG",
+        "awayScore": 24,
+        "homeScore": 36,
+        "results": {
+          "ARI -2.5": "loss",
+          "NYG +2.5": "win"
+        },
+        "winningPicks": [
+          "NYG +2.5"
+        ],
+        "pushPicks": []
+      },
+      "KC @ LV": {
+        "awayTeam": "KC",
+        "homeTeam": "LV",
+        "awayScore": 30,
+        "homeScore": 27,
+        "results": {
+          "KC -4.5": "loss",
+          "LV +4.5": "win"
+        },
+        "winningPicks": [
+          "LV +4.5"
+        ],
+        "pushPicks": []
+      },
+      "LAC @ SEA": {
+        "awayTeam": "LAC",
+        "homeTeam": "SEA",
+        "awayScore": 23,
+        "homeScore": 30,
+        "results": {
+          "LAC +7": "push",
+          "SEA -7": "push"
+        },
+        "winningPicks": [],
+        "pushPicks": [
+          "LAC +7",
+          "SEA -7"
+        ]
+      },
+      "DEN @ SF": {
+        "awayTeam": "DEN",
+        "homeTeam": "SF",
+        "awayScore": 14,
+        "homeScore": 24,
+        "results": {
+          "DEN +2.5": "loss",
+          "SF -2.5": "win"
+        },
+        "winningPicks": [
+          "SF -2.5"
+        ],
+        "pushPicks": []
+      },
+      "DET @ CAR": {
+        "awayTeam": "DET",
+        "homeTeam": "CAR",
+        "awayScore": 26,
+        "homeScore": 32,
+        "results": {
+          "CAR +3.5": "win",
+          "DET -3.5": "loss"
+        },
+        "winningPicks": [
+          "CAR +3.5"
+        ],
+        "pushPicks": []
+      }
+    },
+    "5": {
+      "PHI v JAX": {
+        "awayTeam": "PHI",
+        "homeTeam": "JAX",
+        "awayScore": 17,
+        "homeScore": 19,
+        "results": {
+          "JAX -7": "loss",
+          "PHI +7": "win"
+        },
+        "winningPicks": [
+          "PHI +7"
+        ],
+        "pushPicks": []
+      },
+      "MIN @ NO": {
+        "awayTeam": "MIN",
+        "homeTeam": "NO",
+        "awayScore": 23,
+        "homeScore": 13,
+        "results": {
+          "MIN -1.5": "win",
+          "NO +1.5": "loss"
+        },
+        "winningPicks": [
+          "MIN -1.5"
+        ],
+        "pushPicks": []
+      },
+      "IND @ PIT": {
+        "awayTeam": "IND",
+        "homeTeam": "PIT",
+        "awayScore": 22,
+        "homeScore": 34,
+        "results": {
+          "IND +2.5": "loss",
+          "PIT -2.5": "win"
+        },
+        "winningPicks": [
+          "PIT -2.5"
+        ],
+        "pushPicks": []
+      },
+      "LV @ NE": {
+        "awayTeam": "LV",
+        "homeTeam": "NE",
+        "awayScore": 17,
+        "homeScore": 45,
+        "results": {
+          "LV +3.5": "loss",
+          "NE -3.5": "win"
+        },
+        "winningPicks": [
+          "NE -3.5"
+        ],
+        "pushPicks": []
+      },
+      "DET @ ARI": {
+        "awayTeam": "DET",
+        "homeTeam": "ARI",
+        "awayScore": 45,
+        "homeScore": 21,
+        "results": {
+          "ARI +5.5": "loss",
+          "DET -5.5": "win"
+        },
+        "winningPicks": [
+          "DET -5.5"
+        ],
+        "pushPicks": []
+      },
+      "SF @ SEA": {
+        "awayTeam": "SF",
+        "homeTeam": "SEA",
+        "awayScore": 32,
+        "homeScore": 29,
+        "results": {
+          "SEA -2.5": "loss",
+          "SF +2.5": "win"
+        },
+        "winningPicks": [
+          "SF +2.5"
+        ],
+        "pushPicks": []
+      },
+      "BAL @ ATL": {
+        "awayTeam": "BAL",
+        "homeTeam": "ATL",
+        "awayScore": 30,
+        "homeScore": 23,
+        "results": {
+          "ATL -3.5": "loss",
+          "BAL +3.5": "win"
+        },
+        "winningPicks": [
+          "BAL +3.5"
+        ],
+        "pushPicks": []
+      },
+      "BUF @ LAR": {
+        "awayTeam": "BUF",
+        "homeTeam": "LAR",
+        "awayScore": 37,
+        "homeScore": 34,
+        "results": {
+          "BUF +3": "win",
+          "LAR -3": "loss"
+        },
+        "winningPicks": [
+          "BUF +3"
+        ],
+        "pushPicks": []
+      }
+    },
+    "6": {
+      "CHI @ ATL": {
+        "awayTeam": "CHI",
+        "homeTeam": "ATL",
+        "awayScore": 31,
+        "homeScore": 23,
+        "results": {
+          "ATL +1.5": "loss",
+          "CHI -1.5": "win"
+        },
+        "winningPicks": [
+          "CHI -1.5"
+        ],
+        "pushPicks": []
+      },
+      "BAL @ CLE": {
+        "awayTeam": "BAL",
+        "homeTeam": "CLE",
+        "awayScore": 10,
+        "homeScore": 13,
+        "results": {
+          "BAL -5.5": "loss",
+          "CLE +5.5": "win"
+        },
+        "winningPicks": [
+          "CLE +5.5"
+        ],
+        "pushPicks": []
+      },
+      "TEN @ IND": {
+        "awayTeam": "TEN",
+        "homeTeam": "IND",
+        "awayScore": 26,
+        "homeScore": 20,
+        "results": {
+          "IND -7": "loss",
+          "TEN +7": "win"
+        },
+        "winningPicks": [
+          "TEN +7"
+        ],
+        "pushPicks": []
+      },
+      "NYJ @ NE": {
+        "awayTeam": "NYJ",
+        "homeTeam": "NE",
+        "awayScore": 19,
+        "homeScore": 26,
+        "results": {
+          "NE -7.5": "loss",
+          "NYJ +7.5": "win"
+        },
+        "winningPicks": [
+          "NYJ +7.5"
+        ],
+        "pushPicks": []
+      },
+      "NO @ NYG": {
+        "awayTeam": "NO",
+        "homeTeam": "NYG",
+        "awayScore": 34,
+        "homeScore": 27,
+        "results": {
+          "NO -1.5": "win",
+          "NYG +1.5": "loss"
+        },
+        "winningPicks": [
+          "NO -1.5"
+        ],
+        "pushPicks": []
+      },
+      "CAR @ PHI": {
+        "awayTeam": "CAR",
+        "homeTeam": "PHI",
+        "awayScore": 25,
+        "homeScore": 14,
+        "results": {
+          "CAR -1.5": "win",
+          "CAR -3.5": "win",
+          "PHI +1.5": "loss",
+          "PHI +3.5": "loss"
+        },
+        "winningPicks": [
+          "CAR -1.5",
+          "CAR -3.5"
+        ],
+        "pushPicks": []
+      },
+      "LAC @ KC": {
+        "awayTeam": "LAC",
+        "homeTeam": "KC",
+        "awayScore": 6,
+        "homeScore": 22,
+        "results": {
+          "KC -8.5": "win",
+          "LAC +8.5": "loss"
+        },
+        "winningPicks": [
+          "KC -8.5"
+        ],
+        "pushPicks": []
+      },
+      "DAL @ GB": {
+        "awayTeam": "DAL",
+        "homeTeam": "GB",
+        "awayScore": 13,
+        "homeScore": 23,
+        "results": {
+          "DAL +1.5": "loss",
+          "GB -1.5": "win"
+        },
+        "winningPicks": [
+          "GB -1.5"
+        ],
+        "pushPicks": []
+      }
+    },
+    "7": {
+      "NE @ CHI": {
+        "awayTeam": "NE",
+        "homeTeam": "CHI",
+        "awayScore": 24,
+        "homeScore": 30,
+        "results": {
+          "CHI -3": "win",
+          "NE +3": "loss"
+        },
+        "winningPicks": [
+          "CHI -3"
+        ],
+        "pushPicks": []
+      },
+      "SF @ ATL": {
+        "awayTeam": "SF",
+        "homeTeam": "ATL",
+        "awayScore": 20,
+        "homeScore": 29,
+        "results": {
+          "ATL +3": "win",
+          "SF -3": "loss"
+        },
+        "winningPicks": [
+          "ATL +3"
+        ],
+        "pushPicks": []
+      },
+      "CLE @ TEN": {
+        "awayTeam": "CLE",
+        "homeTeam": "TEN",
+        "awayScore": 27,
+        "homeScore": 24,
+        "results": {
+          "CLE -1.5": "win",
+          "TEN +1.5": "loss"
+        },
+        "winningPicks": [
+          "CLE -1.5"
+        ],
+        "pushPicks": []
+      },
+      "CIN @ BAL": {
+        "awayTeam": "CIN",
+        "homeTeam": "BAL",
+        "awayScore": 35,
+        "homeScore": 13,
+        "results": {
+          "BAL -2.5": "loss",
+          "CIN +2.5": "win"
+        },
+        "winningPicks": [
+          "CIN +2.5"
+        ],
+        "pushPicks": []
+      },
+      "DEN @ ARI": {
+        "awayTeam": "DEN",
+        "homeTeam": "ARI",
+        "awayScore": 30,
+        "homeScore": 16,
+        "results": {
+          "ARI +4.5": "loss",
+          "DEN -4.5": "win"
+        },
+        "winningPicks": [
+          "DEN -4.5"
+        ],
+        "pushPicks": []
+      },
+      "LAR @ LV": {
+        "awayTeam": "LAR",
+        "homeTeam": "LV",
+        "awayScore": 35,
+        "homeScore": 21,
+        "results": {
+          "LAR -4.5": "win",
+          "LV +4.5": "loss"
+        },
+        "winningPicks": [
+          "LAR -4.5"
+        ],
+        "pushPicks": []
+      },
+      "GB @ DET": {
+        "awayTeam": "GB",
+        "homeTeam": "DET",
+        "awayScore": 17,
+        "homeScore": 20,
+        "results": {
+          "DET -3": "push",
+          "GB +3": "push"
+        },
+        "winningPicks": [],
+        "pushPicks": [
+          "DET -3",
+          "GB +3"
+        ]
+      },
+      "KC @ SEA": {
+        "awayTeam": "KC",
+        "homeTeam": "SEA",
+        "awayScore": 3,
+        "homeScore": 20,
+        "results": {
+          "KC +2.5": "loss",
+          "SEA -2.5": "win"
+        },
+        "winningPicks": [
+          "SEA -2.5"
+        ],
+        "pushPicks": []
+      }
+    },
+    "8": {
+      "CLE @ PIT": {
+        "awayTeam": "CLE",
+        "homeTeam": "PIT",
+        "awayScore": 6,
+        "homeScore": 27,
+        "results": {
+          "CLE +3.5": "loss",
+          "PIT -3.5": "win"
+        },
+        "winningPicks": [
+          "PIT -3.5"
+        ],
+        "pushPicks": []
+      },
+      "BAL @ BUF": {
+        "awayTeam": "BAL",
+        "homeTeam": "BUF",
+        "awayScore": 10,
+        "homeScore": 36,
+        "results": {
+          "BAL +3": "loss",
+          "BUF -3": "win"
+        },
+        "winningPicks": [
+          "BUF -3"
+        ],
+        "pushPicks": []
+      },
+      "MIN @ DET": {
+        "awayTeam": "MIN",
+        "homeTeam": "DET",
+        "awayScore": 15,
+        "homeScore": 19,
+        "results": {
+          "DET -3.5": "win",
+          "MIN +3.5": "loss"
+        },
+        "winningPicks": [
+          "DET -3.5"
+        ],
+        "pushPicks": []
+      },
+      "ATL @ TB": {
+        "awayTeam": "ATL",
+        "homeTeam": "TB",
+        "awayScore": 0,
+        "homeScore": 16,
+        "results": {
+          "ATL +2.5": "loss",
+          "TB -2.5": "win"
+        },
+        "winningPicks": [
+          "TB -2.5"
+        ],
+        "pushPicks": []
+      },
+      "ARI @ DAL": {
+        "awayTeam": "ARI",
+        "homeTeam": "DAL",
+        "awayScore": 33,
+        "homeScore": 30,
+        "results": {
+          "ARI +7": "win",
+          "DAL -7": "loss"
+        },
+        "winningPicks": [
+          "ARI +7"
+        ],
+        "pushPicks": []
+      },
+      "KC @ DEN": {
+        "awayTeam": "KC",
+        "homeTeam": "DEN",
+        "awayScore": 24,
+        "homeScore": 28,
+        "results": {
+          "DEN +1.5": "win",
+          "KC -1.5": "loss"
+        },
+        "winningPicks": [
+          "DEN +1.5"
+        ],
+        "pushPicks": []
+      },
+      "PHI @ WAS": {
+        "awayTeam": "PHI",
+        "homeTeam": "WAS",
+        "awayScore": 10,
+        "homeScore": 27,
+        "results": {
+          "PHI +6": "loss",
+          "WAS -6": "win"
+        },
+        "winningPicks": [
+          "WAS -6"
+        ],
+        "pushPicks": []
+      },
+      "CHI @ SEA": {
+        "awayTeam": "CHI",
+        "homeTeam": "SEA",
+        "awayScore": 34,
+        "homeScore": 17,
+        "results": {
+          "CHI +3": "win",
+          "SEA -3": "loss"
+        },
+        "winningPicks": [
+          "CHI +3"
+        ],
+        "pushPicks": []
+      }
+    },
+    "9": {
+      "CIN v ATL": {
+        "awayTeam": "CIN",
+        "homeTeam": "ATL",
+        "awayScore": 34,
+        "homeScore": 17,
+        "results": {
+          "ATL +3": "loss",
+          "CIN -3": "win"
+        },
+        "winningPicks": [
+          "CIN -3"
+        ],
+        "pushPicks": []
+      },
+      "DET @ MIA": {
+        "awayTeam": "DET",
+        "homeTeam": "MIA",
+        "awayScore": 19,
+        "homeScore": 9,
+        "results": {
+          "DET -7": "win",
+          "MIA +7": "loss"
+        },
+        "winningPicks": [
+          "DET -7"
+        ],
+        "pushPicks": []
+      },
+      "Shedeur @ NO": {
+        "awayTeam": "CLE",
+        "homeTeam": "NO",
+        "awayScore": 22,
+        "homeScore": 23,
+        "results": {
+          "CLE +3": "win",
+          "NO -3": "loss"
+        },
+        "winningPicks": [
+          "CLE +3"
+        ],
+        "pushPicks": []
+      },
+      "DEN @ CAR": {
+        "awayTeam": "DEN",
+        "homeTeam": "CAR",
+        "awayScore": 26,
+        "homeScore": 21,
+        "results": {
+          "CAR +2.5": "loss",
+          "DEN -2.5": "win"
+        },
+        "winningPicks": [
+          "DEN -2.5"
+        ],
+        "pushPicks": []
+      },
+      "LAR @ WAS": {
+        "awayTeam": "LAR",
+        "homeTeam": "WAS",
+        "awayScore": 20,
+        "homeScore": 13,
+        "results": {
+          "LAR -5.5": "win",
+          "WAS +5.5": "loss"
+        },
+        "winningPicks": [
+          "LAR -5.5"
+        ],
+        "pushPicks": []
+      },
+      "NYG @ Milton": {
+        "awayTeam": "NYG",
+        "homeTeam": "PHI",
+        "awayScore": 19,
+        "homeScore": 11,
+        "results": {
+          "NYG -3.5": "win",
+          "PHI +3.5": "loss"
+        },
+        "winningPicks": [
+          "NYG -3.5"
+        ],
+        "pushPicks": []
+      },
+      "GB @ NE": {
+        "awayTeam": "GB",
+        "homeTeam": "NE",
+        "awayScore": 45,
+        "homeScore": 27,
+        "results": {
+          "GB +3": "win",
+          "NE -3": "loss"
+        },
+        "winningPicks": [
+          "GB +3"
+        ],
+        "pushPicks": []
+      },
+      "Minshew @ Lock": {
+        "awayTeam": "ARI",
+        "homeTeam": "SEA",
+        "awayScore": 3,
+        "homeScore": 17,
+        "results": {
+          "ARI +8.5": "loss",
+          "SEA -8.5": "win"
+        },
+        "winningPicks": [
+          "SEA -8.5"
+        ],
+        "pushPicks": []
+      }
+    }
+  },
+  "yardagePropResults": {
+    "1": {
+      "header": "Gibbs rush+rec",
+      "statType": "rush+rec",
+      "game": "NO @ DET",
+      "players": [
+        {
+          "name": "Jahmyr Gibbs",
+          "team": "DET",
+          "rushingYards": 156,
+          "receivingYards": 30
+        }
+      ],
+      "actualYards": 186
+    },
+    "2": {
+      "header": "Henry rush+rec",
+      "statType": "rush+rec",
+      "game": "NO @ BAL",
+      "players": [
+        {
+          "name": "Derrick Henry",
+          "team": "BAL",
+          "rushingYards": 68,
+          "receivingYards": 19
+        }
+      ],
+      "actualYards": 87
+    },
+    "3": {
+      "header": "K9 rush+rec",
+      "statType": "rush+rec",
+      "game": "KC @ MIA",
+      "players": [
+        {
+          "name": "Kenneth Walker III",
+          "team": "KC",
+          "rushingYards": 70,
+          "receivingYards": 3
+        }
+      ],
+      "actualYards": 73
+    },
+    "4": {
+      "header": "Bowers rec yds",
+      "statType": "rec",
+      "game": "LV vs KC",
+      "players": [
+        {
+          "name": "Brock Bowers",
+          "team": "LV",
+          "receivingYards": 86
+        }
+      ],
+      "actualYards": 86
+    },
+    "5": {
+      "header": "Bijan rush+rec",
+      "statType": "rush+rec",
+      "game": "BAL @ ATL",
+      "players": [
+        {
+          "name": "Bijan Robinson",
+          "team": "ATL",
+          "rushingYards": 86,
+          "receivingYards": 32
+        }
+      ],
+      "actualYards": 118
+    },
+    "6": {
+      "header": "Warren rush+rec",
+      "statType": "rush+rec",
+      "game": "PIT @ TB",
+      "players": [
+        {
+          "name": "Jaylen Warren",
+          "team": "PIT",
+          "rushingYards": 50,
+          "receivingYards": 28
+        }
+      ],
+      "actualYards": 78
+    },
+    "7": {
+      "header": "Puka rec yds",
+      "statType": "rec",
+      "game": "LAR @ LV",
+      "players": [
+        {
+          "name": "Puka Nacua",
+          "team": "LAR",
+          "receivingYards": 68
+        }
+      ],
+      "actualYards": 68
+    },
+    "8": {
+      "header": "Chase + Tee yds",
+      "statType": "rec",
+      "game": "TEN @ CIN",
+      "players": [
+        {
+          "name": "Ja'Marr Chase",
+          "team": "CIN",
+          "receivingYards": 141
+        },
+        {
+          "name": "Tee Higgins",
+          "team": "CIN",
+          "receivingYards": 155
+        }
+      ],
+      "actualYards": 296
+    },
+    "9": {
+      "header": "Bucky rush+rec",
+      "statType": "rush+rec",
+      "game": "TB @ CHI",
+      "players": [
+        {
+          "name": "Bucky Irving",
+          "team": "TB",
+          "rushingYards": 97,
+          "receivingYards": 28
+        }
+      ],
+      "actualYards": 125
+    }
+  }
+}

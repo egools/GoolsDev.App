@@ -2,7 +2,11 @@
   "Bailey": [
     {
       "week": 1,
-      "key_pick": "DAL @ NYG",
+      "keyPick": "DAL @ NYG",
+      "yardagePick": 120,
+      "parlayPick": "Gibbs",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Chargers",
       "picks": {
         "NE @ SEA": "NE +3.5",
         "SF v LAR": "SF +4.5",
@@ -10,19 +14,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "BUF -1.5",
         "NYJ @ TEN": "NYJ +1.5",
-        "Baldy parlay": "Gibbs",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "GB +1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "KC -2.5",
-        "Gibbs rush+rec": 120,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Chargers"
+        "DEN @ KC": "KC -2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "WAS @ DAL",
+      "keyPick": "WAS @ DAL",
+      "yardagePick": 110,
+      "parlayPick": "Puka",
+      "bigTenSurvivor": "Illinois",
+      "nflSurvivor": "Bucs",
       "picks": {
         "DET @ BUF": "DET +4.5",
         "NO @ BAL": "NO +8.5",
@@ -31,16 +35,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "DEN -2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "LAR -7",
-        "Henry rush+rec": 110,
-        "Baldy Parlay": "Puka",
-        "Big Ten Survivor": "Illinois",
-        "NFL Survivor": "Bucs"
+        "NYG @ LAR": "LAR -7"
       }
     },
     {
       "week": 3,
-      "key_pick": "LAC @ BUF",
+      "keyPick": "LAC @ BUF",
+      "yardagePick": 105,
+      "parlayPick": "Amon ra",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Chiefs",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "LAC +7",
@@ -49,16 +53,16 @@
         "BAL v DAL": "BAL -3.5",
         "LV @ NO": "NO -3.5",
         "LAR @ DEN": "LAR -2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 105,
-        "Baldy Parlay": "Amon ra",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Chiefs"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "DET @ CAR",
+      "keyPick": "DET @ CAR",
+      "yardagePick": 74,
+      "parlayPick": "K9",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Vikings",
       "picks": {
         "JAX @ CIN": "CIN -2.5",
         "DAL @ HOU": "DAL +2.5",
@@ -67,16 +71,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": 74,
-        "Baldy Parlay": "K9",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Vikings"
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "BUF @ LAR",
+      "keyPick": "BUF @ LAR",
+      "yardagePick": 115,
+      "parlayPick": "Josh Allen",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Texans",
       "picks": {
         "PHI v JAX": "PHI +7",
         "MIN @ NO": "MIN -1.5",
@@ -85,16 +89,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 115,
-        "Baldy Parlay": "Josh Allen",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Texans"
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "DAL @ GB",
+      "keyPick": "DAL @ GB",
+      "yardagePick": 70,
+      "parlayPick": "CD",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Pats",
       "picks": {
         "CHI @ ATL": "CHI -1.5",
         "BAL @ CLE": "BAL -5.5",
@@ -103,16 +107,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "CAR -3.5",
         "LAC @ KC": "LAC +8.5",
-        "DAL @ GB": "DAL +1.5",
-        "Warren rush+rec": 70,
-        "Baldy Parlay": "CD",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Pats"
+        "DAL @ GB": "DAL +1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "DEN @ ARI",
+      "keyPick": "DEN @ ARI",
+      "yardagePick": 110,
+      "parlayPick": "Judkins",
+      "bigTenSurvivor": "UCLA",
+      "nflSurvivor": "Broncos",
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "SF -3",
@@ -121,16 +125,16 @@
         "DEN @ ARI": "DEN -4.5",
         "LAR @ LV": "LAR -4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 110,
-        "Baldy Parlay": "Judkins",
-        "Big Ten Survivor": "UCLA",
-        "NFL Survivor": "Broncos"
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "BAL @ BUF",
+      "keyPick": "BAL @ BUF",
+      "yardagePick": 140,
+      "parlayPick": "Henry",
+      "bigTenSurvivor": "Michigan",
+      "nflSurvivor": "Bengals",
       "picks": {
         "CLE @ PIT": "PIT -3.5",
         "BAL @ BUF": "BAL +3",
@@ -139,16 +143,16 @@
         "ARI @ DAL": "DAL -7",
         "KC @ DEN": "KC -1.5",
         "PHI @ WAS": "WAS -6",
-        "CHI @ SEA": "CHI +3",
-        "Chase + Tee yds": 140,
-        "Baldy Parlay": "Henry",
-        "Big Ten Survivor": "Michigan",
-        "NFL Survivor": "Bengals"
+        "CHI @ SEA": "CHI +3"
       }
     },
     {
       "week": 9,
-      "key_pick": "LAR @ WAS",
+      "keyPick": "LAR @ WAS",
+      "yardagePick": 86,
+      "parlayPick": "London",
+      "bigTenSurvivor": "Wisconsin",
+      "nflSurvivor": "Niners",
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -157,18 +161,18 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "GB +3",
-        "Minshew @ Lock": "SEA -8.5",
-        "Bucky rush+rec": 86,
-        "Baldy Parlay": "London",
-        "Big Ten Survivor": "Wisconsin",
-        "NFL Survivor": "Niners"
+        "Minshew @ Lock": "SEA -8.5"
       }
     }
   ],
   "Beast": [
     {
       "week": 1,
-      "key_pick": "SF v LAR",
+      "keyPick": "SF v LAR",
+      "yardagePick": 117,
+      "parlayPick": "Henry",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Chargers",
       "picks": {
         "NE @ SEA": "SEA -3.5",
         "SF v LAR": "LAR -4.5",
@@ -176,19 +180,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "TEN -1.5",
-        "Baldy parlay": "Henry",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "MIN -1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 117,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Chargers"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "WAS @ DAL",
+      "keyPick": "WAS @ DAL",
+      "yardagePick": 129,
+      "parlayPick": "Olave",
+      "bigTenSurvivor": "Minnesota",
+      "nflSurvivor": "Eagles",
       "picks": {
         "DET @ BUF": "BUF -4.5",
         "NO @ BAL": "NO +8.5",
@@ -197,16 +201,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "JAX +2.5",
         "WAS @ DAL": "WAS +4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 129,
-        "Baldy Parlay": "Olave",
-        "Big Ten Survivor": "Minnesota",
-        "NFL Survivor": "Eagles"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "PHI @ CHI",
+      "keyPick": "PHI @ CHI",
+      "yardagePick": 77,
+      "parlayPick": "Chase Brown",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Chiefs",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -215,16 +219,16 @@
         "BAL v DAL": "BAL -3.5",
         "LV @ NO": "NO -3.5",
         "LAR @ DEN": "LAR -2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 77,
-        "Baldy Parlay": "Chase Brown",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Chiefs"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "DET @ CAR",
+      "keyPick": "DET @ CAR",
+      "yardagePick": 86,
+      "parlayPick": "Chase Brown",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Ravens",
       "picks": {
         "JAX @ CIN": "CIN -2.5",
         "DAL @ HOU": "DAL +2.5",
@@ -233,16 +237,16 @@
         "KC @ LV": "LV +4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": 86,
-        "Baldy Parlay": "Chase Brown",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Ravens"
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "BUF @ LAR",
+      "keyPick": "BUF @ LAR",
+      "yardagePick": 123,
+      "parlayPick": "Gesicki",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Bengals",
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "NO +1.5",
@@ -251,16 +255,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 123,
-        "Baldy Parlay": "Gesicki",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Bengals"
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "NO @ NYG",
+      "keyPick": "NO @ NYG",
+      "yardagePick": 91,
+      "parlayPick": "Carnell Tate",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Rams",
       "picks": {
         "CHI @ ATL": "ATL +1.5",
         "BAL @ CLE": "BAL -5.5",
@@ -269,16 +273,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "CAR -3.5",
         "LAC @ KC": "KC -8.5",
-        "DAL @ GB": "GB -1.5",
-        "Warren rush+rec": 91,
-        "Baldy Parlay": "Carnell Tate",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Rams"
+        "DAL @ GB": "GB -1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "KC @ SEA",
+      "keyPick": "KC @ SEA",
+      "yardagePick": 74,
+      "parlayPick": "Perine",
+      "bigTenSurvivor": "UCLA",
+      "nflSurvivor": "Texans",
       "picks": {
         "NE @ CHI": "CHI -3",
         "SF @ ATL": "SF -3",
@@ -287,16 +291,16 @@
         "DEN @ ARI": "DEN -4.5",
         "LAR @ LV": "LAR -4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 74,
-        "Baldy Parlay": "Perine",
-        "Big Ten Survivor": "UCLA",
-        "NFL Survivor": "Texans"
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "CHI @ SEA",
+      "keyPick": "CHI @ SEA",
+      "yardagePick": 165,
+      "parlayPick": "Jeanty",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CLE @ PIT": "PIT -3.5",
         "BAL @ BUF": "BUF -3",
@@ -305,16 +309,16 @@
         "ARI @ DAL": "DAL -7",
         "KC @ DEN": "KC -1.5",
         "PHI @ WAS": "PHI +6",
-        "CHI @ SEA": "SEA -3",
-        "Chase + Tee yds": 165,
-        "Baldy Parlay": "Jeanty",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "CHI @ SEA": "SEA -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "Minshew @ Lock",
+      "keyPick": "Minshew @ Lock",
+      "yardagePick": 92,
+      "parlayPick": "Ladd",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -323,18 +327,18 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
-        "Minshew @ Lock": "SEA -8.5",
-        "Bucky rush+rec": 92,
-        "Baldy Parlay": "Ladd",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "SEA -8.5"
       }
     }
   ],
   "Brandon": [
     {
       "week": 1,
-      "key_pick": "BUF @ HOU",
+      "keyPick": "BUF @ HOU",
+      "yardagePick": 147,
+      "parlayPick": "CD",
+      "bigTenSurvivor": "Wisconsin",
+      "nflSurvivor": "Jags",
       "picks": {
         "NE @ SEA": "NE +3.5",
         "SF v LAR": "LAR -4.5",
@@ -342,19 +346,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "BUF -1.5",
         "NYJ @ TEN": "NYJ +1.5",
-        "Baldy parlay": "CD",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "MIN -1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "KC -2.5",
-        "Gibbs rush+rec": 147,
-        "Big Ten Survivor": "Wisconsin",
-        "NFL Survivor": "Jags"
+        "DEN @ KC": "KC -2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "NYG @ LAR",
+      "keyPick": "NYG @ LAR",
+      "yardagePick": 118,
+      "parlayPick": "J Chase",
+      "bigTenSurvivor": "Minnesota",
+      "nflSurvivor": "Niners",
       "picks": {
         "DET @ BUF": "BUF -4.5",
         "NO @ BAL": "NO +8.5",
@@ -363,16 +367,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "JAX +2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 118,
-        "Baldy Parlay": "J Chase",
-        "Big Ten Survivor": "Minnesota",
-        "NFL Survivor": "Niners"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "NYJ @ DET",
+      "keyPick": "NYJ @ DET",
+      "yardagePick": 132,
+      "parlayPick": "Hubbard",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Chiefs",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -381,16 +385,16 @@
         "BAL v DAL": "DAL +3.5",
         "LV @ NO": "LV +3.5",
         "LAR @ DEN": "LAR -2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 132,
-        "Baldy Parlay": "Hubbard",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Chiefs"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "DET @ CAR",
+      "keyPick": "DET @ CAR",
+      "yardagePick": 57,
+      "parlayPick": "Ladd",
+      "bigTenSurvivor": "Illinois",
+      "nflSurvivor": "Bears",
       "picks": {
         "JAX @ CIN": "JAX +2.5",
         "DAL @ HOU": "DAL +2.5",
@@ -399,16 +403,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": 57,
-        "Baldy Parlay": "Ladd",
-        "Big Ten Survivor": "Illinois",
-        "NFL Survivor": "Bears"
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "LV @ NE",
+      "keyPick": "LV @ NE",
+      "yardagePick": 134,
+      "parlayPick": "Treveon",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Texans",
       "picks": {
         "PHI v JAX": "PHI +7",
         "MIN @ NO": "MIN -1.5",
@@ -417,16 +421,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "ATL -3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 134,
-        "Baldy Parlay": "Treveon",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Texans"
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "TEN @ IND",
+      "keyPick": "TEN @ IND",
+      "yardagePick": 78,
+      "parlayPick": "Rhamondre",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Colts",
       "picks": {
         "CHI @ ATL": "ATL +1.5",
         "BAL @ CLE": "CLE +5.5",
@@ -435,16 +439,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "CAR -1.5",
         "LAC @ KC": "KC -8.5",
-        "DAL @ GB": "DAL +1.5",
-        "Warren rush+rec": 78,
-        "Baldy Parlay": "Rhamondre",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Colts"
+        "DAL @ GB": "DAL +1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "SF @ ATL",
+      "keyPick": "SF @ ATL",
+      "yardagePick": 112,
+      "parlayPick": "CeeDee",
+      "bigTenSurvivor": "Indiana",
+      "nflSurvivor": "Cowboys",
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "SF -3",
@@ -453,16 +457,16 @@
         "DEN @ ARI": "DEN -4.5",
         "LAR @ LV": "LAR -4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 112,
-        "Baldy Parlay": "CeeDee",
-        "Big Ten Survivor": "Indiana",
-        "NFL Survivor": "Cowboys"
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "KC @ DEN",
+      "keyPick": "KC @ DEN",
+      "yardagePick": 187,
+      "parlayPick": "McBride",
+      "bigTenSurvivor": "UCLA",
+      "nflSurvivor": "Pats",
       "picks": {
         "CLE @ PIT": "PIT -3.5",
         "BAL @ BUF": "BUF -3",
@@ -471,16 +475,16 @@
         "ARI @ DAL": "DAL -7",
         "KC @ DEN": "KC -1.5",
         "PHI @ WAS": "PHI +6",
-        "CHI @ SEA": "CHI +3",
-        "Chase + Tee yds": 187,
-        "Baldy Parlay": "McBride",
-        "Big Ten Survivor": "UCLA",
-        "NFL Survivor": "Pats"
+        "CHI @ SEA": "CHI +3"
       }
     },
     {
       "week": 9,
-      "key_pick": "DEN @ CAR",
+      "keyPick": "DEN @ CAR",
+      "yardagePick": 146,
+      "parlayPick": "CeeDee",
+      "bigTenSurvivor": "Michigan",
+      "nflSurvivor": "Lions",
       "picks": {
         "CIN v ATL": "ATL +3",
         "DET @ MIA": "DET -7",
@@ -489,18 +493,18 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "PHI +3.5",
         "GB @ NE": "GB +3",
-        "Minshew @ Lock": "ARI +8.5",
-        "Bucky rush+rec": 146,
-        "Baldy Parlay": "CeeDee",
-        "Big Ten Survivor": "Michigan",
-        "NFL Survivor": "Lions"
+        "Minshew @ Lock": "ARI +8.5"
       }
     }
   ],
   "Dan": [
     {
       "week": 1,
-      "key_pick": "TB @ CIN",
+      "keyPick": "TB @ CIN",
+      "yardagePick": 121,
+      "parlayPick": "Pollard",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Jags",
       "picks": {
         "NE @ SEA": "SEA -3.5",
         "SF v LAR": "SF +4.5",
@@ -508,19 +512,19 @@
         "TB @ CIN": "TB +3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "TEN -1.5",
-        "Baldy parlay": "Pollard",
         "WAS @ PHI": "WAS +5.5",
         "GB @ MIN": "MIN -1.5",
         "DAL @ NYG": "NYG +3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 121,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Jags"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "MIN @ CHI",
+      "keyPick": "MIN @ CHI",
+      "yardagePick": 98,
+      "parlayPick": "JSN",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Bucs",
       "picks": {
         "DET @ BUF": "DET +4.5",
         "NO @ BAL": "NO +8.5",
@@ -529,16 +533,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "DEN -2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 98,
-        "Baldy Parlay": "JSN",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Bucs"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "MIN @ TB",
+      "keyPick": "MIN @ TB",
+      "yardagePick": 145,
+      "parlayPick": "Running JSN back",
+      "bigTenSurvivor": "Washington",
+      "nflSurvivor": "Bills",
       "picks": {
         "NYJ @ DET": "NYJ +6.5",
         "LAC @ BUF": "BUF -7",
@@ -547,16 +551,16 @@
         "BAL v DAL": "BAL -3.5",
         "LV @ NO": "LV +3.5",
         "LAR @ DEN": "DEN +2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 145,
-        "Baldy Parlay": "Running JSN back",
-        "Big Ten Survivor": "Washington",
-        "NFL Survivor": "Bills"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "DAL @ HOU",
+      "keyPick": "DAL @ HOU",
+      "yardagePick": 75,
+      "parlayPick": "Aaron Jones",
+      "bigTenSurvivor": "Illinois",
+      "nflSurvivor": "Vikings",
       "picks": {
         "JAX @ CIN": "CIN -2.5",
         "DAL @ HOU": "HOU -2.5",
@@ -565,16 +569,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "SEA -7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": 75,
-        "Baldy Parlay": "Aaron Jones",
-        "Big Ten Survivor": "Illinois",
-        "NFL Survivor": "Vikings"
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "PHI v JAX",
+      "keyPick": "PHI v JAX",
+      "yardagePick": 128,
+      "parlayPick": "Juwan Johnson",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "NO +1.5",
@@ -583,16 +587,16 @@
         "DET @ ARI": "ARI +5.5",
         "SF @ SEA": "SEA -2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 128,
-        "Baldy Parlay": "Juwan Johnson",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "CHI @ ATL",
+      "keyPick": "CHI @ ATL",
+      "yardagePick": 48,
+      "parlayPick": "Higbee",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CHI @ ATL": "ATL +1.5",
         "BAL @ CLE": "CLE +5.5",
@@ -601,16 +605,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "CAR -3.5",
         "LAC @ KC": "KC -8.5",
-        "DAL @ GB": "DAL +1.5",
-        "Warren rush+rec": 48,
-        "Baldy Parlay": "Higbee",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "DAL @ GB": "DAL +1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "GB @ DET",
+      "keyPick": "GB @ DET",
+      "yardagePick": 112,
+      "parlayPick": "Tre Tucker",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "SF -3",
@@ -619,16 +623,16 @@
         "DEN @ ARI": "DEN -4.5",
         "LAR @ LV": "LV +4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "SEA -2.5",
-        "Puka rec yds": 112,
-        "Baldy Parlay": "Tre Tucker",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "KC @ SEA": "SEA -2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "ARI @ DAL",
+      "keyPick": "ARI @ DAL",
+      "yardagePick": 166,
+      "parlayPick": "Gesicki",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CLE @ PIT": "PIT -3.5",
         "BAL @ BUF": "BAL +3",
@@ -637,16 +641,16 @@
         "ARI @ DAL": "ARI +7",
         "KC @ DEN": "DEN +1.5",
         "PHI @ WAS": "WAS -6",
-        "CHI @ SEA": "SEA -3",
-        "Chase + Tee yds": 166,
-        "Baldy Parlay": "Gesicki",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "CHI @ SEA": "SEA -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "DET @ MIA",
+      "keyPick": "DET @ MIA",
+      "yardagePick": 99,
+      "parlayPick": "Woody Marks",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -655,18 +659,18 @@
         "LAR @ WAS": "WAS +5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
-        "Minshew @ Lock": "ARI +8.5",
-        "Bucky rush+rec": 99,
-        "Baldy Parlay": "Woody Marks",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "ARI +8.5"
       }
     }
   ],
   "Gools": [
     {
       "week": 1,
-      "key_pick": "BUF @ HOU",
+      "keyPick": "BUF @ HOU",
+      "yardagePick": 99,
+      "parlayPick": "Henry",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Jags",
       "picks": {
         "NE @ SEA": "NE +3.5",
         "SF v LAR": "LAR -4.5",
@@ -674,19 +678,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "BUF -1.5",
         "NYJ @ TEN": "TEN -1.5",
-        "Baldy parlay": "Henry",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "GB +1.5",
         "DAL @ NYG": "NYG +3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 99,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Jags"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "CAR @ ATL",
+      "keyPick": "CAR @ ATL",
+      "yardagePick": 135,
+      "parlayPick": "Cook",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Eagles",
       "picks": {
         "DET @ BUF": "DET +4.5",
         "NO @ BAL": "NO +8.5",
@@ -695,16 +699,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "JAX +2.5",
         "WAS @ DAL": "WAS +4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 135,
-        "Baldy Parlay": "Cook",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Eagles"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "LV @ NO",
+      "keyPick": "LV @ NO",
+      "yardagePick": 149,
+      "parlayPick": "Chubbard Huba",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Seahawks",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -713,16 +717,16 @@
         "BAL v DAL": "BAL -3.5",
         "LV @ NO": "LV +3.5",
         "LAR @ DEN": "DEN +2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 149,
-        "Baldy Parlay": "Chubbard Huba",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Seahawks"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "NYJ @ CHI",
+      "keyPick": "NYJ @ CHI",
+      "yardagePick": 74,
+      "parlayPick": "alvin kamara",
+      "bigTenSurvivor": "Illinois",
+      "nflSurvivor": "Ravens",
       "picks": {
         "JAX @ CIN": "JAX +2.5",
         "DAL @ HOU": "DAL +2.5",
@@ -731,16 +735,16 @@
         "KC @ LV": "LV +4.5",
         "LAC @ SEA": "SEA -7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "CAR +3.5",
-        "Bowers rec yds": 74,
-        "Baldy Parlay": "alvin kamara",
-        "Big Ten Survivor": "Illinois",
-        "NFL Survivor": "Ravens"
+        "DET @ CAR": "CAR +3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "MIN @ NO",
+      "keyPick": "MIN @ NO",
+      "yardagePick": 131,
+      "parlayPick": "Luther Burden",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Bengals",
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "MIN -1.5",
@@ -749,16 +753,16 @@
         "DET @ ARI": "ARI +5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "ATL -3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 131,
-        "Baldy Parlay": "Luther Burden",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Bengals"
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "CAR @ PHI",
+      "keyPick": "CAR @ PHI",
+      "yardagePick": 115,
+      "parlayPick": "Kelce",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Rams",
       "picks": {
         "CHI @ ATL": "CHI -1.5",
         "BAL @ CLE": "BAL -5.5",
@@ -767,16 +771,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "CAR -3.5",
         "LAC @ KC": "LAC +8.5",
-        "DAL @ GB": "GB -1.5",
-        "Warren rush+rec": 115,
-        "Baldy Parlay": "Kelce",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Rams"
+        "DAL @ GB": "GB -1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "CLE @ TEN",
+      "keyPick": "CLE @ TEN",
+      "yardagePick": 101,
+      "parlayPick": "josh jacobs",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "NE @ CHI": "CHI -3",
         "SF @ ATL": "SF -3",
@@ -785,16 +789,16 @@
         "DEN @ ARI": "ARI +4.5",
         "LAR @ LV": "LV +4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 101,
-        "Baldy Parlay": "josh jacobs",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "BAL @ BUF",
+      "keyPick": "BAL @ BUF",
+      "yardagePick": 125,
+      "parlayPick": "Raashaad White",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CLE @ PIT": "CLE +3.5",
         "BAL @ BUF": "BUF -3",
@@ -803,16 +807,16 @@
         "ARI @ DAL": "ARI +7",
         "KC @ DEN": "KC -1.5",
         "PHI @ WAS": "PHI +6",
-        "CHI @ SEA": "CHI +3",
-        "Chase + Tee yds": 125,
-        "Baldy Parlay": "Raashaad White",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "CHI @ SEA": "CHI +3"
       }
     },
     {
       "week": 9,
-      "key_pick": "GB @ NE",
+      "keyPick": "GB @ NE",
+      "yardagePick": 77,
+      "parlayPick": "QJud",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -821,18 +825,18 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
-        "Minshew @ Lock": "ARI +8.5",
-        "Bucky rush+rec": 77,
-        "Baldy Parlay": "QJud",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "ARI +8.5"
       }
     }
   ],
-  "JB": [
+  "Jeff": [
     {
       "week": 1,
-      "key_pick": "GB @ MIN",
+      "keyPick": "GB @ MIN",
+      "yardagePick": 125,
+      "parlayPick": "Hampton",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Steelers",
       "picks": {
         "NE @ SEA": "NE +3.5",
         "SF v LAR": "SF +4.5",
@@ -840,19 +844,19 @@
         "TB @ CIN": "TB +3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "NYJ +1.5",
-        "Baldy parlay": "Hampton",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "MIN -1.5",
         "DAL @ NYG": "NYG +3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 125,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Steelers"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": null,
+      "keyPick": null,
+      "yardagePick": 100,
+      "parlayPick": "Jefferson",
+      "bigTenSurvivor": "Minnesota",
+      "nflSurvivor": "Bucs",
       "picks": {
         "DET @ BUF": "BUF -4.5",
         "NO @ BAL": "NO +8.5",
@@ -861,16 +865,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "JAX +2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 100,
-        "Baldy Parlay": "Jefferson",
-        "Big Ten Survivor": "Minnesota",
-        "NFL Survivor": "Bucs"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "LAR @ DEN",
+      "keyPick": "LAR @ DEN",
+      "yardagePick": 125,
+      "parlayPick": "Javonte",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Chiefs",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -879,16 +883,16 @@
         "BAL v DAL": "DAL +3.5",
         "LV @ NO": "LV +3.5",
         "LAR @ DEN": "LAR -2.5",
-        "PHI @ CHI": "CHI +4.5",
-        "K9 rush+rec": 125,
-        "Baldy Parlay": "Javonte",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Chiefs"
+        "PHI @ CHI": "CHI +4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "JAX @ CIN",
+      "keyPick": "JAX @ CIN",
+      "yardagePick": null,
+      "parlayPick": "ASB",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Vikings",
       "picks": {
         "JAX @ CIN": "JAX +2.5",
         "DAL @ HOU": "HOU -2.5",
@@ -897,16 +901,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "DEN +2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": "Infinity",
-        "Baldy Parlay": "ASB",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Vikings"
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "BUF @ LAR",
+      "keyPick": "BUF @ LAR",
+      "yardagePick": 120,
+      "parlayPick": "Swift",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Cowboys",
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "MIN -1.5",
@@ -915,16 +919,16 @@
         "DET @ ARI": "ARI +5.5",
         "SF @ SEA": "SEA -2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "LAR -3",
-        "Bijan rush+rec": 120,
-        "Baldy Parlay": "Swift",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Cowboys"
+        "BUF @ LAR": "LAR -3"
       }
     },
     {
       "week": 6,
-      "key_pick": "CHI @ ATL",
+      "keyPick": "CHI @ ATL",
+      "yardagePick": 60,
+      "parlayPick": "Kyren",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Rams",
       "picks": {
         "CHI @ ATL": "ATL +1.5",
         "BAL @ CLE": "CLE +5.5",
@@ -933,16 +937,16 @@
         "NO @ NYG": "NO -1.5",
         "CAR @ PHI": "PHI +3.5",
         "LAC @ KC": "LAC +8.5",
-        "DAL @ GB": "DAL +1.5",
-        "Warren rush+rec": 60,
-        "Baldy Parlay": "Kyren",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Rams"
+        "DAL @ GB": "DAL +1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "GB @ DET",
+      "keyPick": "GB @ DET",
+      "yardagePick": 82,
+      "parlayPick": "Marv Harrison",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "ATL +3",
@@ -951,16 +955,16 @@
         "DEN @ ARI": "DEN -4.5",
         "LAR @ LV": "LV +4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "SEA -2.5",
-        "Puka rec yds": 82,
-        "Baldy Parlay": "Marv Harrison",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "KC @ SEA": "SEA -2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "BAL @ BUF",
+      "keyPick": "BAL @ BUF",
+      "yardagePick": 150,
+      "parlayPick": "PWash",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CLE @ PIT": "CLE +3.5",
         "BAL @ BUF": "BUF -3",
@@ -969,16 +973,16 @@
         "ARI @ DAL": "DAL -7",
         "KC @ DEN": "DEN +1.5",
         "PHI @ WAS": "PHI +6",
-        "CHI @ SEA": "SEA -3",
-        "Chase + Tee yds": 150,
-        "Baldy Parlay": "PWash",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "CHI @ SEA": "SEA -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "DET @ MIA",
+      "keyPick": "DET @ MIA",
+      "yardagePick": 50,
+      "parlayPick": "Taylor",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -987,18 +991,18 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "GB +3",
-        "Minshew @ Lock": "ARI +8.5",
-        "Bucky rush+rec": 50,
-        "Baldy Parlay": "Taylor",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "ARI +8.5"
       }
     }
   ],
   "Kranker": [
     {
       "week": 1,
-      "key_pick": "GB @ MIN",
+      "keyPick": "GB @ MIN",
+      "yardagePick": 150,
+      "parlayPick": "Dowdle",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Raiders",
       "picks": {
         "NE @ SEA": "NE +3.5",
         "SF v LAR": "LAR -4.5",
@@ -1006,19 +1010,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "TEN -1.5",
-        "Baldy parlay": "Dowdle",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "MIN -1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 150,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Raiders"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "CAR @ ATL",
+      "keyPick": "CAR @ ATL",
+      "yardagePick": 120,
+      "parlayPick": "Omarion",
+      "bigTenSurvivor": "Minnesota",
+      "nflSurvivor": "Bucs",
       "picks": {
         "DET @ BUF": "DET +4.5",
         "NO @ BAL": "NO +8.5",
@@ -1027,16 +1031,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "JAX +2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 120,
-        "Baldy Parlay": "Omarion",
-        "Big Ten Survivor": "Minnesota",
-        "NFL Survivor": "Bucs"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "NYJ @ DET",
+      "keyPick": "NYJ @ DET",
+      "yardagePick": 125,
+      "parlayPick": "King Henry",
+      "bigTenSurvivor": "Maryland",
+      "nflSurvivor": "Titans",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -1045,16 +1049,16 @@
         "BAL v DAL": "DAL +3.5",
         "LV @ NO": "NO -3.5",
         "LAR @ DEN": "LAR -2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 125,
-        "Baldy Parlay": "King Henry",
-        "Big Ten Survivor": "Maryland",
-        "NFL Survivor": "Titans"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "KC @ LV",
+      "keyPick": "KC @ LV",
+      "yardagePick": 65,
+      "parlayPick": "A A Ron Jones SR",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "JAX @ CIN": "CIN -2.5",
         "DAL @ HOU": "DAL +2.5",
@@ -1063,16 +1067,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": 65,
-        "Baldy Parlay": "A A Ron Jones SR",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "SF @ SEA",
+      "keyPick": "SF @ SEA",
+      "yardagePick": 160,
+      "parlayPick": "Judkins",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "MIN -1.5",
@@ -1081,16 +1085,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "LAR -3",
-        "Bijan rush+rec": 160,
-        "Baldy Parlay": "Judkins",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "BUF @ LAR": "LAR -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "DEN @ CAR",
+      "keyPick": "DEN @ CAR",
+      "yardagePick": 85,
+      "parlayPick": "Fuck it Ollie Gordon",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -1099,18 +1103,18 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "PHI +3.5",
         "GB @ NE": "GB +3",
-        "Minshew @ Lock": "SEA -8.5",
-        "Bucky rush+rec": 85,
-        "Baldy Parlay": "Fuck it Ollie Gordon",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "SEA -8.5"
       }
     }
   ],
   "Marc": [
     {
       "week": 1,
-      "key_pick": "NO @ DET",
+      "keyPick": "NO @ DET",
+      "yardagePick": 116,
+      "parlayPick": "Amon ra",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Jags",
       "picks": {
         "NE @ SEA": "SEA -3.5",
         "SF v LAR": "LAR -4.5",
@@ -1118,19 +1122,19 @@
         "TB @ CIN": "TB +3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "TEN -1.5",
-        "Baldy parlay": "Amon ra",
         "WAS @ PHI": "WAS +5.5",
         "GB @ MIN": "GB +1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 116,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Jags"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "MIN @ CHI",
+      "keyPick": "MIN @ CHI",
+      "yardagePick": 86,
+      "parlayPick": "Jamo",
+      "bigTenSurvivor": "Minnesota",
+      "nflSurvivor": "Niners",
       "picks": {
         "DET @ BUF": "BUF -4.5",
         "NO @ BAL": "NO +8.5",
@@ -1139,16 +1143,16 @@
         "CAR @ ATL": "ATL +2.5",
         "JAX @ DEN": "JAX +2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 86,
-        "Baldy Parlay": "Jamo",
-        "Big Ten Survivor": "Minnesota",
-        "NFL Survivor": "Niners"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "PHI @ CHI",
+      "keyPick": "PHI @ CHI",
+      "yardagePick": 132,
+      "parlayPick": "Amon ra",
+      "bigTenSurvivor": "Ohio St",
+      "nflSurvivor": "Chiefs",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -1157,16 +1161,16 @@
         "BAL v DAL": "BAL -3.5",
         "LV @ NO": "NO -3.5",
         "LAR @ DEN": "DEN +2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 132,
-        "Baldy Parlay": "Amon ra",
-        "Big Ten Survivor": "Ohio St",
-        "NFL Survivor": "Chiefs"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "JAX @ CIN",
+      "keyPick": "JAX @ CIN",
+      "yardagePick": 87,
+      "parlayPick": "Bowers",
+      "bigTenSurvivor": "Indiana",
+      "nflSurvivor": "Ravens",
       "picks": {
         "JAX @ CIN": "JAX +2.5",
         "DAL @ HOU": "HOU -2.5",
@@ -1175,16 +1179,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "CAR +3.5",
-        "Bowers rec yds": 87,
-        "Baldy Parlay": "Bowers",
-        "Big Ten Survivor": "Indiana",
-        "NFL Survivor": "Ravens"
+        "DET @ CAR": "CAR +3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "MIN @ NO",
+      "keyPick": "MIN @ NO",
+      "yardagePick": 111,
+      "parlayPick": "Marvin Harrison",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Cowboys",
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "NO +1.5",
@@ -1193,16 +1197,16 @@
         "DET @ ARI": "ARI +5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "ATL -3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 111,
-        "Baldy Parlay": "Marvin Harrison",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Cowboys"
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "DAL @ GB",
+      "keyPick": "DAL @ GB",
+      "yardagePick": 87,
+      "parlayPick": "Marv",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Colts",
       "picks": {
         "CHI @ ATL": "CHI -1.5",
         "BAL @ CLE": "BAL -5.5",
@@ -1211,16 +1215,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "PHI +1.5",
         "LAC @ KC": "LAC +8.5",
-        "DAL @ GB": "GB -1.5",
-        "Warren rush+rec": 87,
-        "Baldy Parlay": "Marv",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Colts"
+        "DAL @ GB": "GB -1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "KC @ SEA",
+      "keyPick": "KC @ SEA",
+      "yardagePick": 0,
+      "parlayPick": "Bijan",
+      "bigTenSurvivor": "UCLA",
+      "nflSurvivor": "Vikings",
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "SF -3",
@@ -1229,16 +1233,16 @@
         "DEN @ ARI": "DEN -4.5",
         "LAR @ LV": "LAR -4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 0,
-        "Baldy Parlay": "Bijan",
-        "Big Ten Survivor": "UCLA",
-        "NFL Survivor": "Vikings"
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "ATL @ TB",
+      "keyPick": "ATL @ TB",
+      "yardagePick": 131,
+      "parlayPick": "Pitts",
+      "bigTenSurvivor": "Michigan",
+      "nflSurvivor": "Pats",
       "picks": {
         "CLE @ PIT": "CLE +3.5",
         "BAL @ BUF": "BUF -3",
@@ -1247,16 +1251,16 @@
         "ARI @ DAL": "ARI +7",
         "KC @ DEN": "DEN +1.5",
         "PHI @ WAS": "WAS -6",
-        "CHI @ SEA": "CHI +3",
-        "Chase + Tee yds": 131,
-        "Baldy Parlay": "Pitts",
-        "Big Ten Survivor": "Michigan",
-        "NFL Survivor": "Pats"
+        "CHI @ SEA": "CHI +3"
       }
     },
     {
       "week": 9,
-      "key_pick": "DET @ MIA",
+      "keyPick": "DET @ MIA",
+      "yardagePick": 87,
+      "parlayPick": "Jeanty",
+      "bigTenSurvivor": "Wisconsin",
+      "nflSurvivor": "Lions",
       "picks": {
         "CIN v ATL": "ATL +3",
         "DET @ MIA": "DET -7",
@@ -1265,18 +1269,18 @@
         "LAR @ WAS": "WAS +5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
-        "Minshew @ Lock": "SEA -8.5",
-        "Bucky rush+rec": 87,
-        "Baldy Parlay": "Jeanty",
-        "Big Ten Survivor": "Wisconsin",
-        "NFL Survivor": "Lions"
+        "Minshew @ Lock": "SEA -8.5"
       }
     }
   ],
   "Snow": [
     {
       "week": 1,
-      "key_pick": "DAL @ NYG",
+      "keyPick": "DAL @ NYG",
+      "yardagePick": 121,
+      "parlayPick": "Ladd",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Jags",
       "picks": {
         "NE @ SEA": "NE +3.5",
         "SF v LAR": "SF +4.5",
@@ -1284,19 +1288,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "NYJ +1.5",
-        "Baldy parlay": "Ladd",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "GB +1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 121,
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Jags"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "JAX @ DEN",
+      "keyPick": "JAX @ DEN",
+      "yardagePick": 97,
+      "parlayPick": "CMC",
+      "bigTenSurvivor": "Illinois",
+      "nflSurvivor": "Bucs",
       "picks": {
         "DET @ BUF": "BUF -4.5",
         "NO @ BAL": "NO +8.5",
@@ -1305,16 +1309,16 @@
         "CAR @ ATL": "ATL +2.5",
         "JAX @ DEN": "DEN -2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 97,
-        "Baldy Parlay": "CMC",
-        "Big Ten Survivor": "Illinois",
-        "NFL Survivor": "Bucs"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "LV @ NO",
+      "keyPick": "LV @ NO",
+      "yardagePick": 124,
+      "parlayPick": "Chuba",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Saints",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -1323,16 +1327,16 @@
         "BAL v DAL": "BAL -3.5",
         "LV @ NO": "NO -3.5",
         "LAR @ DEN": "DEN +2.5",
-        "PHI @ CHI": "CHI +4.5",
-        "K9 rush+rec": 124,
-        "Baldy Parlay": "Chuba",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Saints"
+        "PHI @ CHI": "CHI +4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "DEN @ SF",
+      "keyPick": "DEN @ SF",
+      "yardagePick": 88,
+      "parlayPick": "The good J Love",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Ravens",
       "picks": {
         "JAX @ CIN": "CIN -2.5",
         "DAL @ HOU": "HOU -2.5",
@@ -1341,16 +1345,16 @@
         "KC @ LV": "LV +4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "CAR +3.5",
-        "Bowers rec yds": 88,
-        "Baldy Parlay": "The good J Love",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Ravens"
+        "DET @ CAR": "CAR +3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "IND @ PIT",
+      "keyPick": "IND @ PIT",
+      "yardagePick": 134,
+      "parlayPick": "J Warren",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Cowboys",
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "NO +1.5",
@@ -1359,16 +1363,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SEA -2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 134,
-        "Baldy Parlay": "J Warren",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Cowboys"
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "TEN @ IND",
+      "keyPick": "TEN @ IND",
+      "yardagePick": 84,
+      "parlayPick": "London",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CHI @ ATL": "ATL +1.5",
         "BAL @ CLE": "BAL -5.5",
@@ -1377,16 +1381,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "CAR -1.5",
         "LAC @ KC": "KC -8.5",
-        "DAL @ GB": "DAL +1.5",
-        "Warren rush+rec": 84,
-        "Baldy Parlay": "London",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "DAL @ GB": "DAL +1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "LAR @ LV",
+      "keyPick": "LAR @ LV",
+      "yardagePick": 161,
+      "parlayPick": "Nico",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "ATL +3",
@@ -1395,16 +1399,16 @@
         "DEN @ ARI": "ARI +4.5",
         "LAR @ LV": "LV +4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 161,
-        "Baldy Parlay": "Nico",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "ATL @ TB",
+      "keyPick": "ATL @ TB",
+      "yardagePick": 199,
+      "parlayPick": "Garrett Wilson",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CLE @ PIT": "CLE +3.5",
         "BAL @ BUF": "BUF -3",
@@ -1413,16 +1417,16 @@
         "ARI @ DAL": "ARI +7",
         "KC @ DEN": "KC -1.5",
         "PHI @ WAS": "PHI +6",
-        "CHI @ SEA": "SEA -3",
-        "Chase + Tee yds": 199,
-        "Baldy Parlay": "Garrett Wilson",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "CHI @ SEA": "SEA -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "NYG @ Milton",
+      "keyPick": "NYG @ Milton",
+      "yardagePick": 77,
+      "parlayPick": "J. Cole",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "ATL +3",
         "DET @ MIA": "DET -7",
@@ -1431,18 +1435,18 @@
         "LAR @ WAS": "WAS +5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "GB +3",
-        "Minshew @ Lock": "SEA -8.5",
-        "Bucky rush+rec": 77,
-        "Baldy Parlay": "J. Cole",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "SEA -8.5"
       }
     }
   ],
   "Spencer": [
     {
       "week": 1,
-      "key_pick": "BUF @ HOU",
+      "keyPick": "BUF @ HOU",
+      "yardagePick": 169,
+      "parlayPick": "Bijan",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Chargers",
       "picks": {
         "NE @ SEA": "SEA -3.5",
         "SF v LAR": "SF +4.5",
@@ -1450,19 +1454,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "NYJ +1.5",
-        "Baldy parlay": "Bijan",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "GB +1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 169,
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Chargers"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "DET @ BUF",
+      "keyPick": "DET @ BUF",
+      "yardagePick": 169,
+      "parlayPick": "Croskey-Merritt",
+      "bigTenSurvivor": "Illinois",
+      "nflSurvivor": "Niners",
       "picks": {
         "DET @ BUF": "BUF -4.5",
         "NO @ BAL": "NO +8.5",
@@ -1471,16 +1475,16 @@
         "CAR @ ATL": "ATL +2.5",
         "JAX @ DEN": "DEN -2.5",
         "WAS @ DAL": "WAS +4.5",
-        "NYG @ LAR": "NYG +7",
-        "Henry rush+rec": 169,
-        "Baldy Parlay": "Croskey-Merritt",
-        "Big Ten Survivor": "Illinois",
-        "NFL Survivor": "Niners"
+        "NYG @ LAR": "NYG +7"
       }
     },
     {
       "week": 3,
-      "key_pick": "NYJ @ DET",
+      "keyPick": "NYJ @ DET",
+      "yardagePick": 275,
+      "parlayPick": "Cook",
+      "bigTenSurvivor": "Ohio St",
+      "nflSurvivor": "Lions",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -1489,16 +1493,16 @@
         "BAL v DAL": "DAL +3.5",
         "LV @ NO": "NO -3.5",
         "LAR @ DEN": "DEN +2.5",
-        "PHI @ CHI": "CHI +4.5",
-        "K9 rush+rec": 275,
-        "Baldy Parlay": "Cook",
-        "Big Ten Survivor": "Ohio St",
-        "NFL Survivor": "Lions"
+        "PHI @ CHI": "CHI +4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "NYJ @ CHI",
+      "keyPick": "NYJ @ CHI",
+      "yardagePick": 99,
+      "parlayPick": "Monangai",
+      "bigTenSurvivor": "Indiana",
+      "nflSurvivor": "Vikings",
       "picks": {
         "JAX @ CIN": "CIN -2.5",
         "DAL @ HOU": "DAL +2.5",
@@ -1507,16 +1511,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "SEA -7",
         "DEN @ SF": "DEN +2.5",
-        "DET @ CAR": "CAR +3.5",
-        "Bowers rec yds": 99,
-        "Baldy Parlay": "Monangai",
-        "Big Ten Survivor": "Indiana",
-        "NFL Survivor": "Vikings"
+        "DET @ CAR": "CAR +3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "MIN @ NO",
+      "keyPick": "MIN @ NO",
+      "yardagePick": 121,
+      "parlayPick": "McBride",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Bengals",
       "picks": {
         "PHI v JAX": "JAX -7",
         "MIN @ NO": "MIN -1.5",
@@ -1525,16 +1529,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "BUF +3",
-        "Bijan rush+rec": 121,
-        "Baldy Parlay": "McBride",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Bengals"
+        "BUF @ LAR": "BUF +3"
       }
     },
     {
       "week": 6,
-      "key_pick": "CAR @ PHI",
+      "keyPick": "CAR @ PHI",
+      "yardagePick": 151,
+      "parlayPick": "Christian Watson",
+      "bigTenSurvivor": "Purdue",
+      "nflSurvivor": "Rams",
       "picks": {
         "CHI @ ATL": "CHI -1.5",
         "BAL @ CLE": "CLE +5.5",
@@ -1543,16 +1547,16 @@
         "NO @ NYG": "NYG +1.5",
         "CAR @ PHI": "PHI +3.5",
         "LAC @ KC": "KC -8.5",
-        "DAL @ GB": "GB -1.5",
-        "Warren rush+rec": 151,
-        "Baldy Parlay": "Christian Watson",
-        "Big Ten Survivor": "Purdue",
-        "NFL Survivor": "Rams"
+        "DAL @ GB": "GB -1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "GB @ DET",
+      "keyPick": "GB @ DET",
+      "yardagePick": 147,
+      "parlayPick": "Corum",
+      "bigTenSurvivor": "Michigan St",
+      "nflSurvivor": "Dolphins",
       "picks": {
         "NE @ CHI": "CHI -3",
         "SF @ ATL": "SF -3",
@@ -1561,16 +1565,16 @@
         "DEN @ ARI": "ARI +4.5",
         "LAR @ LV": "LV +4.5",
         "GB @ DET": "GB +3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 147,
-        "Baldy Parlay": "Corum",
-        "Big Ten Survivor": "Michigan St",
-        "NFL Survivor": "Dolphins"
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "CHI @ SEA",
+      "keyPick": "CHI @ SEA",
+      "yardagePick": 222,
+      "parlayPick": "Fournoy",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CLE @ PIT": "PIT -3.5",
         "BAL @ BUF": "BUF -3",
@@ -1579,16 +1583,16 @@
         "ARI @ DAL": "DAL -7",
         "KC @ DEN": "DEN +1.5",
         "PHI @ WAS": "WAS -6",
-        "CHI @ SEA": "SEA -3",
-        "Chase + Tee yds": 222,
-        "Baldy Parlay": "Fournoy",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "CHI @ SEA": "SEA -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "DEN @ CAR",
+      "keyPick": "DEN @ CAR",
+      "yardagePick": 69,
+      "parlayPick": "Joe Milton Rush for 2 yd TD",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -1597,18 +1601,18 @@
         "LAR @ WAS": "WAS +5.5",
         "NYG @ Milton": "PHI +3.5",
         "GB @ NE": "GB +3",
-        "Minshew @ Lock": "ARI +8.5",
-        "Bucky rush+rec": 69,
-        "Baldy Parlay": "Joe Milton Rush for 2 yd TD",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "ARI +8.5"
       }
     }
   ],
   "Tyler": [
     {
       "week": 1,
-      "key_pick": "BUF @ HOU",
+      "keyPick": "BUF @ HOU",
+      "yardagePick": 114,
+      "parlayPick": "Gibbs",
+      "bigTenSurvivor": "UCLA",
+      "nflSurvivor": "Steelers",
       "picks": {
         "NE @ SEA": "SEA -3.5",
         "SF v LAR": "LAR -4.5",
@@ -1616,19 +1620,19 @@
         "TB @ CIN": "TB +3.5",
         "BUF @ HOU": "BUF -1.5",
         "NYJ @ TEN": "TEN -1.5",
-        "Baldy parlay": "Gibbs",
         "WAS @ PHI": "WAS +5.5",
         "GB @ MIN": "MIN -1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "DEN +2.5",
-        "Gibbs rush+rec": 114,
-        "Big Ten Survivor": "UCLA",
-        "NFL Survivor": "Steelers"
+        "DEN @ KC": "DEN +2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "MIN @ CHI",
+      "keyPick": "MIN @ CHI",
+      "yardagePick": 112,
+      "parlayPick": "Derrick Henry",
+      "bigTenSurvivor": "Minnesota",
+      "nflSurvivor": "Packers",
       "picks": {
         "DET @ BUF": "DET +4.5",
         "NO @ BAL": "BAL -8.5",
@@ -1637,16 +1641,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "JAX +2.5",
         "WAS @ DAL": "WAS +4.5",
-        "NYG @ LAR": "LAR -7",
-        "Henry rush+rec": 112,
-        "Baldy Parlay": "Derrick Henry",
-        "Big Ten Survivor": "Minnesota",
-        "NFL Survivor": "Packers"
+        "NYG @ LAR": "LAR -7"
       }
     },
     {
       "week": 3,
-      "key_pick": "LAR @ DEN",
+      "keyPick": "LAR @ DEN",
+      "yardagePick": 121,
+      "parlayPick": "KWIII",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Seahawks",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "BUF -7",
@@ -1655,16 +1659,16 @@
         "BAL v DAL": "DAL +3.5",
         "LV @ NO": "LV +3.5",
         "LAR @ DEN": "LAR -2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 121,
-        "Baldy Parlay": "KWIII",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Seahawks"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "DET @ CAR",
+      "keyPick": "DET @ CAR",
+      "yardagePick": 69,
+      "parlayPick": "Brock bowers",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Ravens",
       "picks": {
         "JAX @ CIN": "JAX +2.5",
         "DAL @ HOU": "DAL +2.5",
@@ -1673,16 +1677,16 @@
         "KC @ LV": "KC -4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": 69,
-        "Baldy Parlay": "Brock bowers",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Ravens"
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "DET @ ARI",
+      "keyPick": "DET @ ARI",
+      "yardagePick": 153,
+      "parlayPick": "Bijan",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Cowboys",
       "picks": {
         "PHI v JAX": "PHI +7",
         "MIN @ NO": "MIN -1.5",
@@ -1691,16 +1695,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SF +2.5",
         "BAL @ ATL": "ATL -3.5",
-        "BUF @ LAR": "LAR -3",
-        "Bijan rush+rec": 153,
-        "Baldy Parlay": "Bijan",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Cowboys"
+        "BUF @ LAR": "LAR -3"
       }
     },
     {
       "week": 6,
-      "key_pick": "CAR @ PHI",
+      "keyPick": "CAR @ PHI",
+      "yardagePick": 43,
+      "parlayPick": "Jaylen warren",
+      "bigTenSurvivor": "Michigan",
+      "nflSurvivor": "Pats",
       "picks": {
         "CHI @ ATL": "CHI -1.5",
         "BAL @ CLE": "BAL -5.5",
@@ -1709,16 +1713,16 @@
         "NO @ NYG": "NO -1.5",
         "CAR @ PHI": "CAR -1.5",
         "LAC @ KC": "KC -8.5",
-        "DAL @ GB": "DAL +1.5",
-        "Warren rush+rec": 43,
-        "Baldy Parlay": "Jaylen warren",
-        "Big Ten Survivor": "Michigan",
-        "NFL Survivor": "Pats"
+        "DAL @ GB": "DAL +1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "CIN @ BAL",
+      "keyPick": "CIN @ BAL",
+      "yardagePick": 69,
+      "parlayPick": "Hunter henry",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Vikings",
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "SF -3",
@@ -1727,16 +1731,16 @@
         "DEN @ ARI": "ARI +4.5",
         "LAR @ LV": "LV +4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "KC +2.5",
-        "Puka rec yds": 69,
-        "Baldy Parlay": "Hunter henry",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Vikings"
+        "KC @ SEA": "KC +2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "KC @ DEN",
+      "keyPick": "KC @ DEN",
+      "yardagePick": 204,
+      "parlayPick": "Tee higgins",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CLE @ PIT": "CLE +3.5",
         "BAL @ BUF": "BUF -3",
@@ -1745,16 +1749,16 @@
         "ARI @ DAL": "ARI +7",
         "KC @ DEN": "KC -1.5",
         "PHI @ WAS": "WAS -6",
-        "CHI @ SEA": "SEA -3",
-        "Chase + Tee yds": 204,
-        "Baldy Parlay": "Tee higgins",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "CHI @ SEA": "SEA -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "Shedeur @ NO",
+      "keyPick": "Shedeur @ NO",
+      "yardagePick": 78,
+      "parlayPick": "Bucky",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
       "picks": {
         "CIN v ATL": "CIN -3",
         "DET @ MIA": "DET -7",
@@ -1763,18 +1767,18 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
-        "Minshew @ Lock": "ARI +8.5",
-        "Bucky rush+rec": 78,
-        "Baldy Parlay": "Bucky",
-        "Big Ten Survivor": null,
-        "NFL Survivor": null
+        "Minshew @ Lock": "ARI +8.5"
       }
     }
   ],
   "Zach": [
     {
       "week": 1,
-      "key_pick": "BUF @ HOU",
+      "keyPick": "BUF @ HOU",
+      "yardagePick": 130,
+      "parlayPick": "Hurts",
+      "bigTenSurvivor": "Wisconsin",
+      "nflSurvivor": "Eagles",
       "picks": {
         "NE @ SEA": "NE +3.5",
         "SF v LAR": "SF +4.5",
@@ -1782,19 +1786,19 @@
         "TB @ CIN": "CIN -3.5",
         "BUF @ HOU": "HOU +1.5",
         "NYJ @ TEN": "TEN -1.5",
-        "Baldy parlay": "Hurts",
         "WAS @ PHI": "PHI -5.5",
         "GB @ MIN": "MIN -1.5",
         "DAL @ NYG": "DAL -3",
-        "DEN @ KC": "KC -2.5",
-        "Gibbs rush+rec": 130,
-        "Big Ten Survivor": "Wisconsin",
-        "NFL Survivor": "Eagles"
+        "DEN @ KC": "KC -2.5"
       }
     },
     {
       "week": 2,
-      "key_pick": "JAX @ DEN",
+      "keyPick": "JAX @ DEN",
+      "yardagePick": 85,
+      "parlayPick": "Kelce",
+      "bigTenSurvivor": "Minnesota",
+      "nflSurvivor": "Niners",
       "picks": {
         "DET @ BUF": "DET +4.5",
         "NO @ BAL": "NO +8.5",
@@ -1803,16 +1807,16 @@
         "CAR @ ATL": "CAR -2.5",
         "JAX @ DEN": "DEN -2.5",
         "WAS @ DAL": "DAL -4.5",
-        "NYG @ LAR": "LAR -7",
-        "Henry rush+rec": 85,
-        "Baldy Parlay": "Kelce",
-        "Big Ten Survivor": "Minnesota",
-        "NFL Survivor": "Niners"
+        "NYG @ LAR": "LAR -7"
       }
     },
     {
       "week": 3,
-      "key_pick": "LAC @ BUF",
+      "keyPick": "LAC @ BUF",
+      "yardagePick": 100,
+      "parlayPick": "Jamo williams",
+      "bigTenSurvivor": "Rutgers",
+      "nflSurvivor": "Chiefs",
       "picks": {
         "NYJ @ DET": "DET -6.5",
         "LAC @ BUF": "LAC +7",
@@ -1821,16 +1825,16 @@
         "BAL v DAL": "DAL +3.5",
         "LV @ NO": "NO -3.5",
         "LAR @ DEN": "DEN +2.5",
-        "PHI @ CHI": "PHI -4.5",
-        "K9 rush+rec": 100,
-        "Baldy Parlay": "Jamo williams",
-        "Big Ten Survivor": "Rutgers",
-        "NFL Survivor": "Chiefs"
+        "PHI @ CHI": "PHI -4.5"
       }
     },
     {
       "week": 4,
-      "key_pick": "LAC @ SEA",
+      "keyPick": "LAC @ SEA",
+      "yardagePick": 85,
+      "parlayPick": "Amon ra",
+      "bigTenSurvivor": "Nebraska",
+      "nflSurvivor": "Ravens",
       "picks": {
         "JAX @ CIN": "CIN -2.5",
         "DAL @ HOU": "HOU -2.5",
@@ -1839,16 +1843,16 @@
         "KC @ LV": "LV +4.5",
         "LAC @ SEA": "LAC +7",
         "DEN @ SF": "SF -2.5",
-        "DET @ CAR": "DET -3.5",
-        "Bowers rec yds": 85,
-        "Baldy Parlay": "Amon ra",
-        "Big Ten Survivor": "Nebraska",
-        "NFL Survivor": "Ravens"
+        "DET @ CAR": "DET -3.5"
       }
     },
     {
       "week": 5,
-      "key_pick": "PHI v JAX",
+      "keyPick": "PHI v JAX",
+      "yardagePick": 120,
+      "parlayPick": "Hurts",
+      "bigTenSurvivor": "Northwestern",
+      "nflSurvivor": "Bengals",
       "picks": {
         "PHI v JAX": "PHI +7",
         "MIN @ NO": "NO +1.5",
@@ -1857,16 +1861,16 @@
         "DET @ ARI": "DET -5.5",
         "SF @ SEA": "SEA -2.5",
         "BAL @ ATL": "BAL +3.5",
-        "BUF @ LAR": "LAR -3",
-        "Bijan rush+rec": 120,
-        "Baldy Parlay": "Hurts",
-        "Big Ten Survivor": "Northwestern",
-        "NFL Survivor": "Bengals"
+        "BUF @ LAR": "LAR -3"
       }
     },
     {
       "week": 6,
-      "key_pick": "DAL @ GB",
+      "keyPick": "DAL @ GB",
+      "yardagePick": 75,
+      "parlayPick": "Goedert",
+      "bigTenSurvivor": "Oregon",
+      "nflSurvivor": "Colts",
       "picks": {
         "CHI @ ATL": "ATL +1.5",
         "BAL @ CLE": "CLE +5.5",
@@ -1875,16 +1879,16 @@
         "NO @ NYG": "NO -1.5",
         "CAR @ PHI": "PHI +3.5",
         "LAC @ KC": "LAC +8.5",
-        "DAL @ GB": "DAL +1.5",
-        "Warren rush+rec": 75,
-        "Baldy Parlay": "Goedert",
-        "Big Ten Survivor": "Oregon",
-        "NFL Survivor": "Colts"
+        "DAL @ GB": "DAL +1.5"
       }
     },
     {
       "week": 7,
-      "key_pick": "KC @ SEA",
+      "keyPick": "KC @ SEA",
+      "yardagePick": 115,
+      "parlayPick": "Jamarr",
+      "bigTenSurvivor": "UCLA",
+      "nflSurvivor": "Texans",
       "picks": {
         "NE @ CHI": "NE +3",
         "SF @ ATL": "ATL +3",
@@ -1893,16 +1897,16 @@
         "DEN @ ARI": "ARI +4.5",
         "LAR @ LV": "LV +4.5",
         "GB @ DET": "DET -3",
-        "KC @ SEA": "SEA -2.5",
-        "Puka rec yds": 115,
-        "Baldy Parlay": "Jamarr",
-        "Big Ten Survivor": "UCLA",
-        "NFL Survivor": "Texans"
+        "KC @ SEA": "SEA -2.5"
       }
     },
     {
       "week": 8,
-      "key_pick": "KC @ DEN",
+      "keyPick": "KC @ DEN",
+      "yardagePick": 200,
+      "parlayPick": "Michael wilson",
+      "bigTenSurvivor": "Indiana",
+      "nflSurvivor": "Jags",
       "picks": {
         "CLE @ PIT": "CLE +3.5",
         "BAL @ BUF": "BUF -3",
@@ -1911,16 +1915,16 @@
         "ARI @ DAL": "ARI +7",
         "KC @ DEN": "KC -1.5",
         "PHI @ WAS": "WAS -6",
-        "CHI @ SEA": "SEA -3",
-        "Chase + Tee yds": 200,
-        "Baldy Parlay": "Michael wilson",
-        "Big Ten Survivor": "Indiana",
-        "NFL Survivor": "Jags"
+        "CHI @ SEA": "SEA -3"
       }
     },
     {
       "week": 9,
-      "key_pick": "Shedeur @ NO",
+      "keyPick": "Shedeur @ NO",
+      "yardagePick": 115,
+      "parlayPick": "Charbonnet",
+      "bigTenSurvivor": "Michigan",
+      "nflSurvivor": "Lions",
       "picks": {
         "CIN v ATL": "ATL +3",
         "DET @ MIA": "DET -7",
@@ -1929,11 +1933,7 @@
         "LAR @ WAS": "LAR -5.5",
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
-        "Minshew @ Lock": "ARI +8.5",
-        "Bucky rush+rec": 115,
-        "Baldy Parlay": "Charbonnet",
-        "Big Ten Survivor": "Michigan",
-        "NFL Survivor": "Lions"
+        "Minshew @ Lock": "ARI +8.5"
       }
     }
   ]

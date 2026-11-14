@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" />
     <title>@ViewData["Title"] - goolsdev</title>
+    <link rel="icon" type="image/x-icon" href="/gdev.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/bmgc.css" />
+    @await RenderSectionAsync("Head", required: false)
 </head>
 <body>
     <header>

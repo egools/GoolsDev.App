@@ -1,0 +1,182 @@
+@model PickemData
+@{
+    ViewData["Title"] = "2026 Pickem";
+    Layout = "_BmgcLayout";
+}
+
+@section Head {
+    <style>
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+}
+
+@* NFL Pickem *@
+<h2 class="pickem-header">Baldy Pickem Leaderboard</h2>
+<div id="pickemLeaderboard" class="pickem-chart">
+    <div class="pickem-chart-container"></div>
+    <div class="bc-tip"></div>
+</div>
+
+<div class="baldy-table">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                @foreach (var week in Model.Weeks)
+                {
+                    <th>@week</th>
+                }
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var picker in Model.PickerNames)
+            {
+                var pickemScore = Model.PickemScores[picker];
+                var keyPicksCorrect = 0;
+                <tr>
+                    <th>@picker</th>
+                    @foreach (var week in Model.Weeks)
+                    {
+                        pickemScore.WeekResults.TryGetValue(week.ToString(), out var result);
+                        if (result != null)
+                        {
+                            <td>
+                                @result.GamePoints
+                                @if (result.KeyPickCorrect)
+                                {
+                                    <span class="key-hit">🔑</span>
+                                    keyPicksCorrect++;
+                                }
+                            </td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    }
+                    <td>
+                        @pickemScore.GamePoints<br />
+                        🔑(@keyPicksCorrect/@Model.Weeks.Max())
+                    </td>
+                </tr>
+            }
+            <tr>
+                <th>Total</th>
+                @{
+                    var allKeyPicksCorrect = 0;
+                    var allKeyPicks = 0;
+                }
+                @foreach (var week in Model.Weeks)
+                {
+                    var allWeekScores = Model.PickemScores
+                        .Select(p =>
+                        {
+                            p.Value.WeekResults.TryGetValue(week.ToString(), out var result);
+                            return result;
+                        })
+                        .Where(p => p != null);
+                    var keyPicksCorrect = allWeekScores.Count(p => p.KeyPickCorrect);
+                    allKeyPicksCorrect += keyPicksCorrect;
+                    allKeyPicks += allWeekScores.Count();
+                    <td>
+                        @allWeekScores.Sum(p => p.GamePoints)<br />
+                        🔑(@keyPicksCorrect/@allWeekScores.Count())
+                    </td>
+                }
+                <td>
+                    @Model.PickemScores.Sum(p => p.Value.GamePoints)<br />
+                    🔑(@allKeyPicksCorrect/@allKeyPicks)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@* Yardage Props *@
+<h2 class="pickem-header">Yardage Player Props</h2>
+<div id="pickemYardage" class="pickem-chart">
+    <div class="pickem-chart-container"></div>
+    <div class="bc-tip"></div>
+    <div>
+        <ul class="bc-legend">
+            @foreach (var pickerName in Model.PickerNames)
+            {
+                <li>
+                    <button id="@pickerName" type="button" class="">
+                        <i style="background: var(--@(pickerName)Color)"></i>@pickerName
+                    </button>
+                </li>
+            }
+        </ul>
+        <p class="bc-note">
+            dashed line marks the correct answer | outlined dot =
+            closest guess | hover a name to highlight, click to pin.
+        </p>
+    </div>
+</div>
+
+@* Baldy Parlay *@
+<div class="baldy-table">
+    @{
+        var allPicks = Model.ParlayResults.SelectMany(p => p.Value);
+        var correctCount = allPicks.Count(p => p.Scored);
+    }
+    <h2 class="pickem-header">Baldy Parlay Picks (@correctCount/@allPicks.Count())</h2>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                @foreach (var week in Model.Weeks)
+                {
+                    var picks = Model.ParlayResults
+                        .Select(p => p.Value
+                            .FirstOrDefault(p => p.Week == week))
+                        .Where(p => p != null);
+                    var correct = picks.Count(p => p.Scored);
+                    <th>
+                        Week @week<br />
+                        <span class="correct-count">(@correct/@picks.Count())</span>
+                    </th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var picker in Model.PickerNames)
+            {
+                var correct = Model.ParlayResults[picker].Count(p => p.Scored);
+                <tr>
+                    <th>
+                        @picker<br />
+                        <span class="correct-count">(@correct/@Model.Weeks.Count)</span>
+                    </th>
+                    @foreach (var week in Model.Weeks)
+                    {
+                        var pick = Model.ParlayResults[picker].FirstOrDefault(p => p.Week == week);
+                        if (pick != null)
+                        {
+                            <td class="@(pick.Scored ? "hit" : "miss")">@pick.Player</td>
+                        }
+                        else
+                        {
+                            <td class="no-pick"></td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+
+    <script src='~/js/baldy-charts.js'></script>
+    <script>
+        const PICKEM_DATA = @Html.Raw(Model.ChartDataJson);
+        BaldyCharts.renderPickemLeaderboard(document.getElementById("pickemLeaderboard"), PICKEM_DATA);
+        BaldyCharts.renderPickemYardage(document.getElementById("pickemYardage"), PICKEM_DATA);
+    </script>
+}

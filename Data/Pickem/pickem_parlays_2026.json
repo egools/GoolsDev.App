@@ -1,0 +1,551 @@
+{
+	"Bailey": [
+		{
+			"week": 1,
+			"player": "Jahmyr Gibbs",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Puka Nacua",
+			"scored": false
+		},
+		{
+			"week": 3,
+			"player": "Amon-Ra St. Brown",
+			"scored": true
+		},
+		{
+			"week": 4,
+			"player": "Kenneth Walker III",
+			"scored": true
+		},
+		{
+			"week": 5,
+			"player": "Josh Allen",
+			"scored": true
+		},
+		{
+			"week": 6,
+			"player": "CeeDee Lamb",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Quinshon Judkins",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Derrick Henry",
+			"scored": true
+		},
+		{
+			"week": 9,
+			"player": "Drake London",
+			"scored": false
+		}
+	],
+	"Beast": [
+		{
+			"week": 1,
+			"player": "Derrick Henry",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Chris Olave",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Chase Brown",
+			"scored": false
+		},
+		{
+			"week": 4,
+			"player": "Chase Brown",
+			"scored": false
+		},
+		{
+			"week": 5,
+			"player": "Mike Gesicki",
+			"scored": true
+		},
+		{
+			"week": 6,
+			"player": "Carnell Tate",
+			"scored": true
+		},
+		{
+			"week": 7,
+			"player": "Samaje Perine",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Ashton Jeanty",
+			"scored": false
+		},
+		{
+			"week": 9,
+			"player": "Ladd McConkey",
+			"scored": false
+		}
+	],
+	"Brandon": [
+		{
+			"week": 1,
+			"player": "CeeDee Lamb",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Ja'Marr Chase",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Chuba Hubbard",
+			"scored": false
+		},
+		{
+			"week": 4,
+			"player": "Ladd McConkey",
+			"scored": false
+		},
+		{
+			"week": 5,
+			"player": "TreVeyon Henderson",
+			"scored": false
+		},
+		{
+			"week": 6,
+			"player": "Rhamondre Stevenson",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "CeeDee Lamb",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Trey McBride",
+			"scored": true
+		},
+		{
+			"week": 9,
+			"player": "CeeDee Lamb",
+			"scored": true
+		}
+	],
+	"Dan": [
+		{
+			"week": 1,
+			"player": "Tony Pollard",
+			"scored": false
+		},
+		{
+			"week": 2,
+			"player": "Jaxon Smith-Njigba",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Jaxon Smith-Njigba",
+			"scored": true
+		},
+		{
+			"week": 4,
+			"player": "Aaron Jones",
+			"scored": false
+		},
+		{
+			"week": 5,
+			"player": "Juwan Johnson",
+			"scored": false
+		},
+		{
+			"week": 6,
+			"player": "Tyler Higbee",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Tre Tucker",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Mike Gesicki",
+			"scored": true
+		},
+		{
+			"week": 9,
+			"player": "Woody Marks",
+			"scored": false
+		}
+	],
+	"Gools": [
+		{
+			"week": 1,
+			"player": "Derrick Henry",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "James Cook",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Chuba Hubbard",
+			"scored": false
+		},
+		{
+			"week": 4,
+			"player": "Alvin Kamara",
+			"scored": true
+		},
+		{
+			"week": 5,
+			"player": "Luther Burden III",
+			"scored": false
+		},
+		{
+			"week": 6,
+			"player": "Travis Kelce",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Josh Jacobs",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Rachaad White",
+			"scored": true
+		},
+		{
+			"week": 9,
+			"player": "Quinshon Judkins",
+			"scored": false
+		}
+	],
+	"Jeff": [
+		{
+			"week": 1,
+			"player": "Omarion Hampton",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Justin Jefferson",
+			"scored": false
+		},
+		{
+			"week": 3,
+			"player": "Javonte Williams",
+			"scored": true
+		},
+		{
+			"week": 4,
+			"player": "Amon-Ra St. Brown",
+			"scored": false
+		},
+		{
+			"week": 5,
+			"player": "D'Andre Swift",
+			"scored": true
+		},
+		{
+			"week": 6,
+			"player": "Kyren Williams",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Marvin Harrison Jr.",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Parker Washington",
+			"scored": false
+		},
+		{
+			"week": 9,
+			"player": "Jonathan Taylor",
+			"scored": false
+		}
+	],
+	"Kranker": [
+		{
+			"week": 1,
+			"player": "Rico Dowdle",
+			"scored": false
+		},
+		{
+			"week": 2,
+			"player": "Omarion Hampton",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Derrick Henry",
+			"scored": true
+		},
+		{
+			"week": 4,
+			"player": "Aaron Jones",
+			"scored": false
+		},
+		{
+			"week": 5,
+			"player": "Quinshon Judkins",
+			"scored": false
+		},
+		{
+			"week": 9,
+			"player": "Ollie Gordon II",
+			"scored": false
+		}
+	],
+	"Marc": [
+		{
+			"week": 1,
+			"player": "Amon-Ra St. Brown",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Jameson Williams",
+			"scored": false
+		},
+		{
+			"week": 3,
+			"player": "Amon-Ra St. Brown",
+			"scored": true
+		},
+		{
+			"week": 4,
+			"player": "Brock Bowers",
+			"scored": true
+		},
+		{
+			"week": 5,
+			"player": "Marvin Harrison Jr.",
+			"scored": false
+		},
+		{
+			"week": 6,
+			"player": "Marvin Harrison Jr.",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Bijan Robinson",
+			"scored": false
+		},
+		{
+			"week": 8,
+			"player": "Kyle Pitts",
+			"scored": false
+		},
+		{
+			"week": 9,
+			"player": "Ashton Jeanty",
+			"scored": false
+		}
+	],
+	"Snow": [
+		{
+			"week": 1,
+			"player": "Ladd McConkey",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Christian McCaffrey",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Chuba Hubbard",
+			"scored": false
+		},
+		{
+			"week": 4,
+			"player": "Jeremiyah Love",
+			"scored": false
+		},
+		{
+			"week": 5,
+			"player": "Jaylen Warren",
+			"scored": true
+		},
+		{
+			"week": 6,
+			"player": "Drake London",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Nico Collins",
+			"scored": false
+		},
+		{
+			"week": 8,
+			"player": "Garrett Wilson",
+			"scored": false
+		},
+		{
+			"week": 9,
+			"player": "Jonah Coleman",
+			"scored": true
+		}
+	],
+	"Spencer": [
+		{
+			"week": 1,
+			"player": "Bijan Robinson",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Jacory Croskey-Merritt",
+			"scored": false
+		},
+		{
+			"week": 3,
+			"player": "James Cook",
+			"scored": true
+		},
+		{
+			"week": 4,
+			"player": "Kyle Monangai",
+			"scored": true
+		},
+		{
+			"week": 5,
+			"player": "Trey McBride",
+			"scored": true
+		},
+		{
+			"week": 6,
+			"player": "Christian Watson",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Blake Corum",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Ryan Flournoy",
+			"scored": true
+		},
+		{
+			"week": 9,
+			"player": "Joe Milton",
+			"scored": false
+		}
+	],
+	"Tyler": [
+		{
+			"week": 1,
+			"player": "Jahmyr Gibbs",
+			"scored": true
+		},
+		{
+			"week": 2,
+			"player": "Derrick Henry",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Kenneth Walker III",
+			"scored": true
+		},
+		{
+			"week": 4,
+			"player": "Brock Bowers",
+			"scored": true
+		},
+		{
+			"week": 5,
+			"player": "Bijan Robinson",
+			"scored": false
+		},
+		{
+			"week": 6,
+			"player": "Jaylen Warren",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Hunter Henry",
+			"scored": false
+		},
+		{
+			"week": 8,
+			"player": "Tee Higgins",
+			"scored": true
+		},
+		{
+			"week": 9,
+			"player": "Bucky Irving",
+			"scored": true
+		}
+	],
+	"Zach": [
+		{
+			"week": 1,
+			"player": "Jalen Hurts",
+			"scored": false
+		},
+		{
+			"week": 2,
+			"player": "Travis Kelce",
+			"scored": true
+		},
+		{
+			"week": 3,
+			"player": "Jameson Williams",
+			"scored": false
+		},
+		{
+			"week": 4,
+			"player": "Amon-Ra St. Brown",
+			"scored": false
+		},
+		{
+			"week": 5,
+			"player": "Jalen Hurts",
+			"scored": false
+		},
+		{
+			"week": 6,
+			"player": "Dallas Goedert",
+			"scored": false
+		},
+		{
+			"week": 7,
+			"player": "Ja'Marr Chase",
+			"scored": true
+		},
+		{
+			"week": 8,
+			"player": "Michael Wilson",
+			"scored": true
+		},
+		{
+			"week": 9,
+			"player": "Zach Charbonnet",
+			"scored": false
+		}
+	]
+}
