@@ -1,6 +1,7 @@
 ﻿using GoolsDev.App.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -11,12 +12,17 @@ namespace GoolsDev.App.Controllers
     public class BmgcController : Controller
     {
         private readonly IWebHostEnvironment _env;
-        private readonly JsonSerializerOptions jsonOptions = new()
+        private readonly string _rootDataPath;
+        private readonly JsonSerializerOptions _jsonOptions = new()
         {
             PropertyNameCaseInsensitive = true
         };
 
-        public BmgcController(IWebHostEnvironment env) => _env = env;
+        public BmgcController(IWebHostEnvironment env)
+        {
+            _env = env;
+            _rootDataPath = Path.Combine(_env.ContentRootPath, "Data", "Pickem");
+        }
 
         public IActionResult Index()
         {
@@ -24,27 +30,22 @@ namespace GoolsDev.App.Controllers
         }
 
         [Route("bmgc/pickem")]
+        [OutputCache(PolicyName = "Expire60m")]
         public IActionResult Pickem()
         {
             var model = new PickemData();
-            var rootDataPath = Path.Combine(_env.ContentRootPath, "Data", "Pickem");
+            
 
-            var chartDataPath = Path.Combine(rootDataPath, "pickem_chart_data_2026.json");
+            var chartDataPath = Path.Combine(_rootDataPath, "pickem_chart_data_2026.json");
             model.ChartDataJson = System.IO.File.ReadAllText(chartDataPath);
 
-            var parlayDataPath = Path.Combine(rootDataPath, "pickem_parlays_2026.json");
-            var parlayResultText = System.IO.File.ReadAllText(parlayDataPath);
-            var parlayResults = JsonSerializer.Deserialize<Dictionary<string, List<ParlayPick>>>(parlayResultText, jsonOptions);
+            var parlayResults = GetDataFile<Dictionary<string, List<ParlayPick>>>("pickem_parlays_2026.json");
             model.ParlayResults = parlayResults;
 
-            var picksPath = Path.Combine(rootDataPath, "pickem_picks_2026.json");
-            var picksText = System.IO.File.ReadAllText(picksPath);
-            var picks = JsonSerializer.Deserialize<Dictionary<string, List<Pick>>>(picksText, jsonOptions);
+            var picks = GetDataFile<Dictionary<string, List<Pick>>>("pickem_picks_2026.json");
             model.Picks = picks;
 
-            var pickemScoreboardPath = Path.Combine(rootDataPath, "pickem_scores_2026.json");
-            var pickemScoreboardText = System.IO.File.ReadAllText(pickemScoreboardPath);
-            var pickemScoreboard = JsonSerializer.Deserialize<PickemScoreboard>(pickemScoreboardText, jsonOptions);
+            var pickemScoreboard =GetDataFile<PickemScoreboard>("pickem_scores_2026.json");
             model.Weeks = pickemScoreboard.Weeks;
             model.PickerNames = pickemScoreboard.Pickers;
             model.PropResults = pickemScoreboard.PropResults;
@@ -57,6 +58,13 @@ namespace GoolsDev.App.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        private T GetDataFile<T>(string fileName)
+        {
+            var filePath = Path.Combine(_rootDataPath, fileName);
+            var fileText = System.IO.File.ReadAllText(filePath);
+            return JsonSerializer.Deserialize<T>(fileText, _jsonOptions);
         }
     }
 }

@@ -35,6 +35,14 @@ namespace GoolsDev.App
                     options.ClientSecret = googleAuthNSection["ClientSecret"];
                 });
 
+            services.AddOutputCache(options =>
+            {
+                options.AddBasePolicy(builder =>
+                    builder.Expire(TimeSpan.FromMinutes(5)));
+                options.AddPolicy("Expire60m", builder =>
+                    builder.Expire(TimeSpan.FromMinutes(60)));
+            });
+
             services.AddSingleton<ICosmosGames, CosmosGames>()
                 .AddSingleton<ICosmosPlayerStats, CosmosPlayerStats>()
                 .AddSingleton(s =>
@@ -68,6 +76,7 @@ namespace GoolsDev.App
                 .UseRouting()
                 .UseAuthorization()
                 .UseResponseCaching()
+                .UseOutputCache()
                 .UseEndpoints(endpoints =>
                 {
                     endpoints.MapControllerRoute(

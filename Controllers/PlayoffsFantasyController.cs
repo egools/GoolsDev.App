@@ -1,6 +1,7 @@
 ﻿using GoolsDev.App.Cosmos;
 using GoolsDev.App.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -14,7 +15,7 @@ using System.Threading.Tasks;
 namespace GoolsDev.App.Controllers
 {
 
-    [ResponseCache(Duration = 60)]
+    [OutputCache]
     [Route("bmgc/playoffs")]
     public class PlayoffsFantasyController(
         ILogger<BmgcController> logger,
@@ -29,6 +30,10 @@ namespace GoolsDev.App.Controllers
         private readonly ICosmosGames _cosmosGames = cosmosGames;
         private readonly BmgcFantasyPlayoffsSettings _settings = options.Value;
         private readonly IMemoryCache _memoryCache = memoryCache;
+        private readonly JsonSerializerOptions _jsonOptions = new()
+        {
+            PropertyNameCaseInsensitive = true
+        };
 
         public async Task<IActionResult> Index()
         {
@@ -130,10 +135,7 @@ namespace GoolsDev.App.Controllers
                     cacheEntry.Priority = CacheItemPriority.NeverRemove;
                     cacheEntry.AbsoluteExpirationRelativeToNow = TimeSpan.FromDays(60);
                     var text = System.IO.File.ReadAllText($"Data/playoffs_fantasy_roster_{year}.json");
-                    return JsonSerializer.Deserialize<FantasySeason>(text, new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
+                    return JsonSerializer.Deserialize<FantasySeason>(text, _jsonOptions);
                 });
         }
     }
