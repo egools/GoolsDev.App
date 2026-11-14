@@ -504,7 +504,7 @@ html
 
     .baldy-table tbody td:nth-child(even)
     {
-        background: var(--pickem-grid);
+        background: rgba(102, 102, 119, 0.1);
     }
 
     .baldy-table td.miss
