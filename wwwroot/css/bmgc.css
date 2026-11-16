@@ -339,6 +339,13 @@ html
         opacity: 0.65;
     }
 
+    .pickem-chart .bc-yards-actual
+    {
+        fill: currentColor;
+        font-size: 8px;
+        opacity: 0.65;
+    }
+
     .pickem-chart .bc-title
     {
         fill: currentColor;
@@ -385,6 +392,11 @@ html
     {
         cursor: pointer;
     }
+
+        .pickem-chart .bc-dot.bc-infinite
+        {
+            font-size: 28px;
+        }
 
     .pickem-chart .bc-tip
     {

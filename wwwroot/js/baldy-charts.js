@@ -95,9 +95,15 @@
         }
 
         //x axis
-        weeks.forEach((w, i) => {
-            const weekLabel = svgEl("text", svg, { x: xFromWeek(i), y: Height - margin.bottom + 20, "text-anchor": "middle", class: "bc-axis" });
-            weekLabel.textContent = `Week ${w}`;
+        weeks.forEach((week, weekIndex) => {
+            const weekLabel = svgEl("text", svg,
+                {
+                    x: xFromWeek(weekIndex),
+                    y: Height - margin.bottom + 20,
+                    "text-anchor": "middle",
+                    class: "bc-axis"
+                });
+            weekLabel.textContent = week;
         });
 
         //y axis
@@ -194,16 +200,16 @@
             propByWeek[p.week] = p;
         });
 
-        let maxV = 0;
+        let maxYards = 0;
         pickemYards.props.forEach((p) => {
-            maxV = Math.max(maxV, p.actual);
+            maxYards = Math.max(maxYards, p.actual);
         });
         pickers.forEach((p) =>
             (pickemYards.guesses[p] || []).forEach((g) => {
-                maxV = Math.max(maxV, g.yards);
+                maxYards = Math.max(maxYards, g.yards);
             })
         );
-        const yMax = roundChartMax(maxV, 50);
+        const yMax = roundChartMax(maxYards, 50);
 
         const innerW = Width - margin.left - margin.right,
             innerH = Height - margin.top - margin.bottom,
@@ -289,17 +295,23 @@
         weeks.forEach((week, weekIndex) => {
             const prop = propByWeek[week];
             if (!prop) return;
-            const half = weekWidth / 2 - 6;
+            const half = weekWidth / 2 - 4
             svgEl("line", svg, {
                 x1: xFromWeek(weekIndex) - half,
                 x2: xFromWeek(weekIndex) + half,
                 y1: yFromYards(prop.actual),
                 y2: yFromYards(prop.actual),
                 stroke: "currentColor",
-                "stroke-width": 1.25,
-                "stroke-dasharray": "4 3",
+                "stroke-width": 1.5,
+                "stroke-dasharray": "3.5 3",
                 opacity: 0.5
             });
+            const actualYards = svgEl("text", svg, {
+                x: xFromWeek(weekIndex) - half,
+                y: yFromYards(prop.actual) - 2,
+                class: "bc-yards-actual"
+            });
+            actualYards.textContent = prop.actual;
         });
 
         // picker dots
@@ -308,20 +320,41 @@
                 const weekIndex = weeks.indexOf(guess.week);
                 if (weekIndex < 0) return;
                 const prop = propByWeek[guess.week];
-                const off = guess.yards - prop.actual;
-                const offStr = `(${off > 0 ? "+" : ""}${off})`;
+
                 const win = prop && prop.winners.indexOf(picker) >= 0;
-                const dot = svgEl("circle", svg, {
-                    cx: xFromWeek(weekIndex), //+ lane(pickerIndex),
-                    cy: yFromYards(guess.yards),
-                    r: win ? 5 : 4,
-                    fill: `var(--${picker}Color)`,
-                    stroke: win ? "currentColor" : `var(--${picker}Color)`,
-                    "stroke-width": win ? 2 : 0,
-                    class: "bc-dot bc-fade"
-                });
+                const x = xFromWeek(weekIndex); //+ lane(pickerIndex),
+
+                let dot, yardsStr, offStr;
+                if (guess.isInfinite) {
+                    yardsStr = "∞";
+                    offStr = "(+∞)";
+                    dot = svgEl("text", svg, {
+                        x: x,
+                        y: yFromYards(yMax) + 7,
+                        fill: `var(--${picker}Color)`,
+                        stroke: win ? "currentColor" : `var(--${picker}Color)`,
+                        "stroke-width": 0,
+                        "text-anchor": "middle",
+                        class: "bc-dot bc-fade bc-infinite"
+                    });
+                    dot.textContent = "∞";
+                }
+                else {
+                    yardsStr = guess.yards;
+                    const off = guess.yards - prop.actual;
+                    offStr = `(${off > 0 ? "+" : ""}${off})`;
+                    dot = svgEl("circle", svg, {
+                        cx: x,
+                        cy: yFromYards(guess.yards),
+                        r: win ? 5 : 4,
+                        fill: `var(--${picker}Color)`,
+                        stroke: win ? "currentColor" : `var(--${picker}Color)`,
+                        "stroke-width": win ? 2 : 0,
+                        class: "bc-dot bc-fade"
+                    });
+                }
                 dot.addEventListener("mousemove", (ev) => {
-                    tip.show(`<b>${picker}</b> · Week ${guess.week}<br>Guess: ${guess.yards} ${offStr}`, ev);
+                    tip.show(`<b>${picker}</b> · Week ${guess.week}<br>Guess: ${yardsStr} ${offStr}`, ev);
                     if (hover !== picker) {
                         hover = picker;
                         refresh();
