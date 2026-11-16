@@ -1,1209 +1,1342 @@
 {
-	"weeks": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-	"pickers": [
-		"Spencer",
-		"Brandon",
-		"Gools",
-		"Bailey",
-		"Jeff",
-		"Tyler",
-		"Beast",
-		"Dan",
-		"Zach",
-		"Snow", 
-		"Marc",
-		"Kranker"
-	],
-	"leaderboard": {
-		"Spencer": [
-			{
-				"week": 1,
-				"points": 6,
-				"total": 6,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 6,
-				"total": 12,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 8,
-				"total": 20,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 5,
-				"total": 25,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 6,
-				"total": 31,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 6,
-				"total": 37,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 3,
-				"total": 40,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 8,
-				"total": 48,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 3,
-				"total": 51,
-				"missed": false
-			}
-		],
-		"Brandon": [
-			{
-				"week": 1,
-				"points": 7,
-				"total": 7,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 5,
-				"total": 12,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 5,
-				"total": 17,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 4,
-				"total": 21,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 7,
-				"total": 28,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 5,
-				"total": 33,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 4,
-				"total": 37,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 4,
-				"total": 41,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 5,
-				"total": 46,
-				"missed": false
-			}
-		],
-		"Gools": [
-			{
-				"week": 1,
-				"points": 6,
-				"total": 6,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 4,
-				"total": 10,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 6,
-				"total": 16,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 7,
-				"total": 23,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 5,
-				"total": 28,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 5,
-				"total": 33,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 4,
-				"total": 37,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 4,
-				"total": 41,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 5,
-				"total": 46,
-				"missed": false
-			}
-		],
-		"Bailey": [
-			{
-				"week": 1,
-				"points": 6,
-				"total": 6,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 7,
-				"total": 13,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 2,
-				"total": 15,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 3,
-				"total": 18,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 8,
-				"total": 26,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 2,
-				"total": 28,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 4,
-				"total": 32,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 5,
-				"total": 37,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 8,
-				"total": 45,
-				"missed": false
-			}
-		],
-		"Jeff": [
-			{
-				"week": 1,
-				"points": 7,
-				"total": 7,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 5,
-				"total": 12,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 7,
-				"total": 19,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 2,
-				"total": 21,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 4,
-				"total": 25,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 3,
-				"total": 28,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 5,
-				"total": 33,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 3,
-				"total": 36,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 8,
-				"total": 44,
-				"missed": false
-			}
-		],
-		"Tyler": [
-			{
-				"week": 1,
-				"points": 4,
-				"total": 4,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 2,
-				"total": 6,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 6,
-				"total": 12,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 4,
-				"total": 16,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 6,
-				"total": 22,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 5,
-				"total": 27,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 5,
-				"total": 32,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 5,
-				"total": 37,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 4,
-				"total": 41,
-				"missed": false
-			}
-		],
-		"Beast": [
-			{
-				"week": 1,
-				"points": 2,
-				"total": 2,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 4,
-				"total": 6,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 4,
-				"total": 10,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 6,
-				"total": 16,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 5,
-				"total": 21,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 3,
-				"total": 24,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 5,
-				"total": 29,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 4,
-				"total": 33,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 7,
-				"total": 40,
-				"missed": false
-			}
-		],
-		"Dan": [
-			{
-				"week": 1,
-				"points": 4,
-				"total": 4,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 6,
-				"total": 10,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 6,
-				"total": 16,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 2,
-				"total": 18,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 3,
-				"total": 21,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 4,
-				"total": 25,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 4,
-				"total": 29,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 6,
-				"total": 35,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 5,
-				"total": 40,
-				"missed": false
-			}
-		],
-		"Zach": [
-			{
-				"week": 1,
-				"points": 5,
-				"total": 5,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 8,
-				"total": 13,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 3,
-				"total": 16,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 2,
-				"total": 18,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 7,
-				"total": 25,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 2,
-				"total": 27,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 4,
-				"total": 31,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 4,
-				"total": 35,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 5,
-				"total": 40,
-				"missed": false
-			}
-		],
-		"Snow": [
-			{
-				"week": 1,
-				"points": 4,
-				"total": 4,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 6,
-				"total": 10,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 5,
-				"total": 15,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 4,
-				"total": 19,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 5,
-				"total": 24,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 2,
-				"total": 26,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 2,
-				"total": 28,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 4,
-				"total": 32,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 6,
-				"total": 38,
-				"missed": false
-			}
-		],
-		"Marc": [
-			{
-				"week": 1,
-				"points": 1,
-				"total": 1,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 5,
-				"total": 6,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 4,
-				"total": 10,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 5,
-				"total": 15,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 2,
-				"total": 17,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 4,
-				"total": 21,
-				"missed": false
-			},
-			{
-				"week": 7,
-				"points": 3,
-				"total": 24,
-				"missed": false
-			},
-			{
-				"week": 8,
-				"points": 5,
-				"total": 29,
-				"missed": false
-			},
-			{
-				"week": 9,
-				"points": 5,
-				"total": 34,
-				"missed": false
-			}
-		],
-		"Kranker": [
-			{
-				"week": 1,
-				"points": 5,
-				"total": 5,
-				"missed": false
-			},
-			{
-				"week": 2,
-				"points": 4,
-				"total": 9,
-				"missed": false
-			},
-			{
-				"week": 3,
-				"points": 4,
-				"total": 13,
-				"missed": false
-			},
-			{
-				"week": 4,
-				"points": 3,
-				"total": 16,
-				"missed": false
-			},
-			{
-				"week": 5,
-				"points": 6,
-				"total": 22,
-				"missed": false
-			},
-			{
-				"week": 6,
-				"points": 0,
-				"total": 22,
-				"missed": true
-			},
-			{
-				"week": 7,
-				"points": 0,
-				"total": 22,
-				"missed": true
-			},
-			{
-				"week": 8,
-				"points": 0,
-				"total": 22,
-				"missed": true
-			},
-			{
-				"week": 9,
-				"points": 7,
-				"total": 29,
-				"missed": false
-			}
-		]
-	},
-	"yardage": {
-		"props": [
-			{
-				"week": 1,
-				"players": "Gibbs",
-				"statType": "rush+rec",
-				"actual": 186,
-				"detail": "Jahmyr Gibbs: 156 rush + 30 rec",
-				"winners": [ "Spencer" ]
-			},
-			{
-				"week": 2,
-				"players": "Henry",
-				"statType": "rush+rec",
-				"actual": 87,
-				"detail": "Derrick Henry: 68 rush + 19 rec",
-				"winners": [ "Marc" ]
-			},
-			{
-				"week": 3,
-				"players": "K9",
-				"statType": "rush+rec",
-				"actual": 73,
-				"detail": "Kenneth Walker III: 70 rush + 3 rec",
-				"winners": [ "Beast" ]
-			},
-			{
-				"week": 4,
-				"players": "Bowers",
-				"statType": "rec yds",
-				"actual": 86,
-				"detail": "Brock Bowers: 86 rec",
-				"winners": [ "Beast" ]
-			},
-			{
-				"week": 5,
-				"players": "Bijan",
-				"statType": "rush+rec",
-				"actual": 118,
-				"detail": "Bijan Robinson: 86 rush + 32 rec",
-				"winners": [ "Jeff", "Zach" ]
-			},
-			{
-				"week": 6,
-				"players": "Warren",
-				"statType": "rush+rec",
-				"actual": 78,
-				"detail": "Jaylen Warren: 50 rush + 28 rec",
-				"winners": [ "Brandon" ]
-			},
-			{
-				"week": 7,
-				"players": "Puka",
-				"statType": "rec yds",
-				"actual": 68,
-				"detail": "Puka Nacua: 68 rec",
-				"winners": [ "Tyler" ]
-			},
-			{
-				"week": 8,
-				"players": "Chase + Tee",
-				"statType": "rush+rec",
-				"actual": 296,
-				"detail": "Ja'Marr Chase: 141 rec | Tee Higgins: 155 rec",
-				"winners": [ "Spencer" ]
-			},
-			{
-				"week": 9,
-				"players": "Bucky",
-				"statType": "rush+rec",
-				"actual": 125,
-				"detail": "Bucky Irving: 97 rush + 28 rec",
-				"winners": [ "Zach" ]
-			}
-		],
-		"guesses": {
-			"Spencer": [
-				{
-					"week": 1,
-					"yards": 169
-				},
-				{
-					"week": 2,
-					"yards": 169
-				},
-				{
-					"week": 3,
-					"yards": 275
-				},
-				{
-					"week": 4,
-					"yards": 99
-				},
-				{
-					"week": 5,
-					"yards": 121
-				},
-				{
-					"week": 6,
-					"yards": 151
-				},
-				{
-					"week": 7,
-					"yards": 147
-				},
-				{
-					"week": 8,
-					"yards": 222
-				},
-				{
-					"week": 9,
-					"yards": 69
-				}
-			],
-			"Brandon": [
-				{
-					"week": 1,
-					"yards": 147
-				},
-				{
-					"week": 2,
-					"yards": 118
-				},
-				{
-					"week": 3,
-					"yards": 132
-				},
-				{
-					"week": 4,
-					"yards": 57
-				},
-				{
-					"week": 5,
-					"yards": 134
-				},
-				{
-					"week": 6,
-					"yards": 78
-				},
-				{
-					"week": 7,
-					"yards": 112
-				},
-				{
-					"week": 8,
-					"yards": 187
-				},
-				{
-					"week": 9,
-					"yards": 146
-				}
-			],
-			"Gools": [
-				{
-					"week": 1,
-					"yards": 99
-				},
-				{
-					"week": 2,
-					"yards": 135
-				},
-				{
-					"week": 3,
-					"yards": 149
-				},
-				{
-					"week": 4,
-					"yards": 74
-				},
-				{
-					"week": 5,
-					"yards": 131
-				},
-				{
-					"week": 6,
-					"yards": 115
-				},
-				{
-					"week": 7,
-					"yards": 101
-				},
-				{
-					"week": 8,
-					"yards": 125
-				},
-				{
-					"week": 9,
-					"yards": 77
-				}
-			],
-			"Bailey": [
-				{
-					"week": 1,
-					"yards": 120
-				},
-				{
-					"week": 2,
-					"yards": 110
-				},
-				{
-					"week": 3,
-					"yards": 105
-				},
-				{
-					"week": 4,
-					"yards": 74
-				},
-				{
-					"week": 5,
-					"yards": 115
-				},
-				{
-					"week": 6,
-					"yards": 70
-				},
-				{
-					"week": 7,
-					"yards": 110
-				},
-				{
-					"week": 8,
-					"yards": 140
-				},
-				{
-					"week": 9,
-					"yards": 86
-				}
-			],
-			"Jeff": [
-				{
-					"week": 1,
-					"yards": 125
-				},
-				{
-					"week": 2,
-					"yards": 100
-				},
-				{
-					"week": 3,
-					"yards": 125
-				},
-				{
-					"week": 5,
-					"yards": 120
-				},
-				{
-					"week": 6,
-					"yards": 60
-				},
-				{
-					"week": 7,
-					"yards": 82
-				},
-				{
-					"week": 8,
-					"yards": 150
-				},
-				{
-					"week": 9,
-					"yards": 50
-				}
-			],
-			"Tyler": [
-				{
-					"week": 1,
-					"yards": 114
-				},
-				{
-					"week": 2,
-					"yards": 112
-				},
-				{
-					"week": 3,
-					"yards": 121
-				},
-				{
-					"week": 4,
-					"yards": 69
-				},
-				{
-					"week": 5,
-					"yards": 153
-				},
-				{
-					"week": 6,
-					"yards": 43
-				},
-				{
-					"week": 7,
-					"yards": 69
-				},
-				{
-					"week": 8,
-					"yards": 204
-				},
-				{
-					"week": 9,
-					"yards": 78
-				}
-			],
-			"Beast": [
-				{
-					"week": 1,
-					"yards": 117
-				},
-				{
-					"week": 2,
-					"yards": 129
-				},
-				{
-					"week": 3,
-					"yards": 77
-				},
-				{
-					"week": 4,
-					"yards": 86
-				},
-				{
-					"week": 5,
-					"yards": 123
-				},
-				{
-					"week": 6,
-					"yards": 91
-				},
-				{
-					"week": 7,
-					"yards": 74
-				},
-				{
-					"week": 8,
-					"yards": 165
-				},
-				{
-					"week": 9,
-					"yards": 92
-				}
-			],
-			"Dan": [
-				{
-					"week": 1,
-					"yards": 121
-				},
-				{
-					"week": 2,
-					"yards": 98
-				},
-				{
-					"week": 3,
-					"yards": 145
-				},
-				{
-					"week": 4,
-					"yards": 75
-				},
-				{
-					"week": 5,
-					"yards": 128
-				},
-				{
-					"week": 6,
-					"yards": 48
-				},
-				{
-					"week": 7,
-					"yards": 112
-				},
-				{
-					"week": 8,
-					"yards": 166
-				},
-				{
-					"week": 9,
-					"yards": 99
-				}
-			],
-			"Zach": [
-				{
-					"week": 1,
-					"yards": 130
-				},
-				{
-					"week": 2,
-					"yards": 85
-				},
-				{
-					"week": 3,
-					"yards": 100
-				},
-				{
-					"week": 4,
-					"yards": 85
-				},
-				{
-					"week": 5,
-					"yards": 120
-				},
-				{
-					"week": 6,
-					"yards": 75
-				},
-				{
-					"week": 7,
-					"yards": 115
-				},
-				{
-					"week": 8,
-					"yards": 200
-				},
-				{
-					"week": 9,
-					"yards": 115
-				}
-			],
-			"Snow": [
-				{
-					"week": 1,
-					"yards": 121
-				},
-				{
-					"week": 2,
-					"yards": 97
-				},
-				{
-					"week": 3,
-					"yards": 124
-				},
-				{
-					"week": 4,
-					"yards": 88
-				},
-				{
-					"week": 5,
-					"yards": 134
-				},
-				{
-					"week": 6,
-					"yards": 84
-				},
-				{
-					"week": 7,
-					"yards": 161
-				},
-				{
-					"week": 8,
-					"yards": 199
-				},
-				{
-					"week": 9,
-					"yards": 77
-				}
-			],
-			"Marc": [
-				{
-					"week": 1,
-					"yards": 116
-				},
-				{
-					"week": 2,
-					"yards": 86
-				},
-				{
-					"week": 3,
-					"yards": 132
-				},
-				{
-					"week": 4,
-					"yards": 87
-				},
-				{
-					"week": 5,
-					"yards": 111
-				},
-				{
-					"week": 6,
-					"yards": 87
-				},
-				{
-					"week": 7,
-					"yards": 0
-				},
-				{
-					"week": 8,
-					"yards": 131
-				},
-				{
-					"week": 9,
-					"yards": 87
-				}
-			],
-			"Kranker": [
-				{
-					"week": 1,
-					"yards": 150
-				},
-				{
-					"week": 2,
-					"yards": 120
-				},
-				{
-					"week": 3,
-					"yards": 125
-				},
-				{
-					"week": 4,
-					"yards": 65
-				},
-				{
-					"week": 5,
-					"yards": 160
-				},
-				{
-					"week": 9,
-					"yards": 85
-				}
-			]
-		}
-	}
+  "weeks": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+  "pickers": [
+    "Spencer",
+    "Brandon",
+    "Gools",
+    "Bailey",
+    "Jeff",
+    "Tyler",
+    "Beast",
+    "Dan",
+    "Zach",
+    "Snow",
+    "Marc",
+    "Kranker"
+  ],
+  "leaderboard": {
+    "Spencer": [
+      {
+        "week": 1,
+        "points": 6,
+        "total": 6,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 6,
+        "total": 12,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 8,
+        "total": 20,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 5,
+        "total": 25,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 6,
+        "total": 31,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 6,
+        "total": 37,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 3,
+        "total": 40,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 8,
+        "total": 48,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 3,
+        "total": 51,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 4,
+        "total": 55,
+        "missed": false
+      }
+    ],
+    "Brandon": [
+      {
+        "week": 1,
+        "points": 7,
+        "total": 7,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 5,
+        "total": 12,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 5,
+        "total": 17,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 4,
+        "total": 21,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 7,
+        "total": 28,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 5,
+        "total": 33,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 4,
+        "total": 37,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 4,
+        "total": 41,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 5,
+        "total": 46,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 4,
+        "total": 50,
+        "missed": false
+      }
+    ],
+    "Gools": [
+      {
+        "week": 1,
+        "points": 6,
+        "total": 6,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 4,
+        "total": 10,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 6,
+        "total": 16,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 7,
+        "total": 23,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 5,
+        "total": 28,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 5,
+        "total": 33,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 4,
+        "total": 37,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 4,
+        "total": 41,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 5,
+        "total": 46,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 8,
+        "total": 54,
+        "missed": false
+      }
+    ],
+    "Bailey": [
+      {
+        "week": 1,
+        "points": 6,
+        "total": 6,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 7,
+        "total": 13,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 2,
+        "total": 15,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 3,
+        "total": 18,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 8,
+        "total": 26,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 2,
+        "total": 28,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 4,
+        "total": 32,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 5,
+        "total": 37,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 8,
+        "total": 45,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 6,
+        "total": 51,
+        "missed": false
+      }
+    ],
+    "Jeff": [
+      {
+        "week": 1,
+        "points": 7,
+        "total": 7,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 5,
+        "total": 12,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 7,
+        "total": 19,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 2,
+        "total": 21,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 4,
+        "total": 25,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 3,
+        "total": 28,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 5,
+        "total": 33,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 3,
+        "total": 36,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 8,
+        "total": 44,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 5,
+        "total": 49,
+        "missed": false
+      }
+    ],
+    "Tyler": [
+      {
+        "week": 1,
+        "points": 4,
+        "total": 4,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 2,
+        "total": 6,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 6,
+        "total": 12,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 4,
+        "total": 16,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 6,
+        "total": 22,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 5,
+        "total": 27,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 5,
+        "total": 32,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 5,
+        "total": 37,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 4,
+        "total": 41,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 6,
+        "total": 47,
+        "missed": false
+      }
+    ],
+    "Beast": [
+      {
+        "week": 1,
+        "points": 2,
+        "total": 2,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 4,
+        "total": 6,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 4,
+        "total": 10,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 6,
+        "total": 16,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 5,
+        "total": 21,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 3,
+        "total": 24,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 5,
+        "total": 29,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 4,
+        "total": 33,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 7,
+        "total": 40,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 5,
+        "total": 45,
+        "missed": false
+      }
+    ],
+    "Dan": [
+      {
+        "week": 1,
+        "points": 4,
+        "total": 4,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 6,
+        "total": 10,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 6,
+        "total": 16,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 2,
+        "total": 18,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 3,
+        "total": 21,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 4,
+        "total": 25,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 4,
+        "total": 29,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 6,
+        "total": 35,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 5,
+        "total": 40,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 7,
+        "total": 47,
+        "missed": false
+      }
+    ],
+    "Zach": [
+      {
+        "week": 1,
+        "points": 5,
+        "total": 5,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 8,
+        "total": 13,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 3,
+        "total": 16,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 2,
+        "total": 18,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 7,
+        "total": 25,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 2,
+        "total": 27,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 4,
+        "total": 31,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 4,
+        "total": 35,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 5,
+        "total": 40,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 4,
+        "total": 44,
+        "missed": false
+      }
+    ],
+    "Snow": [
+      {
+        "week": 1,
+        "points": 4,
+        "total": 4,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 6,
+        "total": 10,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 5,
+        "total": 15,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 4,
+        "total": 19,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 5,
+        "total": 24,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 2,
+        "total": 26,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 2,
+        "total": 28,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 4,
+        "total": 32,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 6,
+        "total": 38,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 4,
+        "total": 42,
+        "missed": false
+      }
+    ],
+    "Marc": [
+      {
+        "week": 1,
+        "points": 1,
+        "total": 1,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 5,
+        "total": 6,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 4,
+        "total": 10,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 5,
+        "total": 15,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 2,
+        "total": 17,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 4,
+        "total": 21,
+        "missed": false
+      },
+      {
+        "week": 7,
+        "points": 3,
+        "total": 24,
+        "missed": false
+      },
+      {
+        "week": 8,
+        "points": 5,
+        "total": 29,
+        "missed": false
+      },
+      {
+        "week": 9,
+        "points": 5,
+        "total": 34,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 6,
+        "total": 40,
+        "missed": false
+      }
+    ],
+    "Kranker": [
+      {
+        "week": 1,
+        "points": 5,
+        "total": 5,
+        "missed": false
+      },
+      {
+        "week": 2,
+        "points": 4,
+        "total": 9,
+        "missed": false
+      },
+      {
+        "week": 3,
+        "points": 4,
+        "total": 13,
+        "missed": false
+      },
+      {
+        "week": 4,
+        "points": 3,
+        "total": 16,
+        "missed": false
+      },
+      {
+        "week": 5,
+        "points": 6,
+        "total": 22,
+        "missed": false
+      },
+      {
+        "week": 6,
+        "points": 0,
+        "total": 22,
+        "missed": true
+      },
+      {
+        "week": 7,
+        "points": 0,
+        "total": 22,
+        "missed": true
+      },
+      {
+        "week": 8,
+        "points": 0,
+        "total": 22,
+        "missed": true
+      },
+      {
+        "week": 9,
+        "points": 7,
+        "total": 29,
+        "missed": false
+      },
+      {
+        "week": 10,
+        "points": 6,
+        "total": 35,
+        "missed": false
+      }
+    ]
+  },
+  "yardage": {
+    "props": [
+      {
+        "week": 1,
+        "players": "Gibbs",
+        "statType": "rush+rec",
+        "actual": 186,
+        "detail": "Jahmyr Gibbs: 156 rush + 30 rec",
+        "winners": [ "Spencer" ]
+      },
+      {
+        "week": 2,
+        "players": "Henry",
+        "statType": "rush+rec",
+        "actual": 87,
+        "detail": "Derrick Henry: 68 rush + 19 rec",
+        "winners": [ "Marc" ]
+      },
+      {
+        "week": 3,
+        "players": "K9",
+        "statType": "rush+rec",
+        "actual": 73,
+        "detail": "Kenneth Walker III: 70 rush + 3 rec",
+        "winners": [ "Beast" ]
+      },
+      {
+        "week": 4,
+        "players": "Bowers",
+        "statType": "rec yds",
+        "actual": 86,
+        "detail": "Brock Bowers: 86 rec",
+        "winners": [ "Beast" ]
+      },
+      {
+        "week": 5,
+        "players": "Bijan",
+        "statType": "rush+rec",
+        "actual": 118,
+        "detail": "Bijan Robinson: 86 rush + 32 rec",
+        "winners": [ "Jeff", "Zach" ]
+      },
+      {
+        "week": 6,
+        "players": "Warren",
+        "statType": "rush+rec",
+        "actual": 78,
+        "detail": "Jaylen Warren: 50 rush + 28 rec",
+        "winners": [ "Brandon" ]
+      },
+      {
+        "week": 7,
+        "players": "Puka",
+        "statType": "rec yds",
+        "actual": 68,
+        "detail": "Puka Nacua: 68 rec",
+        "winners": [ "Tyler" ]
+      },
+      {
+        "week": 8,
+        "players": "Chase + Tee",
+        "statType": "rush+rec",
+        "actual": 296,
+        "detail": "Ja'Marr Chase: 141 rec | Tee Higgins: 155 rec",
+        "winners": [ "Spencer" ]
+      },
+      {
+        "week": 9,
+        "players": "Bucky",
+        "statType": "rush+rec",
+        "actual": 125,
+        "detail": "Bucky Irving: 97 rush + 28 rec",
+        "winners": [ "Zach" ]
+      },
+      {
+        "week": 10,
+        "players": "McBride",
+        "statType": "rec yds",
+        "actual": 37,
+        "detail": "Trey McBride: 37 rec",
+        "winners": [ "Jeff" ]
+      }
+    ],
+    "guesses": {
+      "Spencer": [
+        {
+          "week": 1,
+          "yards": 169
+        },
+        {
+          "week": 2,
+          "yards": 169
+        },
+        {
+          "week": 3,
+          "yards": 275
+        },
+        {
+          "week": 4,
+          "yards": 99
+        },
+        {
+          "week": 5,
+          "yards": 121
+        },
+        {
+          "week": 6,
+          "yards": 151
+        },
+        {
+          "week": 7,
+          "yards": 147
+        },
+        {
+          "week": 8,
+          "yards": 222
+        },
+        {
+          "week": 9,
+          "yards": 69
+        },
+        {
+          "week": 10,
+          "yards": 87
+        }
+      ],
+      "Brandon": [
+        {
+          "week": 1,
+          "yards": 147
+        },
+        {
+          "week": 2,
+          "yards": 118
+        },
+        {
+          "week": 3,
+          "yards": 132
+        },
+        {
+          "week": 4,
+          "yards": 57
+        },
+        {
+          "week": 5,
+          "yards": 134
+        },
+        {
+          "week": 6,
+          "yards": 78
+        },
+        {
+          "week": 7,
+          "yards": 112
+        },
+        {
+          "week": 8,
+          "yards": 187
+        },
+        {
+          "week": 9,
+          "yards": 146
+        },
+        {
+          "week": 10,
+          "yards": 87
+        }
+      ],
+      "Gools": [
+        {
+          "week": 1,
+          "yards": 99
+        },
+        {
+          "week": 2,
+          "yards": 135
+        },
+        {
+          "week": 3,
+          "yards": 149
+        },
+        {
+          "week": 4,
+          "yards": 74
+        },
+        {
+          "week": 5,
+          "yards": 131
+        },
+        {
+          "week": 6,
+          "yards": 115
+        },
+        {
+          "week": 7,
+          "yards": 101
+        },
+        {
+          "week": 8,
+          "yards": 125
+        },
+        {
+          "week": 9,
+          "yards": 77
+        },
+        {
+          "week": 10,
+          "yards": 101
+        }
+      ],
+      "Bailey": [
+        {
+          "week": 1,
+          "yards": 120
+        },
+        {
+          "week": 2,
+          "yards": 110
+        },
+        {
+          "week": 3,
+          "yards": 105
+        },
+        {
+          "week": 4,
+          "yards": 74
+        },
+        {
+          "week": 5,
+          "yards": 115
+        },
+        {
+          "week": 6,
+          "yards": 70
+        },
+        {
+          "week": 7,
+          "yards": 110
+        },
+        {
+          "week": 8,
+          "yards": 140
+        },
+        {
+          "week": 9,
+          "yards": 86
+        },
+        {
+          "week": 10,
+          "yards": 84
+        }
+      ],
+      "Jeff": [
+        {
+          "week": 1,
+          "yards": 125
+        },
+        {
+          "week": 2,
+          "yards": 100
+        },
+        {
+          "week": 3,
+          "yards": 125
+        },
+        {
+          "week": 4,
+          "yards": null,
+          "isInfinite":  true
+        },
+        {
+          "week": 5,
+          "yards": 120
+        },
+        {
+          "week": 6,
+          "yards": 60
+        },
+        {
+          "week": 7,
+          "yards": 82
+        },
+        {
+          "week": 8,
+          "yards": 150
+        },
+        {
+          "week": 9,
+          "yards": 50
+        },
+        {
+          "week": 10,
+          "yards": 46
+        }
+      ],
+      "Tyler": [
+        {
+          "week": 1,
+          "yards": 114
+        },
+        {
+          "week": 2,
+          "yards": 112
+        },
+        {
+          "week": 3,
+          "yards": 121
+        },
+        {
+          "week": 4,
+          "yards": 69
+        },
+        {
+          "week": 5,
+          "yards": 153
+        },
+        {
+          "week": 6,
+          "yards": 43
+        },
+        {
+          "week": 7,
+          "yards": 69
+        },
+        {
+          "week": 8,
+          "yards": 204
+        },
+        {
+          "week": 9,
+          "yards": 78
+        },
+        {
+          "week": 10,
+          "yards": 57
+        }
+      ],
+      "Beast": [
+        {
+          "week": 1,
+          "yards": 117
+        },
+        {
+          "week": 2,
+          "yards": 129
+        },
+        {
+          "week": 3,
+          "yards": 77
+        },
+        {
+          "week": 4,
+          "yards": 86
+        },
+        {
+          "week": 5,
+          "yards": 123
+        },
+        {
+          "week": 6,
+          "yards": 91
+        },
+        {
+          "week": 7,
+          "yards": 74
+        },
+        {
+          "week": 8,
+          "yards": 165
+        },
+        {
+          "week": 9,
+          "yards": 92
+        },
+        {
+          "week": 10,
+          "yards": 77
+        }
+      ],
+      "Dan": [
+        {
+          "week": 1,
+          "yards": 121
+        },
+        {
+          "week": 2,
+          "yards": 98
+        },
+        {
+          "week": 3,
+          "yards": 145
+        },
+        {
+          "week": 4,
+          "yards": 75
+        },
+        {
+          "week": 5,
+          "yards": 128
+        },
+        {
+          "week": 6,
+          "yards": 48
+        },
+        {
+          "week": 7,
+          "yards": 112
+        },
+        {
+          "week": 8,
+          "yards": 166
+        },
+        {
+          "week": 9,
+          "yards": 99
+        },
+        {
+          "week": 10,
+          "yards": 76
+        }
+      ],
+      "Zach": [
+        {
+          "week": 1,
+          "yards": 130
+        },
+        {
+          "week": 2,
+          "yards": 85
+        },
+        {
+          "week": 3,
+          "yards": 100
+        },
+        {
+          "week": 4,
+          "yards": 85
+        },
+        {
+          "week": 5,
+          "yards": 120
+        },
+        {
+          "week": 6,
+          "yards": 75
+        },
+        {
+          "week": 7,
+          "yards": 115
+        },
+        {
+          "week": 8,
+          "yards": 200
+        },
+        {
+          "week": 9,
+          "yards": 115
+        },
+        {
+          "week": 10,
+          "yards": 85
+        }
+      ],
+      "Snow": [
+        {
+          "week": 1,
+          "yards": 121
+        },
+        {
+          "week": 2,
+          "yards": 97
+        },
+        {
+          "week": 3,
+          "yards": 124
+        },
+        {
+          "week": 4,
+          "yards": 88
+        },
+        {
+          "week": 5,
+          "yards": 134
+        },
+        {
+          "week": 6,
+          "yards": 84
+        },
+        {
+          "week": 7,
+          "yards": 161
+        },
+        {
+          "week": 8,
+          "yards": 199
+        },
+        {
+          "week": 9,
+          "yards": 77
+        },
+        {
+          "week": 10,
+          "yards": 86
+        }
+      ],
+      "Marc": [
+        {
+          "week": 1,
+          "yards": 116
+        },
+        {
+          "week": 2,
+          "yards": 86
+        },
+        {
+          "week": 3,
+          "yards": 132
+        },
+        {
+          "week": 4,
+          "yards": 87
+        },
+        {
+          "week": 5,
+          "yards": 111
+        },
+        {
+          "week": 6,
+          "yards": 87
+        },
+        {
+          "week": 7,
+          "yards": 0
+        },
+        {
+          "week": 8,
+          "yards": 131
+        },
+        {
+          "week": 9,
+          "yards": 87
+        },
+        {
+          "week": 10,
+          "yards": 87
+        }
+      ],
+      "Kranker": [
+        {
+          "week": 1,
+          "yards": 150
+        },
+        {
+          "week": 2,
+          "yards": 120
+        },
+        {
+          "week": 3,
+          "yards": 125
+        },
+        {
+          "week": 4,
+          "yards": 65
+        },
+        {
+          "week": 5,
+          "yards": 160
+        },
+        {
+          "week": 9,
+          "yards": 85
+        },
+        {
+          "week": 10,
+          "yards": 65
+        }
+      ]
+    }
+  }
 }

@@ -163,6 +163,24 @@
         "GB @ NE": "GB +3",
         "Minshew @ Lock": "SEA -8.5"
       }
+    },
+    {
+      "week": 10,
+      "keyPick": "MIN @ GB",
+      "yardagePick": 84,
+      "parlayPick": "Jetta",
+      "bigTenSurvivor": "Iowa",
+      "nflSurvivor": "Jags",
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "HOU -4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "MIN +3",
+        "MIA @ IND": "IND -3.5",
+        "SF @ DAL": "SF -4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "LAC +4.5"
+      }
     }
   ],
   "Beast": [
@@ -328,6 +346,24 @@
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
         "Minshew @ Lock": "SEA -8.5"
+      }
+    },
+    {
+      "week": 10,
+      "keyPick": "MIA @ IND",
+      "yardagePick": 77,
+      "parlayPick": "Chase Brown",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "HOU -4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "GB -3",
+        "MIA @ IND": "MIA +3.5",
+        "SF @ DAL": "DAL +4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "LAC +4.5"
       }
     }
   ],
@@ -495,6 +531,24 @@
         "GB @ NE": "GB +3",
         "Minshew @ Lock": "ARI +8.5"
       }
+    },
+    {
+      "week": 10,
+      "keyPick": "LAC @ BAL",
+      "yardagePick": 87,
+      "parlayPick": "Judkins",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "HOU -4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "MIN +3",
+        "MIA @ IND": "IND -3.5",
+        "SF @ DAL": "DAL +4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "LAC +4.5"
+      }
     }
   ],
   "Dan": [
@@ -660,6 +714,24 @@
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
         "Minshew @ Lock": "ARI +8.5"
+      }
+    },
+    {
+      "week": 10,
+      "keyPick": "NE v DET",
+      "yardagePick": 76,
+      "parlayPick": "Pollard",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "CLE +4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "MIN +3",
+        "MIA @ IND": "MIA +3.5",
+        "SF @ DAL": "SF -4.5",
+        "PIT @ CIN": "PIT +3.5",
+        "LAC @ BAL": "BAL -4.5"
       }
     }
   ],
@@ -827,6 +899,24 @@
         "GB @ NE": "NE -3",
         "Minshew @ Lock": "ARI +8.5"
       }
+    },
+    {
+      "week": 10,
+      "keyPick": "SF @ DAL",
+      "yardagePick": 101,
+      "parlayPick": "Trey",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "CLE +4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "MIN +3",
+        "MIA @ IND": "MIA +3.5",
+        "SF @ DAL": "SF -4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "LAC +4.5"
+      }
     }
   ],
   "Jeff": [
@@ -993,6 +1083,24 @@
         "GB @ NE": "GB +3",
         "Minshew @ Lock": "ARI +8.5"
       }
+    },
+    {
+      "week": 10,
+      "keyPick": "NE v DET",
+      "yardagePick": 46,
+      "parlayPick": "Warren",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "HOU -4.5",
+        "KC @ ATL": "ATL +3.5",
+        "MIN @ GB": "GB -3",
+        "MIA @ IND": "IND -3.5",
+        "SF @ DAL": "DAL +4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "BAL -4.5"
+      }
     }
   ],
   "Kranker": [
@@ -1104,6 +1212,24 @@
         "NYG @ Milton": "PHI +3.5",
         "GB @ NE": "GB +3",
         "Minshew @ Lock": "SEA -8.5"
+      }
+    },
+    {
+      "week": 10,
+      "keyPick": "NE v DET",
+      "yardagePick": 65,
+      "parlayPick": "THE Blake corum",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "CLE +4.5",
+        "KC @ ATL": "ATL +3.5",
+        "MIN @ GB": "MIN +3",
+        "MIA @ IND": "MIA +3.5",
+        "SF @ DAL": "SF -4.5",
+        "PIT @ CIN": "PIT +3.5",
+        "LAC @ BAL": "BAL -4.5"
       }
     }
   ],
@@ -1271,6 +1397,24 @@
         "GB @ NE": "NE -3",
         "Minshew @ Lock": "SEA -8.5"
       }
+    },
+    {
+      "week": 10,
+      "keyPick": "SF @ DAL",
+      "yardagePick": 87,
+      "parlayPick": "Amon ra",
+      "bigTenSurvivor": "Iowa",
+      "nflSurvivor": "Rams",
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "CLE +4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "GB -3",
+        "MIA @ IND": "IND -3.5",
+        "SF @ DAL": "SF -4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "LAC +4.5"
+      }
     }
   ],
   "Snow": [
@@ -1436,6 +1580,24 @@
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "GB +3",
         "Minshew @ Lock": "SEA -8.5"
+      }
+    },
+    {
+      "week": 10,
+      "keyPick": "SF @ DAL",
+      "yardagePick": 86,
+      "parlayPick": "Chase Brown",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "HOU -4.5",
+        "KC @ ATL": "ATL +3.5",
+        "MIN @ GB": "MIN +3",
+        "MIA @ IND": "IND -3.5",
+        "SF @ DAL": "SF -4.5",
+        "PIT @ CIN": "PIT +3.5",
+        "LAC @ BAL": "BAL -4.5"
       }
     }
   ],
@@ -1603,6 +1765,24 @@
         "GB @ NE": "GB +3",
         "Minshew @ Lock": "ARI +8.5"
       }
+    },
+    {
+      "week": 10,
+      "keyPick": "NE v DET",
+      "yardagePick": 87,
+      "parlayPick": "Hubbard",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "CLE +4.5",
+        "KC @ ATL": "ATL +3.5",
+        "MIN @ GB": "GB -3",
+        "MIA @ IND": "IND -3.5",
+        "SF @ DAL": "DAL +4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "BAL -4.5"
+      }
     }
   ],
   "Tyler": [
@@ -1769,6 +1949,24 @@
         "GB @ NE": "NE -3",
         "Minshew @ Lock": "ARI +8.5"
       }
+    },
+    {
+      "week": 10,
+      "keyPick": "KC @ ATL",
+      "yardagePick": 57,
+      "parlayPick": "McBride",
+      "bigTenSurvivor": null,
+      "nflSurvivor": null,
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "HOU -4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "MIN +3",
+        "MIA @ IND": "IND -3.5",
+        "SF @ DAL": "SF -4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "LAC +4.5"
+      }
     }
   ],
   "Zach": [
@@ -1934,6 +2132,24 @@
         "NYG @ Milton": "NYG -3.5",
         "GB @ NE": "NE -3",
         "Minshew @ Lock": "ARI +8.5"
+      }
+    },
+    {
+      "week": 10,
+      "keyPick": "LAC @ BAL",
+      "yardagePick": 85,
+      "parlayPick": "Allegier",
+      "bigTenSurvivor": "Illinois",
+      "nflSurvivor": "Commies",
+      "picks": {
+        "NE v DET": "DET -2.5",
+        "HOU @ CLE": "HOU -4.5",
+        "KC @ ATL": "KC -3.5",
+        "MIN @ GB": "GB -3",
+        "MIA @ IND": "MIA +3.5",
+        "SF @ DAL": "DAL +4.5",
+        "PIT @ CIN": "CIN -3.5",
+        "LAC @ BAL": "BAL -4.5"
       }
     }
   ]

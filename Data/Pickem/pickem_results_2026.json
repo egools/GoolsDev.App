@@ -1058,6 +1058,116 @@
         ],
         "pushPicks": []
       }
+    },
+    "10": {
+      "NE v DET": {
+        "awayTeam": "NE",
+        "homeTeam": "DET",
+        "awayScore": 10,
+        "homeScore": 35,
+        "results": {
+          "DET -2.5": "win",
+          "NE +2.5": "loss"
+        },
+        "winningPicks": [
+          "DET -2.5"
+        ],
+        "pushPicks": []
+      },
+      "HOU @ CLE": {
+        "awayTeam": "HOU",
+        "homeTeam": "CLE",
+        "awayScore": 24,
+        "homeScore": 27,
+        "results": {
+          "CLE +4.5": "win",
+          "HOU -4.5": "loss"
+        },
+        "winningPicks": [
+          "CLE +4.5"
+        ],
+        "pushPicks": []
+      },
+      "KC @ ATL": {
+        "awayTeam": "KC",
+        "homeTeam": "ATL",
+        "awayScore": 35,
+        "homeScore": 13,
+        "results": {
+          "ATL +3.5": "loss",
+          "KC -3.5": "win"
+        },
+        "winningPicks": [
+          "KC -3.5"
+        ],
+        "pushPicks": []
+      },
+      "MIN @ GB": {
+        "awayTeam": "MIN",
+        "homeTeam": "GB",
+        "awayScore": 30,
+        "homeScore": 10,
+        "results": {
+          "GB -3": "loss",
+          "MIN +3": "win"
+        },
+        "winningPicks": [
+          "MIN +3"
+        ],
+        "pushPicks": []
+      },
+      "MIA @ IND": {
+        "awayTeam": "MIA",
+        "homeTeam": "IND",
+        "awayScore": 22,
+        "homeScore": 24,
+        "results": {
+          "IND -3.5": "loss",
+          "MIA +3.5": "win"
+        },
+        "winningPicks": [
+          "MIA +3.5"
+        ],
+        "pushPicks": []
+      },
+      "SF @ DAL": {
+        "awayTeam": "SF",
+        "homeTeam": "DAL",
+        "awayScore": 46,
+        "homeScore": 40,
+        "results": {
+          "DAL +4.5": "loss",
+          "SF -4.5": "win"
+        },
+        "winningPicks": [
+          "SF -4.5"
+        ],
+        "pushPicks": []
+      },
+      "PIT @ CIN": {
+        "awayTeam": "PIT",
+        "homeTeam": "CIN",
+        "awayScore": 18,
+        "homeScore": 38,
+        "results": {
+          "CIN -3.5": "win",
+          "PIT +3.5": "loss"
+        },
+        "winningPicks": [
+          "CIN -3.5"
+        ],
+        "pushPicks": []
+      },
+      "LAC @ BAL": {
+        "awayTeam": "LAC",
+        "homeTeam": "BAL",
+        "awayScore": null,
+        "homeScore": null,
+        "results": {},
+        "winningPicks": [],
+        "pushPicks": [],
+        "status": "pending"
+      }
     }
   },
   "yardagePropResults": {

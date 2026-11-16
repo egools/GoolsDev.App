@@ -1,5 +1,5 @@
 {
-  "weeks": [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+  "weeks": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
   "pickers": [
     "Spencer",
     "Brandon",
@@ -209,6 +209,28 @@
         "Spencer": 69,
         "Jeff": 50
       }
+    },
+    "10": {
+      "prop": "McBride rec yds",
+      "actualYardage": 37,
+      "closestMiss": 9,
+      "winners": [
+        "Jeff"
+      ],
+      "guesses": {
+        "Jeff": 46,
+        "Tyler": 57,
+        "Kranker": 65,
+        "Dan": 76,
+        "Beast": 77,
+        "Bailey": 84,
+        "Zach": 85,
+        "Snow": 86,
+        "Brandon": 87,
+        "Marc": 87,
+        "Spencer": 87,
+        "Gools": 101
+      }
     }
   },
   "pickemScores": {
@@ -276,11 +298,18 @@
           "propPoints": 0,
           "weekTotal": 3,
           "keyPickCorrect": false
+        },
+        "10": {
+          "gamePoints": 4,
+          "yardageGuess": 87,
+          "propPoints": 0,
+          "weekTotal": 4,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 47,
+      "gamePoints": 51,
       "propPoints": 4,
-      "totalPoints": 51
+      "totalPoints": 55
     },
     "Brandon": {
       "weekResults": {
@@ -346,11 +375,18 @@
           "propPoints": 0,
           "weekTotal": 5,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 4,
+          "yardageGuess": 87,
+          "propPoints": 0,
+          "weekTotal": 4,
+          "keyPickCorrect": false
         }
       },
-      "gamePoints": 44,
+      "gamePoints": 48,
       "propPoints": 2,
-      "totalPoints": 46
+      "totalPoints": 50
     },
     "Gools": {
       "weekResults": {
@@ -416,11 +452,18 @@
           "propPoints": 0,
           "weekTotal": 5,
           "keyPickCorrect": false
+        },
+        "10": {
+          "gamePoints": 8,
+          "yardageGuess": 101,
+          "propPoints": 0,
+          "weekTotal": 8,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 46,
+      "gamePoints": 54,
       "propPoints": 0,
-      "totalPoints": 46
+      "totalPoints": 54
     },
     "Bailey": {
       "weekResults": {
@@ -486,11 +529,18 @@
           "propPoints": 0,
           "weekTotal": 8,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 6,
+          "yardageGuess": 84,
+          "propPoints": 0,
+          "weekTotal": 6,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 45,
+      "gamePoints": 51,
       "propPoints": 0,
-      "totalPoints": 45
+      "totalPoints": 51
     },
     "Jeff": {
       "weekResults": {
@@ -556,11 +606,18 @@
           "propPoints": 0,
           "weekTotal": 8,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 3,
+          "yardageGuess": 46,
+          "propPoints": 2,
+          "weekTotal": 5,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 42,
-      "propPoints": 2,
-      "totalPoints": 44
+      "gamePoints": 45,
+      "propPoints": 4,
+      "totalPoints": 49
     },
     "Tyler": {
       "weekResults": {
@@ -626,11 +683,18 @@
           "propPoints": 0,
           "weekTotal": 4,
           "keyPickCorrect": false
+        },
+        "10": {
+          "gamePoints": 6,
+          "yardageGuess": 57,
+          "propPoints": 0,
+          "weekTotal": 6,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 39,
+      "gamePoints": 45,
       "propPoints": 2,
-      "totalPoints": 41
+      "totalPoints": 47
     },
     "Beast": {
       "weekResults": {
@@ -696,11 +760,18 @@
           "propPoints": 0,
           "weekTotal": 7,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 5,
+          "yardageGuess": 77,
+          "propPoints": 0,
+          "weekTotal": 5,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 36,
+      "gamePoints": 41,
       "propPoints": 4,
-      "totalPoints": 40
+      "totalPoints": 45
     },
     "Dan": {
       "weekResults": {
@@ -766,11 +837,18 @@
           "propPoints": 0,
           "weekTotal": 5,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 7,
+          "yardageGuess": 76,
+          "propPoints": 0,
+          "weekTotal": 7,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 40,
+      "gamePoints": 47,
       "propPoints": 0,
-      "totalPoints": 40
+      "totalPoints": 47
     },
     "Zach": {
       "weekResults": {
@@ -836,11 +914,18 @@
           "propPoints": 2,
           "weekTotal": 5,
           "keyPickCorrect": false
+        },
+        "10": {
+          "gamePoints": 4,
+          "yardageGuess": 85,
+          "propPoints": 0,
+          "weekTotal": 4,
+          "keyPickCorrect": false
         }
       },
-      "gamePoints": 36,
+      "gamePoints": 40,
       "propPoints": 4,
-      "totalPoints": 40
+      "totalPoints": 44
     },
     "Snow": {
       "weekResults": {
@@ -906,11 +991,18 @@
           "propPoints": 0,
           "weekTotal": 6,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 4,
+          "yardageGuess": 86,
+          "propPoints": 0,
+          "weekTotal": 4,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 38,
+      "gamePoints": 42,
       "propPoints": 0,
-      "totalPoints": 38
+      "totalPoints": 42
     },
     "Marc": {
       "weekResults": {
@@ -976,11 +1068,18 @@
           "propPoints": 0,
           "weekTotal": 5,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 6,
+          "yardageGuess": 87,
+          "propPoints": 0,
+          "weekTotal": 6,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 32,
+      "gamePoints": 38,
       "propPoints": 2,
-      "totalPoints": 34
+      "totalPoints": 40
     },
     "Kranker": {
       "weekResults": {
@@ -1025,11 +1124,18 @@
           "propPoints": 0,
           "weekTotal": 7,
           "keyPickCorrect": true
+        },
+        "10": {
+          "gamePoints": 6,
+          "yardageGuess": 65,
+          "propPoints": 0,
+          "weekTotal": 6,
+          "keyPickCorrect": true
         }
       },
-      "gamePoints": 29,
+      "gamePoints": 35,
       "propPoints": 0,
-      "totalPoints": 29
+      "totalPoints": 35
     }
   }
 }
