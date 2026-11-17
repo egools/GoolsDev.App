@@ -377,11 +377,11 @@
           "keyPickCorrect": true
         },
         "10": {
-          "gamePoints": 4,
+          "gamePoints": 6,
           "yardageGuess": 87,
           "propPoints": 0,
-          "weekTotal": 4,
-          "keyPickCorrect": false
+          "weekTotal": 6,
+          "keyPickCorrect": true
         }
       },
       "gamePoints": 48,
@@ -454,10 +454,10 @@
           "keyPickCorrect": false
         },
         "10": {
-          "gamePoints": 8,
+          "gamePoints": 9,
           "yardageGuess": 101,
           "propPoints": 0,
-          "weekTotal": 8,
+          "weekTotal": 9,
           "keyPickCorrect": true
         }
       },
@@ -531,10 +531,10 @@
           "keyPickCorrect": true
         },
         "10": {
-          "gamePoints": 6,
+          "gamePoints": 7,
           "yardageGuess": 84,
           "propPoints": 0,
-          "weekTotal": 6,
+          "weekTotal": 7,
           "keyPickCorrect": true
         }
       },
@@ -685,10 +685,10 @@
           "keyPickCorrect": false
         },
         "10": {
-          "gamePoints": 6,
+          "gamePoints": 7,
           "yardageGuess": 57,
           "propPoints": 0,
-          "weekTotal": 6,
+          "weekTotal": 7,
           "keyPickCorrect": true
         }
       },
@@ -762,10 +762,10 @@
           "keyPickCorrect": true
         },
         "10": {
-          "gamePoints": 5,
+          "gamePoints": 6,
           "yardageGuess": 77,
           "propPoints": 0,
-          "weekTotal": 5,
+          "weekTotal": 6,
           "keyPickCorrect": true
         }
       },
@@ -1070,10 +1070,10 @@
           "keyPickCorrect": true
         },
         "10": {
-          "gamePoints": 6,
+          "gamePoints": 7,
           "yardageGuess": 87,
           "propPoints": 0,
-          "weekTotal": 6,
+          "weekTotal": 7,
           "keyPickCorrect": true
         }
       },

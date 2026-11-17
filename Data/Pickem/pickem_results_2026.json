@@ -1161,10 +1161,15 @@
       "LAC @ BAL": {
         "awayTeam": "LAC",
         "homeTeam": "BAL",
-        "awayScore": null,
-        "homeScore": null,
-        "results": {},
-        "winningPicks": [],
+        "awayScore": 20,
+        "homeScore": 23,
+        "results": {
+          "BAL -4.5": "loss",
+          "LAC +4.5": "win"
+        },
+        "winningPicks": [
+          "LAC +4.5"
+        ],
         "pushPicks": [],
         "status": "pending"
       }
